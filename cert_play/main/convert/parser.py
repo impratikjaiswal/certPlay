@@ -5,6 +5,7 @@ from python_helpers.ph_util import PhUtil
 
 from cert_play.main.convert import converter
 from cert_play.main.convert.converter import validate_urls
+from cert_play.main.convert.util import is_windows_environment
 from cert_play.main.helper.metadata import MetaData
 
 
@@ -33,15 +34,27 @@ def open_ssl_cmd(raw_data):
     """
 
     """
-    openssl s_client -connect amenitypj.in:443 2>&1 < NUL | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.pem.txt
+    openssl s_client -connect amenitypj.in:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > wikipedia.org.pem.txt
+    openssl s_client -connect amenitypj.in:443 2>&1 < NUL       | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.pem.txt
     openssl x509 -in amenitypj.in.pem.txt -text -out amenitypj.in.pem_parsed.txt
     """
     # cmd = "dir"
     # execute_cmd(cmd)
     # Move File to Temp Folder
+    nul_windows = 'NUL'
+    nul_unix = '/dev/null'
+    nul_handling = nul_windows if is_windows_environment() else nul_unix
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as fp:
         print(f'Temp File {fp.name} is created.')
-        cmd = ' '.join(["openssl s_client -connect", raw_data, "2>&1 < NUL | sed -n '/-----BEGIN/,/-----END/p'"])
+        cmd = ' '.join(
+            [
+                "openssl s_client -connect",
+                raw_data,
+                "2>&1 < ",
+                nul_handling,
+                "| sed -n '/-----BEGIN/,/-----END/p'"
+            ]
+        )
         result = execute_cmd(cmd)
         fp.write(result)
         fp.close()
