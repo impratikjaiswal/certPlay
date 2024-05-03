@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="tlvplay" type="PythonConfigurationType" factoryName="Python" folderName="certPlay" nameIsGenerated="true">
+  <configuration default="false" name="certplay" type="PythonConfigurationType" factoryName="Python" folderName="certPlay" nameIsGenerated="true">
     <output_file path="$PROJECT_DIR$/../../Github_Personal/AmenityPjRaw/TempFiles/pycharm.log" is_save="true" />
-    <module name="tlvplay" />
+    <module name="certPlay" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
@@ -9,11 +9,12 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../certPlay/tlv_play/main" />
+    <option name="WORKING_DIRECTORY" value="D:\Other\Github_Self\certPlay\cert_play\main" />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../certPlay/tlv_play/main/tlvplay.py" />
+    <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../certPlay/cert_play/main/certplay.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />

@@ -2,13 +2,13 @@ from python_helpers.ph_modes_error_handling import PhErrorHandlingModes
 from python_helpers.ph_modes_execution import PhExecutionModes
 from python_helpers.ph_util import PhUtil
 
-from tlv_play.main.data_type.any_data import AnyData
-from tlv_play.main.data_type.data_type_master import DataTypeMaster
-from tlv_play.main.data_type.dev import Dev
-from tlv_play.main.data_type.unit_testing import UnitTesting
-from tlv_play.main.data_type.user_data import UserData
-from tlv_play.main.helper.constants_config import ConfigConst
-from tlv_play.main.helper.defaults import Defaults
+from cert_play.main.data_type.any_data import AnyData
+from cert_play.main.data_type.data_type_master import DataTypeMaster
+from cert_play.main.data_type.dev import Dev
+from cert_play.main.data_type.unit_testing import UnitTesting
+from cert_play.main.data_type.user_data import UserData
+from cert_play.main.helper.constants_config import ConfigConst
+from cert_play.main.helper.defaults import Defaults
 
 
 def process_data(execution_mode, error_handling_mode):
@@ -57,10 +57,6 @@ def process_data(execution_mode, error_handling_mode):
         data_type.set_print_info()
         data_type.set_quiet_mode()
         data_type.set_remarks_list()
-        data_type.set_one_liner()
-        data_type.set_value_in_ascii()
-        data_type.set_length_in_decimal()
-
         data_type.set_data_pool()
         if isinstance(data_type, UnitTesting):
             error_handling_mode = PhErrorHandlingModes.CONTINUE_ON_ERROR
