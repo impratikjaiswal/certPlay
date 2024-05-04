@@ -21,7 +21,7 @@ restrictions:
 ## Discussions
 
 For any questions, support, or ideas, etc. 
-[please create a GitHub discussion](https://github.com/impratikjaiswal/tlvPlay/discussions/new/choose).
+[please create a GitHub discussion](https://github.com/impratikjaiswal/certPlay/discussions/new/choose).
 
 ## Feature requests
 
@@ -30,7 +30,7 @@ fits with the scope and aims of the project. It's up to *you* to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
-If you've an idea in mind, [please submit a feature request](https://github.com/impratikjaiswal/tlvPlay/discussions/new?category=ideas).
+If you've an idea in mind, [please submit a feature request](https://github.com/impratikjaiswal/certPlay/discussions/new?category=ideas).
 
 Your ideas and suggestions are always welcome!
 
@@ -39,12 +39,12 @@ Your ideas and suggestions are always welcome!
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
 Good bug reports are extremely helpful - thank you!
 
-If you've noticed a bug, [please submit an issue](https://github.com/impratikjaiswal/tlvPlay/issues/new).
+If you've noticed a bug, [please submit an issue](https://github.com/impratikjaiswal/certPlay/issues/new).
 
 ## Bug Reports Guidelines
 
 1. **Use the GitHub issue search.** Check if the issue has already been
-   [reported](https://github.com/impratikjaiswal/tlvPlay/issues).
+   [reported](https://github.com/impratikjaiswal/certPlay/issues).
 
 2. **Check if the issue has been fixed.** Try to reproduce it using the
    latest `main` or `dev` branch in the repository.
@@ -94,7 +94,7 @@ the authors (and/or leaders) of the project a non-exclusive license to
 re-distribute your code under the current license and possibly re-license the
 code as deemed necessary.
 
-If this is something you think you can fix, then [fork](https://github.com/impratikjaiswal/tlvPlay/fork) and create
+If this is something you think you can fix, then [fork](https://github.com/impratikjaiswal/certPlay/fork) and create
 a branch with a descriptive name.
 
 * IMPORTANT: base your PR on the `dev` branch and target the `dev` branch
