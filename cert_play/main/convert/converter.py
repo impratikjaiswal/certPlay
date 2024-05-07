@@ -1,10 +1,8 @@
-import urllib
-
 from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_util import PhUtil
 
-from cert_play.main.convert.util import to_str
+from cert_play.main.convert.util import to_str, is_url_accessible
 from cert_play.main.helper.data import Data
 from cert_play.main.helper.defaults import Defaults
 
@@ -105,8 +103,9 @@ def validate_urls(raw_data):
     :return:
     """
     # compare_urlparse_urlsplit(raw_data)
-    url_w_port = clean_url(raw_data)
-    return url_w_port
+    schema, url, port = clean_url(raw_data)
+    is_url_accessible('://'.join(filter(None, [schema, url])), fail_safe=False)
+    return ':'.join(filter(None, [url, port]))
 
 
 def clean_url(raw_data):
@@ -130,13 +129,18 @@ def clean_url(raw_data):
     # raw_data = 'f{urlsplit_data.scheme}'
     if not url:
         result = raw_data
+        schema = ''
         # remove www., if any
         if result.startswith('www.'):
             result = result.replace('www.', '', 1)
         # remove Schemas, is any
         sep = '://' if '://' in result else '//'
         results = result.split(sep, maxsplit=1)
-        result = results[1] if len(results) > 1 else result
+        if len(results) > 1:
+            schema = results[0]
+            result = results[1]
+        else:
+            result = result
         # remove Fragment, if any
         results = result.split('#', maxsplit=1)
         result = results[0]
@@ -155,6 +159,7 @@ def clean_url(raw_data):
         port = results[0]
         # port must be numeric
         port = port if port and PhUtil.is_numeric(port) else '443'
-    print(f'url: {url}; port: {port}')
+        schema = schema if schema else 'https'
+    # print(f'schema: {schema}; url: {url}; port: {port}')
     # Trim the url for fetching certificate
-    return ':'.join([url, port])
+    return schema, url, port

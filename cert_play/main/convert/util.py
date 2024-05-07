@@ -26,12 +26,14 @@ def is_valid_url_regex2(url):
     return True if re.search(p, url) else False
 
 
-def is_valid_url_urlopen(url):
+def is_url_accessible(url, fail_safe=False):
     try:
         urllib.request.urlopen(url)
         return True
-    except:
-        return False
+    except Exception as e:
+        if fail_safe is True:
+            return False
+        raise ValueError(f'URL {url} is not accessible. Please try a different URL.')
 
 
 def get_urls_pool():

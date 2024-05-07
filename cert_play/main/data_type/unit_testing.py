@@ -30,5 +30,9 @@ class UnitTesting(DataTypeMaster):
         ]
         data_pool_negative = [
             #
+            Data(
+                remarks_list='WikiPedia; Sub Pages',
+                raw_data='https://amenitypj.com',
+            ),
         ]
         super().set_data_pool(data_pool_positive + data_pool_negative)
