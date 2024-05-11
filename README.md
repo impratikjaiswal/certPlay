@@ -1,7 +1,5 @@
 # certPlay
 Generic Certificates Parser based on X.509 and related standards
-<BR>Can parse any TLV upto **nth Level**.
-<BR>Single-Multi byte Tag, Length & values are Supported.
 
 [![GitHub License](https://img.shields.io/github/license/impratikjaiswal/certPlay)](LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
@@ -13,7 +11,10 @@ Generic Certificates Parser based on X.509 and related standards
 [![Website](https://img.shields.io/website?url=https://amenitypj.in/certPlay&label=website%20status)](https://amenitypj.in/certPlay)
 
 [![Static Badge](https://img.shields.io/badge/impratikjaiswal.github.io/certPlay-a?label=gihub%20website%20url)](https://impratikjaiswal.github.io/certPlay)
-[![Website](https://img.shields.io/website?url=https://amenitypj.in/certPlay&label=website%20status)](https://impratikjaiswal.github.io/certPlay)
+[![Website](https://img.shields.io/website?url=https://impratikjaiswal.github.io/certPlay&label=website%20status)](https://impratikjaiswal.github.io/certPlay)
+
+# Url(s) of AmenityPj 
+Refer [Url(s) of AmenityPj](https://impratikjaiswal.github.io/amenitypj/#urls-of-amenitypj) for details.
 
 # Screen Shot(s) of Web App [![Static Badge](https://img.shields.io/badge/amenitypj.in-a)](https://amenitypj.in/) 
 ![sample_web_1](https://github.com/impratikjaiswal/certPlay/blob/main/static/images/sample_web_1.gif?raw=true)
