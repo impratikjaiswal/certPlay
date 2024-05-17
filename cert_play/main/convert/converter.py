@@ -90,11 +90,34 @@ def set_defaults(data, meta_data):
     :param meta_data:
     :return:
     """
-    pass
+    if data.input_format is None:
+        data.input_format = Defaults.INPUT_FORMAT
 
 
 def read_web_request(request_form):
     return Data(**parse_config(request_form))
+
+
+def validate_der_format(raw_data):
+    """
+
+    :return:
+    """
+    raw_data_list = raw_data.split('\n')
+    if len(raw_data_list) > 1:
+        # Multi Line
+        if PhConstants.CERTIFICATE in raw_data_list[0]:
+            raw_data_list[0] = ''
+        if PhConstants.CERTIFICATE in raw_data_list[-1]:
+            raw_data_list[-1] = ''
+    else:
+        # Single Line
+        # TODO: Cleaning of -----BEGIN CERTIFICATE-----, -----END CERTIFICATE----- from same line data
+        pass
+    # Strip All Lines
+    raw_data_list = [str(x).strip() for x in raw_data_list]
+    single_line_data = ''.join(filter(None, raw_data_list))
+    return '\n'.join(['-----BEGIN CERTIFICATE-----', single_line_data, '-----END CERTIFICATE-----'])
 
 
 def validate_urls(raw_data):
@@ -104,7 +127,10 @@ def validate_urls(raw_data):
     """
     # compare_urlparse_urlsplit(raw_data)
     schema, url, port = clean_url(raw_data)
-    is_url_accessible('://'.join(filter(None, [schema, url])), fail_safe=False)
+    if not schema:
+        print(f'URL Type is missing (e.g.: http, https etc), hence {url} accessibility can not be validated')
+    else:
+        is_url_accessible('://'.join(filter(None, [schema, url])), fail_safe=False)
     return ':'.join(filter(None, [url, port]))
 
 
@@ -159,7 +185,6 @@ def clean_url(raw_data):
         port = results[0]
         # port must be numeric
         port = port if port and PhUtil.is_numeric(port) else '443'
-        schema = schema if schema else 'https'
     # print(f'schema: {schema}; url: {url}; port: {port}')
     # Trim the url for fetching certificate
     return schema, url, port

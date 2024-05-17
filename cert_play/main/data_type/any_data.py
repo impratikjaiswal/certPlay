@@ -24,6 +24,10 @@ class AnyData(DataTypeMaster):
         remarks_list = None
         super().set_remarks_list(remarks_list)
 
+    def set_input_format(self):
+        input_format = None
+        super().set_input_format(input_format)
+
     def set_data_pool(self):
         data_pool = [
             #

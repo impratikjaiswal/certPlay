@@ -9,6 +9,7 @@ class Data:
                  print_info=None,
                  quite_mode=None,
                  remarks_list=[],
+                 input_format=None,
                  ):
         self.raw_data = raw_data
         self.print_input = print_input
@@ -22,6 +23,8 @@ class Data:
         #
         self.remarks_list = None
         self.set_user_remarks(remarks_list)
+        #
+        self.input_format = input_format
 
     def set_user_remarks(self, remarks_list):
         self.remarks_list = PhUtil.to_list(remarks_list, trim_data=True, all_str=True)

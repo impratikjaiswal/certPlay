@@ -1,3 +1,4 @@
+import subprocess
 import traceback
 
 import binascii
@@ -20,6 +21,7 @@ class DataTypeMaster(object):
         self.print_info = None
         self.quite_mode = None
         self.remarks_list = None
+        self.input_format = None
         self.data_pool = []
         self.__master_data = (Data(raw_data=None), MetaData(raw_data_org=None), PhExceptionHelper(msg_key=None))
 
@@ -37,6 +39,9 @@ class DataTypeMaster(object):
 
     def set_remarks_list(self, remarks_list):
         self.remarks_list = remarks_list
+
+    def set_input_format(self, input_format):
+        self.input_format = input_format
 
     def set_data_pool(self, data_pool):
         self.data_pool = data_pool
@@ -85,6 +90,12 @@ class DataTypeMaster(object):
             elif isinstance(e, FileExistsError):
                 known = True
                 summary_msg = PhConstants.WRITE_PATH_ERROR
+            elif isinstance(e, subprocess.TimeoutExpired):
+                known = True
+                summary_msg = PhConstants.TIME_OUT_ERROR
+            elif isinstance(e, subprocess.CalledProcessError):
+                known = True
+                summary_msg = PhConstants.NON_ZERO_EXIT_STATUS_ERROR
             exception_object.set_summary_msg(summary_msg)
             self.__master_data = (
                 self.__master_data[PhMasterData.INDEX_DATA], self.__master_data[PhMasterData.INDEX_META_DATA],
@@ -112,6 +123,7 @@ class DataTypeMaster(object):
             data.print_info = data.print_info if data.print_info is not None else self.print_info
             data.quite_mode = data.quite_mode if data.quite_mode is not None else self.quite_mode
             data.remarks_list = data.remarks_list if data.remarks_list is not None else self.remarks_list
+            data.input_format = data.input_format if data.input_format is not None else self.input_format
         else:
             data = Data(
                 raw_data=data,
@@ -120,6 +132,7 @@ class DataTypeMaster(object):
                 print_info=self.print_info,
                 quite_mode=self.quite_mode,
                 remarks_list=self.remarks_list,
+                input_format=self.input_format,
             )
         meta_data = MetaData(raw_data_org=data.raw_data)
         self.__master_data = (data, meta_data)

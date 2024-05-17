@@ -1,10 +1,14 @@
 import os
 import platform
 import re
+import subprocess
 import urllib
 
 import sys
 from python_helpers.ph_constants import PhConstants
+from python_helpers.ph_util import PhUtil
+
+from cert_play.main.helper.defaults import Defaults
 
 
 def is_valid_url_regex(url):
@@ -315,3 +319,15 @@ def get_os_name(detailed_output=False):
         """
         print(f'platform.platform() is {platform.platform()}')
     return sys.platform
+
+
+def execute_cmd(cmd):
+    """
+
+    :param cmd:
+    :return:
+    """
+    PhUtil.print_heading(str_heading=cmd)
+    # This command will print the output directly to the console.
+    # os.system(cmd)
+    return subprocess.check_output(cmd, shell=True, text=True, timeout=Defaults.TIME_OUT_IN_SECONDS)
