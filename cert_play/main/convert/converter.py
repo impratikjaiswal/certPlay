@@ -1,3 +1,6 @@
+import base64
+
+from binascii import unhexlify
 from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_util import PhUtil
@@ -98,6 +101,13 @@ def read_web_request(request_form):
     return Data(**parse_config(request_form))
 
 
+# TODO: PhUtil
+def decode_to_base64_if_hex(raw_data):
+    if PhUtil.is_hex(raw_data) and not PhUtil.is_base64(raw_data):
+        return base64.b64encode(unhexlify(raw_data)).decode()
+    return raw_data
+
+
 def validate_der_format(raw_data):
     """
 
@@ -117,7 +127,12 @@ def validate_der_format(raw_data):
     # Strip All Lines
     raw_data_list = [str(x).strip() for x in raw_data_list]
     single_line_data = ''.join(filter(None, raw_data_list))
-    return '\n'.join(['-----BEGIN CERTIFICATE-----', single_line_data, '-----END CERTIFICATE-----'])
+    #
+    single_line_data = decode_to_base64_if_hex(single_line_data)
+    # TODO; PhConstants
+    BEGIN_CERTIFICATE = '-----BEGIN CERTIFICATE-----'
+    END_CERTIFICATE = '-----END CERTIFICATE-----'
+    return '\n'.join([BEGIN_CERTIFICATE, single_line_data, END_CERTIFICATE])
 
 
 def validate_urls(raw_data):
