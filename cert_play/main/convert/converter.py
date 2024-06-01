@@ -103,7 +103,7 @@ def read_web_request(request_form):
 
 # TODO: PhUtil
 def decode_to_base64_if_hex(raw_data):
-    if PhUtil.is_hex(raw_data) and not PhUtil.is_base64(raw_data):
+    if PhUtil.is_hex(raw_data):
         return base64.b64encode(unhexlify(raw_data)).decode()
     return raw_data
 

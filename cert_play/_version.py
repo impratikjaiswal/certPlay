@@ -7,5 +7,5 @@ Provides cert_play version information.
 
 from incremental import Version
 
-__version__ = Version("cert_play", 1, 0, 7)
+__version__ = Version("cert_play", 1, 0, 8)
 __all__ = ["__version__"]
