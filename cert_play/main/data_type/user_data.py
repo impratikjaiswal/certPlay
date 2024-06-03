@@ -1,5 +1,6 @@
 from cert_play.main.data_type.data_type_master import DataTypeMaster
 from cert_play.main.helper.data import Data
+from cert_play.main.helper.formats import Formats
 
 
 class UserData(DataTypeMaster):
@@ -32,13 +33,15 @@ class UserData(DataTypeMaster):
         data_pool = [
             #
             Data(
-                remarks_list='AmenityPj; IP',
-                raw_data='3.141.211.207',
+                remarks_list='AmenityPj',
+                raw_data='amenitypj.in',
+                input_format=Formats.URL,
             ),
             #
             Data(
-                remarks_list='AmenityPj; Home Page',
-                raw_data='amenitypj.in',
+                remarks_list='AmenityPj; IP',
+                raw_data='3.141.211.207',
+                input_format=Formats.URL,
             ),
         ]
         super().set_data_pool(data_pool)

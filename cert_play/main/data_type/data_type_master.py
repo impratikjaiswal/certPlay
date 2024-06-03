@@ -5,6 +5,7 @@ import binascii
 from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_data_master import PhMasterData
 from python_helpers.ph_exception_helper import PhExceptionHelper
+from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_modes_error_handling import PhErrorHandlingModes
 
 from cert_play.main.convert import converter
@@ -157,3 +158,15 @@ class DataTypeMaster(object):
             output_data = exception_data.get_details() if isinstance(exception_data,
                                                                      PhExceptionHelper) else exception_data
         return output_data if only_output else (output_data, info_data)
+
+    def to_dic(self, data):
+        """
+
+        :param data:
+        :return:
+        """
+        return {
+            PhKeys.RAW_DATA: data.raw_data,
+            PhKeys.INPUT_FORMAT: data.input_format,
+            PhKeys.REMARKS_LIST: data.remarks_list,
+        }
