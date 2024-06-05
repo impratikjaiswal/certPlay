@@ -330,4 +330,13 @@ def execute_cmd(cmd):
     PhUtil.print_heading(str_heading=cmd)
     # This command will print the output directly to the console.
     # os.system(cmd)
-    return subprocess.check_output(cmd, shell=True, text=True, timeout=Defaults.TIME_OUT_IN_SECONDS)
+    result = subprocess.run(cmd, shell=True, capture_output=True, timeout=Defaults.TIME_OUT_IN_SECONDS)
+    # Positive Case
+    if result.stdout:
+        return result.stdout.decode(PhConstants.DECODE_MODE_UTF8)
+    # Error Case
+    if result.stderr:
+        # Sample Data b'Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmpo0egstjt\r\n ...'
+        error_data = result.stderr.decode(PhConstants.DECODE_MODE_UTF8).split('\r\n')[0]
+        raise subprocess.CalledProcessError(returncode=result.returncode, cmd=result.args, stderr=error_data)
+    return None

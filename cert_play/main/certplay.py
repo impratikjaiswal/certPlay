@@ -72,7 +72,7 @@ def main():
     :return:
     """
     """
-    Set Execution Mode, If you are a first time user then try #ExecutionModes.SAMPLE_GENERIC
+    Set Execution Mode, If you are a first time user then try #PhExecutionModes.SAMPLE_GENERIC
     """
     execution_mode = PhExecutionModes.USER
     error_handling_mode = PhErrorHandlingModes.CONTINUE_ON_ERROR

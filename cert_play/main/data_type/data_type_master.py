@@ -76,7 +76,7 @@ class DataTypeMaster(object):
         except Exception as e:
             known = False
             summary_msg = None
-            exception_object = e.args[0]
+            exception_object = e.args[0] if len(e.args) > 0 else e
             if not isinstance(exception_object, PhExceptionHelper):
                 # for scenarios like FileExistsError where a touple is returned, (17, 'Cannot create a file when that file already exists')
                 exception_object = PhExceptionHelper(exception=e)
@@ -96,7 +96,7 @@ class DataTypeMaster(object):
                 summary_msg = PhConstants.TIME_OUT_ERROR
             elif isinstance(e, subprocess.CalledProcessError):
                 known = True
-                summary_msg = PhConstants.NON_ZERO_EXIT_STATUS_ERROR
+                summary_msg = e.stderr if e.stderr else PhConstants.NON_ZERO_EXIT_STATUS_ERROR
             exception_object.set_summary_msg(summary_msg)
             self.__master_data = (
                 self.__master_data[PhMasterData.INDEX_DATA], self.__master_data[PhMasterData.INDEX_META_DATA],

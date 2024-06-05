@@ -1,5 +1,6 @@
 import tempfile
 
+from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_exception_helper import PhExceptionHelper
 from python_helpers.ph_util import PhUtil
 
@@ -25,10 +26,7 @@ def parse_or_update_any_data(data, meta_data=None):
     PhUtil.print_heading(data.get_remarks_as_str(), heading_level=2)
     converter.set_defaults(data, meta_data)
     if data.input_format not in FormatsGroup.INPUT_FORMATS_SUPPORTED:
-        # TODO: Move to phConstants
-        UNKNOWN_INPUT_FORMAT = 'Unknown input format'
-        raise ValueError(
-            PhExceptionHelper(msg_key=UNKNOWN_INPUT_FORMAT, msg_value=data.input_format))
+        raise ValueError(PhExceptionHelper(msg_key=PhConstants.UNKNOWN_INPUT_FORMAT, msg_value=data.input_format))
     temp_data = data.raw_data
     if data.input_format == Formats.URL:
         temp_data = validate_urls(temp_data)
