@@ -5,11 +5,12 @@ from cert_play.main.helper.formats import Formats
 
 
 class Defaults:
-    TIME_OUT_IN_SECONDS = 5
+    URL_TIME_OUT = 5
+    URL_PRE_ACCESS = True
     PRINT_INFO = True
     PRINT_INPUT = True
     PRINT_OUTPUT = True
     QUITE_MODE = False
     EXECUTION_MODE = PhExecutionModes.USER
     ERROR_HANDLING_MODE = PhErrorHandlingModes.CONTINUE_ON_ERROR
-    INPUT_FORMAT = Formats.URL
+    FORMAT_INPUT = Formats.URL

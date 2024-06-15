@@ -7,6 +7,7 @@ from python_helpers.ph_util import PhUtil
 from cert_play.main.convert.util import to_str, is_url_accessible
 from cert_play.main.helper.data import Data
 from cert_play.main.helper.defaults import Defaults
+from cert_play.main.helper.formats import Formats
 
 
 def print_data(data, meta_data):
@@ -27,18 +28,24 @@ def print_data(data, meta_data):
                 if remarks_original in remarks_generated:
                     remarks_generated = ''
             meta_data.output_dic.update(
-                get_dic_data_and_print(PhKeys.REMARKS_LIST, PhConstants.SEPERATOR_ONE_LINE, remarks_original))
+                get_dic_data_and_print(PhKeys.REMARKS, PhConstants.SEPERATOR_ONE_LINE, remarks_original))
         if remarks_generated:
             meta_data.output_dic.update(
-                get_dic_data_and_print(PhKeys.REMARKS_LIST_GENERATED, PhConstants.SEPERATOR_ONE_LINE,
+                get_dic_data_and_print(PhKeys.REMARKS_GENERATED, PhConstants.SEPERATOR_ONE_LINE,
                                        remarks_generated))
         info = PhConstants.SEPERATOR_MULTI_OBJ.join(filter(None, [
+            get_dic_data_and_print(PhKeys.INPUT_FORMAT, PhConstants.SEPERATOR_ONE_LINE, data.input_format,
+                                   dic_format=False, print_also=False),
+            get_dic_data_and_print(PhKeys.URL_TIME_OUT, PhConstants.SEPERATOR_ONE_LINE, data.url_time_out,
+                                   dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
+            get_dic_data_and_print(PhKeys.URL_PRE_ACCESS, PhConstants.SEPERATOR_ONE_LINE, data.url_pre_access,
+                                   dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
             get_dic_data_and_print(PhKeys.QUITE_MODE, PhConstants.SEPERATOR_ONE_LINE, data.quite_mode,
                                    dic_format=False, print_also=False) if data.quite_mode else None,
         ]))
         meta_data.output_dic.update(get_dic_data_and_print(PhKeys.INFO, PhConstants.SEPERATOR_INFO, info))
     if data.print_input:
-        meta_data.output_dic.update(get_dic_data_and_print(PhKeys.INPUT_DATA, input_sep, data.raw_data))
+        meta_data.output_dic.update(get_dic_data_and_print(PhKeys.INPUT_DATA, input_sep, meta_data.input_data_org))
     print_output = data.print_output
     if data.print_output and print_output:  # and meta_data.parsed_data:
         meta_data.output_dic.update(get_dic_data_and_print(PhKeys.OUTPUT_DATA, output_sep, meta_data.parsed_data))
@@ -93,56 +100,61 @@ def set_defaults(data, meta_data):
     :return:
     """
     if data.input_format is None:
-        data.input_format = Defaults.INPUT_FORMAT
+        data.input_format = Defaults.FORMAT_INPUT
+    if data.url_time_out is None:
+        data.url_time_out = Defaults.URL_TIME_OUT
+    if data.url_pre_access is None:
+        data.url_pre_access = Defaults.URL_PRE_ACCESS
 
 
 def read_web_request(request_form):
     return Data(**parse_config(request_form))
 
 
-def validate_der_format(raw_data):
+def clean_der_data(input_data):
     """
 
     :return:
     """
-    raw_data_list = raw_data.split('\n')
-    if len(raw_data_list) > 1:
+    input_data_list = input_data.split('\n')
+    if len(input_data_list) > 1:
         # Multi Line
-        if PhConstants.CERTIFICATE in raw_data_list[0]:
-            raw_data_list[0] = ''
-        if PhConstants.CERTIFICATE in raw_data_list[-1]:
-            raw_data_list[-1] = ''
+        if PhConstants.CERTIFICATE in input_data_list[0]:
+            input_data_list[0] = ''
+        if PhConstants.CERTIFICATE in input_data_list[-1]:
+            input_data_list[-1] = ''
     else:
         # Single Line
         # Cleaning of ----------, -----END CERTIFICATE----- from same line data
-        raw_data_list = re.sub(r'[- ]*(BEGIN|END) CERTIFICATE[- ]*', '', raw_data_list[0])
+        input_data_list = re.sub(r'[- ]*(BEGIN|END) CERTIFICATE[- ]*', '', input_data_list[0])
     # Strip All Lines
-    raw_data_list = [str(x).strip() for x in raw_data_list]
-    single_line_data = ''.join(filter(None, raw_data_list))
+    input_data_list = [str(x).strip() for x in input_data_list]
+    single_line_data = ''.join(filter(None, input_data_list))
     single_line_data = PhUtil.decode_to_base64_if_hex(single_line_data)
     return '\n'.join([PhConstants.BEGIN_CERTIFICATE, single_line_data, PhConstants.END_CERTIFICATE])
 
 
-def validate_urls(raw_data):
+def clean_and_pre_access_url_data(input_data, pre_access=True):
     """
 
     :return:
     """
-    # compare_urlparse_urlsplit(raw_data)
-    schema, url, port = clean_url(raw_data)
-    if not schema:
-        print(f'URL Type is missing (e.g.: http, https etc), hence {url} accessibility can not be validated')
-    else:
-        is_url_accessible('://'.join(filter(None, [schema, url])), fail_safe=False)
+    # compare_urlparse_urlsplit(input_data)
+    schema, url, port = clean_url(input_data)
+    if pre_access:
+        if not schema:
+            print(f'URL Type is missing (e.g.: http, https etc), hence {input_data} accessibility can not be validated')
+        else:
+            is_url_accessible('://'.join(filter(None, [schema, url])), fail_safe=False)
     return ':'.join(filter(None, [url, port]))
 
 
-def clean_url(raw_data):
-    raw_data = to_str(raw_data)
-    if raw_data is None:
-        raise ValueError('Invalid raw_data')
-    # urlsplit_data = urllib.parse.urlsplit(raw_data)
-    # print(f'raw_data: {raw_data}; urlsplit_data: {urlsplit_data}')
+def clean_url(input_data):
+    input_data = to_str(input_data)
+    if input_data is None:
+        raise ValueError('Invalid input_data')
+    # urlsplit_data = urllib.parse.urlsplit(input_data)
+    # print(f'input_data: {input_data}; urlsplit_data: {urlsplit_data}')
     url = ''
     port = ''
     # if urlsplit_data.netloc:
@@ -155,9 +167,9 @@ def clean_url(raw_data):
     # # https://github.com/django/django/blob/main/django/core/validators.py#L74
     # if urlsplit_data.scheme:
     #     joint_data.append(f'urlsplit_data.scheme')
-    # raw_data = 'f{urlsplit_data.scheme}'
+    # input_data = 'f{urlsplit_data.scheme}'
     if not url:
-        result = raw_data
+        result = input_data
         schema = ''
         # remove www., if any
         if result.startswith('www.'):

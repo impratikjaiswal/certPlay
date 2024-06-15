@@ -21,26 +21,34 @@ class UserData(DataTypeMaster):
         quite_mode = None
         super().set_quiet_mode(quite_mode)
 
-    def set_remarks_list(self):
-        remarks_list = None
-        super().set_remarks_list(remarks_list)
+    def set_remarks(self):
+        remarks = None
+        super().set_remarks(remarks)
 
     def set_input_format(self):
         input_format = None
         super().set_input_format(input_format)
 
+    def set_url_time_out(self):
+        url_time_out = None
+        super().set_url_time_out(url_time_out)
+
+    def set_url_pre_access(self):
+        url_pre_access = None
+        super().set_url_pre_access(url_pre_access)
+
     def set_data_pool(self):
         data_pool = [
             #
             Data(
-                remarks_list='AmenityPj',
-                raw_data='amenitypj.in',
+                remarks='Url; AmenityPj',
+                input_data='amenitypj.in',
                 input_format=Formats.URL,
             ),
             #
             Data(
-                remarks_list='AmenityPj; IP',
-                raw_data='3.141.211.207',
+                remarks='Url; IP; AmenityPj',
+                input_data='3.141.211.207',
                 input_format=Formats.URL,
             ),
         ]

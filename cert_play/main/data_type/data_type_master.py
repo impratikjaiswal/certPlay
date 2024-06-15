@@ -21,10 +21,12 @@ class DataTypeMaster(object):
         self.print_output = None
         self.print_info = None
         self.quite_mode = None
-        self.remarks_list = None
+        self.remarks = None
         self.input_format = None
+        self.url_time_out = None
+        self.url_pre_access = None
         self.data_pool = []
-        self.__master_data = (Data(raw_data=None), MetaData(raw_data_org=None), PhExceptionHelper(msg_key=None))
+        self.__master_data = (Data(input_data=None), MetaData(input_data_org=None), PhExceptionHelper(msg_key=None))
 
     def set_print_input(self, print_input):
         self.print_input = print_input
@@ -38,11 +40,17 @@ class DataTypeMaster(object):
     def set_quiet_mode(self, quite_mode):
         self.quite_mode = quite_mode
 
-    def set_remarks_list(self, remarks_list):
-        self.remarks_list = remarks_list
+    def set_remarks(self, remarks):
+        self.remarks = remarks
 
     def set_input_format(self, input_format):
         self.input_format = input_format
+
+    def set_url_time_out(self, url_time_out):
+        self.url_time_out = url_time_out
+
+    def set_url_pre_access(self, url_pre_access):
+        self.url_pre_access = url_pre_access
 
     def set_data_pool(self, data_pool):
         self.data_pool = data_pool
@@ -82,7 +90,7 @@ class DataTypeMaster(object):
                 exception_object = PhExceptionHelper(exception=e)
             if isinstance(e, binascii.Error):
                 known = True
-                summary_msg = PhConstants.INVALID_RAW_DATA
+                summary_msg = PhConstants.INVALID_INPUT_DATA
             elif isinstance(e, ValueError):
                 known = True
             elif isinstance(e, PermissionError):
@@ -123,19 +131,23 @@ class DataTypeMaster(object):
             data.print_output = data.print_output if data.print_output is not None else self.print_output
             data.print_info = data.print_info if data.print_info is not None else self.print_info
             data.quite_mode = data.quite_mode if data.quite_mode is not None else self.quite_mode
-            data.remarks_list = data.remarks_list if data.remarks_list is not None else self.remarks_list
+            data.url_time_out = data.url_time_out if data.url_time_out is not None else self.url_time_out
+            data.url_pre_access = data.url_pre_access if data.url_pre_access is not None else self.url_pre_access
+            data.remarks = data.remarks if data.remarks is not None else self.remarks
             data.input_format = data.input_format if data.input_format is not None else self.input_format
         else:
             data = Data(
-                raw_data=data,
+                input_data=data,
                 print_input=self.print_input,
                 print_output=self.print_output,
                 print_info=self.print_info,
                 quite_mode=self.quite_mode,
-                remarks_list=self.remarks_list,
+                url_time_out=self.url_time_out,
+                url_pre_access=self.url_pre_access,
+                remarks=self.remarks,
                 input_format=self.input_format,
             )
-        meta_data = MetaData(raw_data_org=data.raw_data)
+        meta_data = MetaData(input_data_org=data.input_data)
         self.__master_data = (data, meta_data)
         parse_or_update_any_data(data, meta_data)
 
@@ -166,7 +178,10 @@ class DataTypeMaster(object):
         :return:
         """
         return {
-            PhKeys.RAW_DATA: data.raw_data,
+            PhKeys.INPUT_DATA: data.input_data,
             PhKeys.INPUT_FORMAT: data.input_format,
-            PhKeys.REMARKS_LIST: data.remarks_list,
+            PhKeys.URL_TIME_OUT: data.url_time_out,
+            PhKeys.URL_PRE_ACCESS: data.url_pre_access,
+            PhKeys.REMARKS: data.remarks,
+            PhKeys.DATA_GROUP: data.data_group,
         }

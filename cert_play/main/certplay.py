@@ -56,8 +56,10 @@ def process_data(execution_mode, error_handling_mode):
         data_type.set_print_output()
         data_type.set_print_info()
         data_type.set_quiet_mode()
-        data_type.set_remarks_list()
+        data_type.set_remarks()
         data_type.set_input_format()
+        data_type.set_url_time_out()
+        data_type.set_url_pre_access()
         data_type.set_data_pool()
         if isinstance(data_type, UnitTesting):
             error_handling_mode = PhErrorHandlingModes.CONTINUE_ON_ERROR
