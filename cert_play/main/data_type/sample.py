@@ -1,6 +1,5 @@
 from collections import OrderedDict
 
-from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_util import PhUtil
 
 from cert_play.main.data_type.data_type_master import DataTypeMaster
@@ -185,11 +184,8 @@ rYhF
             self.set_data_pool()
         sample_data_dic = OrderedDict()
         for data in self.data_pool:
-            remarks = PhUtil.to_list(data.remarks, all_str=True, trim_data=True)[0]
-            if remarks in sample_data_dic:
-                raise ValueError(f'Duplicate Sample Key (Remarks) {remarks}')
-            data_group_list = remarks.split(PhConstants.SEPERATOR_MULTI_OBJ)
-            data_group = data_group_list[0] if len(data_group_list) > 0 else data_group_list
-            data.data_group = data_group
-            sample_data_dic.update({remarks: super().to_dic(data)})
+            key, data.data_group = PhUtil.generate_key_and_data_group(data.remarks)
+            if key in sample_data_dic:
+                raise ValueError(f'Duplicate Sample Remarks {key}')
+            sample_data_dic.update({key: super().to_dic(data)})
         return sample_data_dic
