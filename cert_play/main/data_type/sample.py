@@ -81,7 +81,7 @@ class Sample(DataTypeMaster):
             ),
             #
             Data(
-                remarks='Url; Sub Pages; WikiPedia; TimeOut',
+                remarks='Url; Sub Pages; WikiPedia; url_time_out=10',
                 input_data='https://en.wikipedia.org/wiki/Main_Page',
                 input_format=Formats.URL,
                 url_time_out=10,

@@ -9,7 +9,7 @@ from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_modes_error_handling import PhErrorHandlingModes
 
 from cert_play.main.convert import converter
-from cert_play.main.convert.converter import read_web_request
+from cert_play.main.convert.converter import read_web_request, set_defaults
 from cert_play.main.convert.parser import parse_or_update_any_data
 from cert_play.main.helper.data import Data
 from cert_play.main.helper.metadata import MetaData
@@ -177,9 +177,10 @@ class DataTypeMaster(object):
         :param data:
         :return:
         """
+        set_defaults(data, None)
         return {
             PhKeys.INPUT_DATA: data.input_data,
-            PhKeys.REMARKS: data.remarks,
+            PhKeys.REMARKS: data.get_remarks_as_str(),
             PhKeys.DATA_GROUP: data.data_group,
             PhKeys.INPUT_FORMAT: data.input_format,
             PhKeys.URL_TIME_OUT: data.url_time_out,
