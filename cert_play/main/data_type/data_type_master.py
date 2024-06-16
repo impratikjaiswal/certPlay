@@ -131,9 +131,9 @@ class DataTypeMaster(object):
             data.print_output = data.print_output if data.print_output is not None else self.print_output
             data.print_info = data.print_info if data.print_info is not None else self.print_info
             data.quite_mode = data.quite_mode if data.quite_mode is not None else self.quite_mode
+            data.remarks = data.remarks if data.remarks is not None else self.remarks
             data.url_time_out = data.url_time_out if data.url_time_out is not None else self.url_time_out
             data.url_pre_access = data.url_pre_access if data.url_pre_access is not None else self.url_pre_access
-            data.remarks = data.remarks if data.remarks is not None else self.remarks
             data.input_format = data.input_format if data.input_format is not None else self.input_format
         else:
             data = Data(
@@ -142,9 +142,9 @@ class DataTypeMaster(object):
                 print_output=self.print_output,
                 print_info=self.print_info,
                 quite_mode=self.quite_mode,
+                remarks=self.remarks,
                 url_time_out=self.url_time_out,
                 url_pre_access=self.url_pre_access,
-                remarks=self.remarks,
                 input_format=self.input_format,
             )
         meta_data = MetaData(input_data_org=data.input_data)
@@ -179,9 +179,9 @@ class DataTypeMaster(object):
         """
         return {
             PhKeys.INPUT_DATA: data.input_data,
+            PhKeys.REMARKS: data.remarks,
+            PhKeys.DATA_GROUP: data.data_group,
             PhKeys.INPUT_FORMAT: data.input_format,
             PhKeys.URL_TIME_OUT: data.url_time_out,
             PhKeys.URL_PRE_ACCESS: data.url_pre_access,
-            PhKeys.REMARKS: data.remarks,
-            PhKeys.DATA_GROUP: data.data_group,
         }
