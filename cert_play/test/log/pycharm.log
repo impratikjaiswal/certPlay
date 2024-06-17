@@ -7,13 +7,13 @@ User Name is Pratik Jaiswal
 --------------------------------------------------------------------------------
 User Account is impra
 --------------------------------------------------------------------------------
-Time Stamp is Monday, Jun 17 2024, 01:29:14:214732, IST (GMT+0530)
+Time Stamp is Monday, Jun 17 2024, 10:05:02:474380, IST (GMT+0530)
 --------------------------------------------------------------------------------
-Git Summary is 8dc9715;  (HEAD -> main); 2024-06-16 23:58:46 +0530; imPratik <impratikjaiswal@gmail.com>; synced with tlvPlay
+Git Summary is 73d3c9f;  (HEAD -> main); 2024-06-17 01:42:43 +0530; imPratik <impratikjaiswal@gmail.com>; remarks_list fixed
 --------------------------------------------------------------------------------
-pythonHelpers version is v3.0.9.dev11
+pythonHelpers version is v3.1.0
 --------------------------------------------------------------------------------
-certPlay version is v1.0.11.dev3
+certPlay version is v2.0.0
 --------------------------------------------------------------------------------
 Sample Data:
 Url; AmenityPj: {'input_data': 'amenitypj.in', 'remarks': 'Url; AmenityPj', 'data_group': 'Url', 'input_format': 'url', 'url_time_out': 5, 'url_pre_access': True}
@@ -33,9 +33,9 @@ Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x): {'input_data': '3082
 -------------------------------------------------------- Sample --------------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp6xw_cggb is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpryennekz is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp6xw_cggb -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpryennekz -text -------------------------
 Remarks: Url; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: amenitypj.in
@@ -154,9 +154,9 @@ rYhF
 --------------------------------------------------------------------------------
 ************************************************** Url; IP; AmenityPj **************************************************
 URL Type is missing (e.g.: http, https etc), hence 3.141.211.207 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpzvng1h86 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmph93j1qig is created.
 -------------- openssl s_client -connect 3.141.211.207:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpzvng1h86 -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmph93j1qig -text -------------------------
 Remarks: Url; IP; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: 3.141.211.207
@@ -274,9 +274,9 @@ rYhF
 
 --------------------------------------------------------------------------------
 ********************************************** Url; https; www; AmenityPj **********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpq9wlscac is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpam2mspwa is created.
 ------------ openssl s_client -connect www.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpq9wlscac -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpam2mspwa -text -------------------------
 Remarks: Url; https; www; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: https://www.amenitypj.in/
@@ -395,9 +395,9 @@ rYhF
 --------------------------------------------------------------------------------
 ********************************************** Url; Sub Domain; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence beta.amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpnllsblwf is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp7ydx9qe3 is created.
 ------------ openssl s_client -connect beta.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpnllsblwf -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp7ydx9qe3 -text -------------------------
 Remarks: Url; Sub Domain; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: beta.amenitypj.in
@@ -516,9 +516,9 @@ rYhF
 --------------------------------------------------------------------------------
 ****************************************************** Url; Google *****************************************************
 URL Type is missing (e.g.: http, https etc), hence google.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpgcmt09yw is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpu8xbvi0g is created.
 --------------- openssl s_client -connect google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ---------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpgcmt09yw -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpu8xbvi0g -text -------------------------
 Remarks: Url; Google
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: google.com
@@ -692,9 +692,9 @@ L2x47OnN3JK67hXOOuRUAb7A1DZecD8TL+wMGRdPta678YyoYvYRAXYnfx91cKS6
 
 --------------------------------------------------------------------------------
 ************************************************ Url; https; www; Google ***********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpqvgsk2bg is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpitxtaj53 is created.
 ------------- openssl s_client -connect www.google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpqvgsk2bg -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpitxtaj53 -text -------------------------
 Remarks: Url; https; www; Google
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: https://www.google.com/
@@ -814,11 +814,11 @@ nZ1xUm8kLoFstoX0LMT0P/ckGbO/s9rvt2XsKnMnn8bAXTFN1AtkMc+C6p5O3vJn
 -----END CERTIFICATE-----
 
 --------------------------------------------------------------------------------
-****************************************** Url; Sub Pages; WikiPedia; TimeOut ******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp2fhjwe_3 is created.
+************************************** Url; Sub Pages; WikiPedia; url_time_out=10 **************************************
+Temp File C:\Users\impra\AppData\Local\Temp\tmp_kzvxrz5 is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp2fhjwe_3 -text -------------------------
-Remarks: Url; Sub Pages; WikiPedia; TimeOut
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp_kzvxrz5 -text -------------------------
+Remarks: Url; Sub Pages; WikiPedia; url_time_out=10
 Info => Input Format: url; Url Time Out: 10; Url Pre Access: True
 Input Data: https://en.wikipedia.org/wiki/Main_Page
 Output Data:
@@ -963,9 +963,9 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 ***************************** Url; https; www; cloudflare; Forbidden; url_pre_access=False *****************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmptw7q300b is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpp5hkwr7b is created.
 ----------- openssl s_client -connect www.cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmptw7q300b -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpp5hkwr7b -text -------------------------
 Remarks: Url; https; www; cloudflare; Forbidden; url_pre_access=False
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: False
 Input Data: https://www.cloudflare.com
@@ -1068,8 +1068,8 @@ F/4r2f466C5oIfR6tMQdAJhNQUmw
 
 --------------------------------------------------------------------------------
 *********************************** Der; Base64; Certificate; Single Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpfvcu4fut is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpfvcu4fut -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpcht1c5wf is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpcht1c5wf -text -------------------------
 Remarks: Der; Base64; Certificate; Single Line; AmenityPj
 Info => Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMTDGFtZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL74hi/pJ2opqu+36ppYNCt65tD3B2Kq5u1C3n/QqlofA2tdW1MXMxTPX2x66cEuMWYH0eTi0EZWv0tRB18Hy0ajggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNPucKQzTDVMjhjQEASfE1Gh44fWMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCCEmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlwai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6CEHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBhc3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGPZsnk6QAABAMARzBFAiEA5YpmM1dVtOW7SH2/SVEHpi9TdDv1j1+SMbiaw1CrqN4CIH/ulMV5ItLuRMyvz63qdkPHuesahzkNUNe1lJax8mlPAHYA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGPZsnmAAAABAMARzBFAiEA5z82NzuMuMPKl7z2lthCsSGZkNvO4VKHYJbMfrFwCAYCIDOTKLX5p+9CS8rF38jM0JZi6Gh2GwoH04oEk6lIbdpGMA0GCSqGSIb3DQEBCwUAA4IBAQCYYN6K+WblpJXB3VDpoaxJB/raiD5m4B0Yr4b0SFdBRNac/N+dBxxBTSizlW+2DkqU4j0Ni7DrudwpqZWMe9pSTRtnIgUdAs9TqpwMszUuCrToDzIbBdxYyI+4cDbMpdJtRcJLBUvBrp38b6oFp3hLs34VruS+SyXGIcnCzhJjSfUIMM51VCyyO+qbLWWRGPxz231lB6pktznflJtCllqPaOGifLBa7it2I7chuMW00GuZ4MDytqmRtWu704KKy6jiuqp+c7+je6L+B63mVry1cZlWhDm4Mhs3wpJ2k8xjzOPiHHqGCAvjLZtXkx1y1T2Y1Si62lB1iGx939ucrYhF
@@ -1187,8 +1187,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 ************************************ Der; Base64; Certificate; Multi Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp4a4gp59u is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp4a4gp59u -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp3mldv7bm is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp3mldv7bm -text -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; AmenityPj
 Info => Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
@@ -1331,8 +1331,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 *************************** Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpkx5qoy5g is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpkx5qoy5g -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpqbj0ljq1 is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpqbj0ljq1 -text -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj
 Info => Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----
@@ -1477,8 +1477,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 ******************************************* Der; Hex; Certificate; AmenityPj *******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpv5mu14f4 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpv5mu14f4 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpiw_6ii9h is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpiw_6ii9h -text -------------------------
 Remarks: Der; Hex; Certificate; AmenityPj
 Info => Input Format: der
 Input Data: 308204AF30820397A003020102021203C71A30F683939E8FD6FF11BF1910760C69300D06092A864886F70D01010B05003032310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074310B3009060355040313025233301E170D3234303531313037333431385A170D3234303830393037333431375A3017311530130603550403130C616D656E697479706A2E696E3059301306072A8648CE3D020106082A8648CE3D03010703420004BEF8862FE9276A29AAEFB7EA9A58342B7AE6D0F70762AAE6ED42DE7FD0AA5A1F036B5D5B53173314CF5F6C7AE9C12E316607D1E4E2D04656BF4B51075F07CB46A38202A33082029F300E0603551D0F0101FF040403020780301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E04160414D3EE70A4334C354C8E18D010049F1351A1E387D6301F0603551D23041830168014142EB317B75856CBAE500940E61FAF9D8B14C2C6305506082B0601050507010104493047302106082B060105050730018615687474703A2F2F72332E6F2E6C656E63722E6F7267302206082B060105050730028616687474703A2F2F72332E692E6C656E63722E6F72672F3081AB0603551D110481A33081A08212616C7068612E616D656E697479706A2E696E820C616D656E697479706A2E696E8211626574612E616D656E697479706A2E696E8211706173742E616D656E697479706A2E696E82167777772E616C7068612E616D656E697479706A2E696E82107777772E616D656E697479706A2E696E82157777772E626574612E616D656E697479706A2E696E82157777772E706173742E616D656E697479706A2E696E30130603551D20040C300A3008060667810C01020130820104060A2B06010401D6790204020481F50481F200F000760048B0E36BDAA647340FE56A02FA9D30EB1C5201CB56DD2C81D9BBBFAB39D884730000018F66C9E4E90000040300473045022100E58A66335755B4E5BB487DBF495107A62F53743BF58F5F9231B89AC350ABA8DE02207FEE94C57922D2EE44CCAFCFADEA7643C7B9EB1A87390D50D7B59496B1F2694F007600DFE156EBAA05AFB59C0F86718DA8C0324EAE56D96EA7F5A56A01D1C13BBE525C0000018F66C9E6000000040300473045022100E73F36373B8CB8C3CA97BCF696D842B1219990DBCEE152876096CC7EB17008060220339328B5F9A7EF424BCAC5DFC8CCD09662E868761B0A07D38A0493A9486DDA46300D06092A864886F70D01010B050003820101009860DE8AF966E5A495C1DD50E9A1AC4907FADA883E66E01D18AF86F448574144D69CFCDF9D071C414D28B3956FB60E4A94E23D0D8BB0EBB9DC29A9958C7BDA524D1B6722051D02CF53AA9C0CB3352E0AB4E80F321B05DC58C88FB87036CCA5D26D45C24B054BC1AE9DFC6FAA05A7784BB37E15AEE4BE4B25C621C9C2CE126349F50830CE75542CB23BEA9B2D659118FC73DB7D6507AA64B739DF949B42965A8F68E1A27CB05AEE2B7623B721B8C5B4D06B99E0C0F2B6A991B56BBBD3828ACBA8E2BAAA7E73BFA37BA2FE07ADE656BCB57199568439B8321B37C2927693CC63CCE3E21C7A86080BE32D9B57931D72D53D98D528BADA5075886C7DDFDB9CAD8845
@@ -1596,8 +1596,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 ****************************** Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x) ******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp0_or6kj3 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp0_or6kj3 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpbq49nnke is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpbq49nnke -text -------------------------
 Remarks: Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x)
 Info => Input Format: der
 Input Data: 30820250308201F7A003020102020900B874F3ABFA6C44D3300A06082A8648CE3D04030230443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543020170D3230303430313038323735315A180F32303535303430313038323735315A30443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543059301306072A8648CE3D020106082A8648CE3D03010703420004940657A673DC288F89D52EA8A47704992791F9C34B0036E633E2D0CBA9454D65DB32EB17981799D2F24388EE2B95C1094546C97901CEAEBA9650919A2E20D229A381CF3081CC301D0603551D0E04160414F54172BDF98A95D65CBEB88A38A1C11D800A85C3300F0603551D130101FF040530030101FF30170603551D200101FF040D300B3009060767811201020100300E0603551D0F0101FF040403020106300E0603551D1104073005880388370130610603551D1F045A3058302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D412E63726C302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D422E63726C300A06082A8648CE3D0403020347003044022052756AAFC2020A6CECBF2E5F3C20892510FF29751D298BD3B015D9605A4FE67D022057982836E4D205DDD2E6C3C1B455937F6B6E493B602FD1B66C357489A935F76B
@@ -1666,9 +1666,9 @@ tFWTf2tuSTtgL9G2bDV0iak192s=
 ------------------------------------------------------ UnitTesting -----------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpy4y_tquo is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpgb94yh1h is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpy4y_tquo -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpgb94yh1h -text -------------------------
 Remarks: Url; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: amenitypj.in
@@ -1786,9 +1786,9 @@ rYhF
 
 --------------------------------------------------------------------------------
 ********************************************** Url; https; www; AmenityPj **********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpf1ous3sv is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp0z9gs90o is created.
 ------------ openssl s_client -connect www.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpf1ous3sv -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp0z9gs90o -text -------------------------
 Remarks: Url; https; www; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: https://www.amenitypj.in/
@@ -1907,9 +1907,9 @@ rYhF
 --------------------------------------------------------------------------------
 ********************************************** Url; Sub Domain; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence beta.amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp3nsgdpsl is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmprra89r_s is created.
 ------------ openssl s_client -connect beta.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp3nsgdpsl -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmprra89r_s -text -------------------------
 Remarks: Url; Sub Domain; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: beta.amenitypj.in
@@ -2027,9 +2027,9 @@ rYhF
 
 --------------------------------------------------------------------------------
 ************************************** Url; Sub Pages; WikiPedia; url_time_out=10 **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpr5n9z7h7 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp9woe5fii is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpr5n9z7h7 -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp9woe5fii -text -------------------------
 Remarks: Url; Sub Pages; WikiPedia; url_time_out=10
 Info => Input Format: url; Url Time Out: 10; Url Pre Access: True
 Input Data: https://en.wikipedia.org/wiki/Main_Page
@@ -2175,8 +2175,8 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 *********************************** Der; Base64; Certificate; Single Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpw92ttzxb is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpw92ttzxb -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpq7qcrer_ is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpq7qcrer_ -text -------------------------
 Remarks: Der; Base64; Certificate; Single Line; AmenityPj
 Info => Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMTDGFtZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL74hi/pJ2opqu+36ppYNCt65tD3B2Kq5u1C3n/QqlofA2tdW1MXMxTPX2x66cEuMWYH0eTi0EZWv0tRB18Hy0ajggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNPucKQzTDVMjhjQEASfE1Gh44fWMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCCEmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlwai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6CEHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBhc3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGPZsnk6QAABAMARzBFAiEA5YpmM1dVtOW7SH2/SVEHpi9TdDv1j1+SMbiaw1CrqN4CIH/ulMV5ItLuRMyvz63qdkPHuesahzkNUNe1lJax8mlPAHYA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGPZsnmAAAABAMARzBFAiEA5z82NzuMuMPKl7z2lthCsSGZkNvO4VKHYJbMfrFwCAYCIDOTKLX5p+9CS8rF38jM0JZi6Gh2GwoH04oEk6lIbdpGMA0GCSqGSIb3DQEBCwUAA4IBAQCYYN6K+WblpJXB3VDpoaxJB/raiD5m4B0Yr4b0SFdBRNac/N+dBxxBTSizlW+2DkqU4j0Ni7DrudwpqZWMe9pSTRtnIgUdAs9TqpwMszUuCrToDzIbBdxYyI+4cDbMpdJtRcJLBUvBrp38b6oFp3hLs34VruS+SyXGIcnCzhJjSfUIMM51VCyyO+qbLWWRGPxz231lB6pktznflJtCllqPaOGifLBa7it2I7chuMW00GuZ4MDytqmRtWu704KKy6jiuqp+c7+je6L+B63mVry1cZlWhDm4Mhs3wpJ2k8xjzOPiHHqGCAvjLZtXkx1y1T2Y1Si62lB1iGx939ucrYhF
@@ -2294,8 +2294,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 ************************************ Der; Base64; Certificate; Multi Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmppdvowrmp is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmppdvowrmp -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp4n1pt3mv is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp4n1pt3mv -text -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; AmenityPj
 Info => Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
@@ -2438,8 +2438,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 *************************** Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpkohlgogm is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpkohlgogm -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpusbb06bw is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpusbb06bw -text -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj
 Info => Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----
@@ -2584,8 +2584,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 **************************** Der; Base64; Certificate; Single Line; Begin & End in same line ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpe5e00d07 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpe5e00d07 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpmgr8rgtw is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpmgr8rgtw -text -------------------------
 Remarks: Der; Base64; Certificate; Single Line; Begin & End in same line
 Info => Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil-----END CERTIFICATE-----
@@ -2731,8 +2731,8 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 ******************************************* Der; Hex; Certificate; AmenityPj *******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp6a3r3c5s is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp6a3r3c5s -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpljhb_n4t is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpljhb_n4t -text -------------------------
 Remarks: Der; Hex; Certificate; AmenityPj
 Info => Input Format: der
 Input Data: 308204AF30820397A003020102021203C71A30F683939E8FD6FF11BF1910760C69300D06092A864886F70D01010B05003032310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074310B3009060355040313025233301E170D3234303531313037333431385A170D3234303830393037333431375A3017311530130603550403130C616D656E697479706A2E696E3059301306072A8648CE3D020106082A8648CE3D03010703420004BEF8862FE9276A29AAEFB7EA9A58342B7AE6D0F70762AAE6ED42DE7FD0AA5A1F036B5D5B53173314CF5F6C7AE9C12E316607D1E4E2D04656BF4B51075F07CB46A38202A33082029F300E0603551D0F0101FF040403020780301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E04160414D3EE70A4334C354C8E18D010049F1351A1E387D6301F0603551D23041830168014142EB317B75856CBAE500940E61FAF9D8B14C2C6305506082B0601050507010104493047302106082B060105050730018615687474703A2F2F72332E6F2E6C656E63722E6F7267302206082B060105050730028616687474703A2F2F72332E692E6C656E63722E6F72672F3081AB0603551D110481A33081A08212616C7068612E616D656E697479706A2E696E820C616D656E697479706A2E696E8211626574612E616D656E697479706A2E696E8211706173742E616D656E697479706A2E696E82167777772E616C7068612E616D656E697479706A2E696E82107777772E616D656E697479706A2E696E82157777772E626574612E616D656E697479706A2E696E82157777772E706173742E616D656E697479706A2E696E30130603551D20040C300A3008060667810C01020130820104060A2B06010401D6790204020481F50481F200F000760048B0E36BDAA647340FE56A02FA9D30EB1C5201CB56DD2C81D9BBBFAB39D884730000018F66C9E4E90000040300473045022100E58A66335755B4E5BB487DBF495107A62F53743BF58F5F9231B89AC350ABA8DE02207FEE94C57922D2EE44CCAFCFADEA7643C7B9EB1A87390D50D7B59496B1F2694F007600DFE156EBAA05AFB59C0F86718DA8C0324EAE56D96EA7F5A56A01D1C13BBE525C0000018F66C9E6000000040300473045022100E73F36373B8CB8C3CA97BCF696D842B1219990DBCEE152876096CC7EB17008060220339328B5F9A7EF424BCAC5DFC8CCD09662E868761B0A07D38A0493A9486DDA46300D06092A864886F70D01010B050003820101009860DE8AF966E5A495C1DD50E9A1AC4907FADA883E66E01D18AF86F448574144D69CFCDF9D071C414D28B3956FB60E4A94E23D0D8BB0EBB9DC29A9958C7BDA524D1B6722051D02CF53AA9C0CB3352E0AB4E80F321B05DC58C88FB87036CCA5D26D45C24B054BC1AE9DFC6FAA05A7784BB37E15AEE4BE4B25C621C9C2CE126349F50830CE75542CB23BEA9B2D659118FC73DB7D6507AA64B739DF949B42965A8F68E1A27CB05AEE2B7623B721B8C5B4D06B99E0C0F2B6A991B56BBBD3828ACBA8E2BAAA7E73BFA37BA2FE07ADE656BCB57199568439B8321B37C2927693CC63CCE3E21C7A86080BE32D9B57931D72D53D98D528BADA5075886C7DDFDB9CAD8845
@@ -2850,8 +2850,8 @@ rYhF
 
 --------------------------------------------------------------------------------
 ****************************** Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x) ******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmptpxg7y66 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmptpxg7y66 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmplmvdpveg is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmplmvdpveg -text -------------------------
 Remarks: Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x)
 Info => Input Format: der
 Input Data: 30820250308201F7A003020102020900B874F3ABFA6C44D3300A06082A8648CE3D04030230443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543020170D3230303430313038323735315A180F32303535303430313038323735315A30443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543059301306072A8648CE3D020106082A8648CE3D03010703420004940657A673DC288F89D52EA8A47704992791F9C34B0036E633E2D0CBA9454D65DB32EB17981799D2F24388EE2B95C1094546C97901CEAEBA9650919A2E20D229A381CF3081CC301D0603551D0E04160414F54172BDF98A95D65CBEB88A38A1C11D800A85C3300F0603551D130101FF040530030101FF30170603551D200101FF040D300B3009060767811201020100300E0603551D0F0101FF040403020106300E0603551D1104073005880388370130610603551D1F045A3058302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D412E63726C302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D422E63726C300A06082A8648CE3D0403020347003044022052756AAFC2020A6CECBF2E5F3C20892510FF29751D298BD3B015D9605A4FE67D022057982836E4D205DDD2E6C3C1B455937F6B6E493B602FD1B66C357489A935F76B
@@ -2919,9 +2919,9 @@ tFWTf2tuSTtgL9G2bDV0iak192s=
 --------------------------------------------------------------------------------
 ************************************************* Default Input Format *************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpgfdbbf99 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpw4igmyp9 is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpgfdbbf99 -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpw4igmyp9 -text -------------------------
 Remarks: Default Input Format
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: amenitypj.in
@@ -3040,9 +3040,9 @@ rYhF
 --------------------------------------------------------------------------------
 ************************************************ cloudflare; Accessible ************************************************
 URL Type is missing (e.g.: http, https etc), hence cloudflare.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp2idlwjft is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpat1xw0cu is created.
 ------------- openssl s_client -connect cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp2idlwjft -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpat1xw0cu -text -------------------------
 Remarks: cloudflare; Accessible
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: cloudflare.com
@@ -3170,9 +3170,9 @@ k4QVOrPRoPYIba4CIQCAWfXT20QbxgFQSh6UjJ4b+Mc12617LvDVeY0V6T+QRw==
 
 --------------------------------------------------------------------------------
 ******************************** cloudflare; https; www; Forbidden; url_pre_access=False *******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpe32ufi9q is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpxmdb8odw is created.
 ----------- openssl s_client -connect www.cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpe32ufi9q -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpxmdb8odw -text -------------------------
 Remarks: cloudflare; https; www; Forbidden; url_pre_access=False
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: False
 Input Data: https://www.cloudflare.com
@@ -3275,9 +3275,9 @@ F/4r2f466C5oIfR6tMQdAJhNQUmw
 
 --------------------------------------------------------------------------------
 *********************************** cloudflare; www; Forbidden; url_pre_access=False ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpkaftdq5o is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp78mc61gv is created.
 ------------- openssl s_client -connect cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpkaftdq5o -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp78mc61gv -text -------------------------
 Remarks: cloudflare; www; Forbidden; url_pre_access=False
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: False
 Input Data: www.cloudflare.com
@@ -3405,8 +3405,8 @@ k4QVOrPRoPYIba4CIQCAWfXT20QbxgFQSh6UjJ4b+Mc12617LvDVeY0V6T+QRw==
 
 --------------------------------------------------------------------------------
 * MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwL... *
-Temp File C:\Users\impra\AppData\Local\Temp\tmpmxwpeeen is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpmxwpeeen -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmps_az6t3o is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmps_az6t3o -text -------------------------
 Remarks Generated: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwL...
 Info => Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
@@ -3552,8 +3552,8 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 *************************************************** Kwargs; raw_data ***************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp7yuk_hf2 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp7yuk_hf2 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpvv4j2dq3 is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpvv4j2dq3 -text -------------------------
 Remarks: Kwargs; raw_data
 Info => Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
@@ -3699,8 +3699,8 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 **************************************************** Kwargs; future ****************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpt4tn_n2t is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpt4tn_n2t -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp1m7w7i9i is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp1m7w7i9i -text -------------------------
 Remarks: Kwargs; future
 Info => Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
@@ -3854,18 +3854,18 @@ Output Data:
 --------------------------------------------------------------------------------
 Known Exception Occurred; Details: Missing Input Data
 *************************************************** Garbage Hex Data ***************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp9jj0uax7 is created.
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp9jj0uax7 -text -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpiid0jslm is created.
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpiid0jslm -text -------------------------
 Remarks: Garbage Hex Data
 Info => Input Format: der
 Input Data: 1234
 Output Data:
 
 --------------------------------------------------------------------------------
-Known Exception Occurred; Summary: Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmp9jj0uax7; Details: Command 'openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmp9jj0uax7 -text' returned non-zero exit status 1.
+Known Exception Occurred; Summary: Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmpiid0jslm; Details: Command 'openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpiid0jslm -text' returned non-zero exit status 1.
 **************************************************** Inaccessible IP ***************************************************
 URL Type is missing (e.g.: http, https etc), hence 1.2.3.4 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp2o5j9tkm is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpikoou919 is created.
 ----------------- openssl s_client -connect 1.2.3.4:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ----------------
 Remarks: Inaccessible IP
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
@@ -3915,7 +3915,7 @@ Output Data:
 --------------------------------------------------------------------------------
 Known Exception Occurred; Details: URL https://www.cloudflare.com is not accessible. HTTP Error 403: Forbidden.
 *************************************** Url; Sub Pages; WikiPedia; time out error **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpyyw4oixt is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpmi2_p0j1 is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
 Remarks: Url; Sub Pages; WikiPedia; time out error
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
@@ -3927,9 +3927,9 @@ Known Exception Occurred; Summary: time out error; Details: Command 'openssl s_c
 ------------------------------------------------------- UserData -------------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpp4bpbbv_ is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpjkcdev6w is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpp4bpbbv_ -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpjkcdev6w -text -------------------------
 Remarks: Url; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: amenitypj.in
@@ -4048,9 +4048,9 @@ rYhF
 --------------------------------------------------------------------------------
 ************************************************** Url; IP; AmenityPj **************************************************
 URL Type is missing (e.g.: http, https etc), hence 3.141.211.207 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpt8pets6b is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpksnoqwgw is created.
 -------------- openssl s_client -connect 3.141.211.207:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpt8pets6b -text -------------------------
+------------------------- openssl x509 -in C:\Users\impra\AppData\Local\Temp\tmpksnoqwgw -text -------------------------
 Remarks: Url; IP; AmenityPj
 Info => Input Format: url; Url Time Out: 5; Url Pre Access: True
 Input Data: 3.141.211.207

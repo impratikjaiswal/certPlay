@@ -186,6 +186,6 @@ rYhF
         for data in self.data_pool:
             key, data.data_group = PhUtil.generate_key_and_data_group(data.remarks)
             if key in sample_data_dic:
-                raise ValueError(f'Duplicate Sample Remarks {key}')
+                raise ValueError(f'Duplicate Sample Remarks: {key}')
             sample_data_dic.update({key: super().to_dic(data)})
         return sample_data_dic
