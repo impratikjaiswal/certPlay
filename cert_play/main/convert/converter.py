@@ -34,6 +34,8 @@ def print_data(data, meta_data):
                 get_dic_data_and_print(PhKeys.REMARKS_GENERATED, PhConstants.SEPERATOR_ONE_LINE,
                                        remarks_generated))
         info = PhConstants.SEPERATOR_MULTI_OBJ.join(filter(None, [
+            get_dic_data_and_print(PhKeys.TRANSACTION_ID, PhConstants.SEPERATOR_ONE_LINE, meta_data.transaction_id,
+                                   dic_format=False, print_also=False),
             get_dic_data_and_print(PhKeys.INPUT_FORMAT, PhConstants.SEPERATOR_ONE_LINE, data.input_format,
                                    dic_format=False, print_also=False),
             get_dic_data_and_print(PhKeys.URL_TIME_OUT, PhConstants.SEPERATOR_ONE_LINE, data.url_time_out,
