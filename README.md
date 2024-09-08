@@ -1,5 +1,5 @@
 # certPlay
-Generic Certificate Parser based on X.509 and related standards. Can parse any certificate by utilize OpenSSL toolkit.
+Generic Certificate Parser based on X.509 and related standards. Can fetch (& parse) TLS certificate of any website.
 
 [![GitHub License](https://img.shields.io/github/license/impratikjaiswal/certPlay)](LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
