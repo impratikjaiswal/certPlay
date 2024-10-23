@@ -42,6 +42,10 @@ def print_data(data, meta_data):
                                    dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
             get_dic_data_and_print(PhKeys.URL_PRE_ACCESS, PhConstants.SEPERATOR_ONE_LINE, data.url_pre_access,
                                    dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
+            get_dic_data_and_print(PhKeys.URL_CERT_FETCH_ONLY, PhConstants.SEPERATOR_ONE_LINE, data.url_cert_fetch_only,
+                                   dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
+            get_dic_data_and_print(PhKeys.URL_ALL_CERTS, PhConstants.SEPERATOR_ONE_LINE, data.url_all_certs,
+                                   dic_format=False, print_also=False) if data.input_format == Formats.URL else None,
             get_dic_data_and_print(PhKeys.QUITE_MODE, PhConstants.SEPERATOR_ONE_LINE, data.quite_mode,
                                    dic_format=False, print_also=False) if data.quite_mode else None,
         ]))
@@ -107,6 +111,10 @@ def set_defaults(data, meta_data):
         data.url_time_out = Defaults.URL_TIME_OUT
     if data.url_pre_access is None:
         data.url_pre_access = Defaults.URL_PRE_ACCESS
+    if data.url_cert_fetch_only is None:
+        data.url_cert_fetch_only = Defaults.URL_CERT_FETCH_ONLY
+    if data.url_all_certs is None:
+        data.url_all_certs = Defaults.URL_ALL_CERTS
 
 
 def read_web_request(request_form):

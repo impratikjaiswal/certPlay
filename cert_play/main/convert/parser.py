@@ -6,6 +6,7 @@ from python_helpers.ph_util import PhUtil
 
 from cert_play.main.convert import converter
 from cert_play.main.convert.converter import clean_and_pre_access_url_data, clean_der_data
+from cert_play.main.convert.handler import open_ssl_cmd
 from cert_play.main.convert.util import is_windows_environment, execute_cmd
 from cert_play.main.helper.formats import Formats
 from cert_play.main.helper.formats_group import FormatsGroup
@@ -42,49 +43,3 @@ def parse_or_update_any_data(data, meta_data=None):
     converter.print_data(data, meta_data)
 
 
-def open_ssl_cmd_step_1(input_data, url_time_out):
-    nul_windows = 'NUL'
-    nul_unix = '/dev/null'
-    nul_handling = nul_windows if is_windows_environment() else nul_unix
-    cmd = ' '.join(
-        [
-            "openssl s_client -connect",
-            input_data,
-            "2>&1 < ",
-            nul_handling,
-            "| sed -n '/-----BEGIN/,/-----END/p'"
-        ]
-    )
-    result = execute_cmd(cmd, time_out=url_time_out)
-    if not result:
-        raise ValueError(f'URL {input_data} is not accessible. Please try a different URL.')
-    return result
-
-
-def open_ssl_cmd(data):
-    """
-
-    :param input_data:
-    :return:
-    """
-
-    """
-    openssl s_client -connect amenitypj.in:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > wikipedia.org.pem.txt
-    openssl s_client -connect amenitypj.in:443 2>&1 < NUL       | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.pem.txt
-    openssl x509 -in amenitypj.in.pem.txt -text -out amenitypj.in.pem_parsed.txt
-    """
-    # cmd = "dir"
-    # execute_cmd(cmd)
-    with tempfile.NamedTemporaryFile(mode='w', delete=False) as fp1:
-        print(f'Temp File {fp1.name} is created.')
-        if data.input_format == Formats.URL:
-            result = open_ssl_cmd_step_1(data.input_data, data.url_time_out)
-        if data.input_format == Formats.DER:
-            result = data.input_data
-        fp1.write(result)
-        fp1.close()
-        with open(fp1.name, mode='r') as fp2:
-            cmd = ' '.join(["openssl x509 -in", fp1.name, '-text'])
-            result = execute_cmd(cmd)
-            fp2.close()
-    return result

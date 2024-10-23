@@ -13,4 +13,6 @@ class Defaults:
     ERROR_HANDLING_MODE = PhErrorHandlingModes.CONTINUE_ON_ERROR
     URL_TIME_OUT = 5
     URL_PRE_ACCESS = True
+    URL_CERT_FETCH_ONLY = False
+    URL_ALL_CERTS = False
     FORMAT_INPUT = Formats.URL

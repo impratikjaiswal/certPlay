@@ -36,6 +36,14 @@ class Dev(DataTypeMaster):
         url_pre_access = None
         super().set_url_pre_access(url_pre_access)
 
+    def set_url_cert_fetch_only(self):
+        url_cert_fetch_only = None
+        super().set_url_cert_fetch_only(url_cert_fetch_only)
+
+    def set_url_all_certs(self):
+        url_all_certs = None
+        super().set_url_all_certs(url_all_certs)
+
     def set_data_pool(self):
         data_pool = [
             # TODO: Need to Fix

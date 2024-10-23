@@ -43,22 +43,45 @@ def process_data(data, meta_data, flip_output=False):
     meta_data.parsed_data = open_ssl_cmd(data)
 
 
-def open_ssl_cmd_step_1(input_data, url_time_out):
+def open_ssl_cmd_step_1(input_data, url_time_out, url_all_certs):
     nul_windows = 'NUL'
     nul_unix = '/dev/null'
     nul_handling = nul_windows if is_windows_environment() else nul_unix
-    cmd = ' '.join(
-        [
-            "openssl s_client -connect",
-            input_data,
-            "2>&1 < ",
-            nul_handling,
-            "| sed -n '/-----BEGIN/,/-----END/p'"
-        ]
-    )
+    all_certs_flag = '-showcerts' if url_all_certs else None
+    cmd = ' '.join(filter(None, [
+        "openssl s_client -connect",
+        input_data,
+        all_certs_flag,
+        "2>&1 < ",
+        nul_handling,
+        "| sed -n '/-----BEGIN/,/-----END/p'"
+    ]))
     result = execute_cmd(cmd, time_out=url_time_out)
     if not result:
         raise ValueError(f'URL {input_data} is not accessible. Please try a different URL.')
+    return result
+
+
+def open_ssl_cmd_step_2(input_file_name, url_all_certs):
+    """
+
+    :param input_file_name:
+    :param url_all_certs:
+    :return:
+    """
+    open_ssl_lib = 'storeutl' if url_all_certs else 'x509'
+    open_ssl_lib_param = '-certs' if url_all_certs else '-in'
+    cmd = ' '.join(filter(None, [
+        'openssl',
+        open_ssl_lib,
+        '-text',
+        open_ssl_lib_param,
+        input_file_name,
+
+    ]))
+    result = execute_cmd(cmd)
+    if not result:
+        raise ValueError(f'Parsing Failed. Please try again.')
     return result
 
 
@@ -70,22 +93,31 @@ def open_ssl_cmd(data):
     """
 
     """
+    ***** Step 1:
+    ***** *****  Unix:
     openssl s_client -connect amenitypj.in:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > wikipedia.org.pem.txt
-    openssl s_client -connect amenitypj.in:443 2>&1 < NUL       | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.pem.txt
-    openssl x509 -in amenitypj.in.pem.txt -text -out amenitypj.in.pem_parsed.txt
+    ***** ***** Windows:
+    openssl s_client -connect amenitypj.in:443 2>&1 < NUL | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.pem.txt
+    ***** ***** All Certs:
+    openssl s_client -connect amenitypj.in:443 -showcerts 2>&1 < NUL | sed -n '/-----BEGIN/,/-----END/p' > amenitypj.in.bundle.pem.txt
+    
+    ***** Step 2:
+    openssl x509 -text -out amenitypj.in.pem_parsed.txt -in amenitypj.in.pem.txt
+    openssl storeutl -text -out amenitypj.in.bundle.pem_parsed.txt -certs amenitypj.in.bundle.pem.txt
     """
     # cmd = "dir"
     # execute_cmd(cmd)
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as fp1:
         print(f'Temp File {fp1.name} is created.')
         if data.input_format == Formats.URL:
-            result = open_ssl_cmd_step_1(data.input_data, data.url_time_out)
+            result = open_ssl_cmd_step_1(data.input_data, data.url_time_out, data.url_all_certs)
         if data.input_format == Formats.DER:
             result = data.input_data
         fp1.write(result)
         fp1.close()
+        if data.url_cert_fetch_only:
+            return result
         with open(fp1.name, mode='r') as fp2:
-            cmd = ' '.join(["openssl x509 -in", fp1.name, '-text'])
-            result = execute_cmd(cmd)
+            result = open_ssl_cmd_step_2(fp1.name, data.url_all_certs)
             fp2.close()
     return result

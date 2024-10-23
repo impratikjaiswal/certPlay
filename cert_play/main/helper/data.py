@@ -13,20 +13,24 @@ class Data:
                  input_format=None,
                  url_time_out=None,
                  url_pre_access=None,
+                 url_cert_fetch_only=None,
+                 url_all_certs=None,
                  **kwargs,
                  ):
         """
         Instantiate the Data Object for further Processing.
 
         :param input_data: Input Data
-        :param print_input: Printing of input needed ?
-        :param print_output: Printing of output needed ?
-        :param print_info:  Printing of info needed ?
+        :param print_input: Printing of input needed?
+        :param print_output: Printing of output needed?
+        :param print_info:  Printing of info needed?
         :param quite_mode: Quite mode needed ? if yes, no printing at all.
         :param remarks: Remarks for Input Data
         :param input_format: Format of Input Data
         :param url_time_out: Time Out in seconds for Fetching Certificate
-        :param url_pre_access: Pre access check is needed ?
+        :param url_pre_access: Pre url access check is needed?
+        :param url_cert_fetch_only: Certificate parsing isn't needed?
+        :param url_all_certs: All Certificates sent By Server?
         :param kwargs: To Handle unwanted/deprecated/internal/additional arguments (See Description)
         ----------
 
@@ -46,6 +50,8 @@ class Data:
         self.input_format = input_format
         self.url_time_out = url_time_out
         self.url_pre_access = url_pre_access
+        self.url_cert_fetch_only = url_cert_fetch_only
+        self.url_all_certs = url_all_certs
         # Handle kwargs
         if self.input_data is None and PhKeys.RAW_DATA in kwargs:
             self.input_data = kwargs[PhKeys.RAW_DATA]

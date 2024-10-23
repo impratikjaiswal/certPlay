@@ -25,6 +25,8 @@ class DataTypeMaster(object):
         self.input_format = None
         self.url_time_out = None
         self.url_pre_access = None
+        self.url_cert_fetch_only = None
+        self.url_all_certs = None
         self.data_pool = []
         self.__master_data = (Data(input_data=None), MetaData(input_data_org=None), PhExceptionHelper(msg_key=None))
 
@@ -51,6 +53,12 @@ class DataTypeMaster(object):
 
     def set_url_pre_access(self, url_pre_access):
         self.url_pre_access = url_pre_access
+
+    def set_url_cert_fetch_only(self, url_cert_fetch_only):
+        self.url_cert_fetch_only = url_cert_fetch_only
+
+    def set_url_all_certs(self, url_all_certs):
+        self.url_all_certs = url_all_certs
 
     def set_data_pool(self, data_pool):
         self.data_pool = data_pool
@@ -134,6 +142,8 @@ class DataTypeMaster(object):
             data.remarks = data.remarks if data.remarks is not None else self.remarks
             data.url_time_out = data.url_time_out if data.url_time_out is not None else self.url_time_out
             data.url_pre_access = data.url_pre_access if data.url_pre_access is not None else self.url_pre_access
+            data.url_cert_fetch_only = data.url_cert_fetch_only if data.url_cert_fetch_only is not None else self.url_cert_fetch_only
+            data.url_all_certs = data.url_all_certs if data.url_all_certs is not None else self.url_all_certs
             data.input_format = data.input_format if data.input_format is not None else self.input_format
         else:
             data = Data(
@@ -145,6 +155,8 @@ class DataTypeMaster(object):
                 remarks=self.remarks,
                 url_time_out=self.url_time_out,
                 url_pre_access=self.url_pre_access,
+                url_cert_fetch_only=self.url_cert_fetch_only,
+                url_all_certs=self.url_all_certs,
                 input_format=self.input_format,
             )
         meta_data = MetaData(input_data_org=data.input_data)
@@ -185,4 +197,6 @@ class DataTypeMaster(object):
             PhKeys.INPUT_FORMAT: data.input_format,
             PhKeys.URL_TIME_OUT: data.url_time_out,
             PhKeys.URL_PRE_ACCESS: data.url_pre_access,
+            PhKeys.URL_CERT_FETCH_ONLY: data.url_cert_fetch_only,
+            PhKeys.URL_ALL_CERTS: data.url_all_certs,
         }
