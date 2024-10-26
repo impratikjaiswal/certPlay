@@ -5,13 +5,13 @@ Python executable Path is D:\Other\Github_Self\certPlay\venv\Scripts
 User Name is Pratik Jaiswal
 User Account is impra
 --------------------------------------------------------------------------------
-Time Stamp is Wednesday, Oct 23 2024, 22:55:28:846650, IST (GMT+0530)
+Time Stamp is Sunday, Oct 27 2024, 00:18:25:436817, IST (GMT+0530)
 --------------------------------------------------------------------------------
-Git Summary is 192d418;  (HEAD -> main, tag: v2.1.0, origin/main, origin/HEAD); 2024-10-20 22:29:27 +0530; imPratik <impratikjaiswal@gmail.com>; v2.1.0
+Git Summary is 4052a62;  (HEAD -> main, tag: v2.2.0, origin/main, origin/HEAD); 2024-10-23 23:03:28 +0530; imPratik <impratikjaiswal@gmail.com>; support of certificate chain, all certs of URL
 --------------------------------------------------------------------------------
-pythonHelpers version is v4.4.3
+pythonHelpers version is v4.4.5
 --------------------------------------------------------------------------------
-certPlay version is v2.2.0
+certPlay version is v2.2.1
 --------------------------------------------------------------------------------
 Sample Data:
 Url; AmenityPj: {'input_data': 'amenitypj.in', 'remarks': 'Url; AmenityPj', 'data_group': 'Url', 'input_format': 'url', 'url_time_out': 5, 'url_pre_access': True, 'url_cert_fetch_only': False, 'url_all_certs': False}
@@ -34,11 +34,11 @@ Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x): {'input_data': '3082
 -------------------------------------------------------- Sample --------------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpb6b6wu7a is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpzkgqbsnd is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpb6b6wu7a -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpzkgqbsnd -------------------------
 Remarks: Url; AmenityPj
-Info => Transaction Id: wbo8olnjisoy; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 2r6cm8dlx0tn; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 Certificate:
@@ -142,11 +142,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 --------------------------------------------------------------------------------
 ************************************************** Url; IP; AmenityPj **************************************************
 URL Type is missing (e.g.: http, https etc), hence 3.141.211.207 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpq0vkpz6i is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmps7g750co is created.
 -------------- openssl s_client -connect 3.141.211.207:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpq0vkpz6i -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmps7g750co -------------------------
 Remarks: Url; IP; AmenityPj
-Info => Transaction Id: jjo62n4nx2ky; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 3izk8o14536l; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: 3.141.211.207
 Output Data:
 Certificate:
@@ -248,14 +248,13 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 -----END CERTIFICATE-----
 
 --------------------------------------------------------------------------------
-
 *********************************************** Url; All Certs; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp902870wz is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmppx82hpos is created.
 --------- openssl s_client -connect amenitypj.in:443 -showcerts 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------
----------------------- openssl storeutl -text -certs C:\Users\impra\AppData\Local\Temp\tmp902870wz ---------------------
+---------------------- openssl storeutl -text -certs C:\Users\impra\AppData\Local\Temp\tmppx82hpos ---------------------
 Remarks: Url; All Certs; AmenityPj
-Info => Transaction Id: xwsi8i83ytxg; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: True
+Info => Transaction Id: r1ryzxkwxb1d; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: True
 Input Data: amenitypj.in
 Output Data:
 0: Certificate
@@ -460,11 +459,11 @@ Total found: 2
 
 --------------------------------------------------------------------------------
 ********************************************** Url; https; www; AmenityPj **********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpfzmmy7yf is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpx1e9a6jj is created.
 ------------ openssl s_client -connect www.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpfzmmy7yf -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpx1e9a6jj -------------------------
 Remarks: Url; https; www; AmenityPj
-Info => Transaction Id: 7je8b2hzolt2; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 8s4ev3o3b5de; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.amenitypj.in/
 Output Data:
 Certificate:
@@ -568,11 +567,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 --------------------------------------------------------------------------------
 ********************************************** Url; Sub Domain; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence beta.amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmppxddug6e is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp0bk7ycnm is created.
 ------------ openssl s_client -connect beta.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmppxddug6e -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp0bk7ycnm -------------------------
 Remarks: Url; Sub Domain; AmenityPj
-Info => Transaction Id: irnokt4yita7; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: i8i1n2nxfd0o; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: beta.amenitypj.in
 Output Data:
 Certificate:
@@ -676,33 +675,33 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 --------------------------------------------------------------------------------
 ****************************************************** Url; Google *****************************************************
 URL Type is missing (e.g.: http, https etc), hence google.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpfwb9iypg is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp_d71vtjd is created.
 --------------- openssl s_client -connect google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ---------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpfwb9iypg -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp_d71vtjd -------------------------
 Remarks: Url; Google
-Info => Transaction Id: u7e3v49329wh; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: jcq7z8m3xhz0; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: google.com
 Output Data:
 Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            0f:49:a6:a8:0c:e5:44:1e:09:6d:8f:77:96:59:ff:37
+            f3:c9:29:12:34:18:17:b4:12:8b:8a:31:d4:98:cc:51
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C=US, O=Google Trust Services, CN=WR2
         Validity
-            Not Before: Sep 30 14:36:26 2024 GMT
-            Not After : Dec 23 14:36:25 2024 GMT
+            Not Before: Oct  7 08:23:38 2024 GMT
+            Not After : Dec 30 08:23:37 2024 GMT
         Subject: CN=*.google.com
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:69:91:91:bc:98:fc:12:2e:13:35:1c:91:78:f5:
-                    7c:f9:21:5a:88:13:c8:44:75:48:af:ba:ad:71:de:
-                    25:85:fe:c2:91:3d:cf:c5:da:bc:48:63:4c:61:0f:
-                    5e:fd:e1:a8:e5:e1:0f:9e:c3:f7:a7:0c:65:b5:ce:
-                    e4:b4:45:68:45
+                    04:39:d3:97:a0:3c:57:bd:f4:16:63:fe:83:25:32:
+                    1a:ec:c2:67:04:a6:a5:aa:4b:73:d5:f1:05:8f:74:
+                    b2:bb:2d:6d:ae:8f:27:75:f9:d9:38:98:a0:0f:b5:
+                    db:99:e8:d2:36:a3:9e:1c:f5:c4:bd:9f:ae:a4:4b:
+                    d4:cc:f4:46:57
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
         X509v3 extensions:
@@ -713,7 +712,7 @@ Certificate:
             X509v3 Basic Constraints: critical
                 CA:FALSE
             X509v3 Subject Key Identifier: 
-                23:B3:DC:F1:EB:48:9B:F6:6F:5C:53:66:29:0C:F8:FD:44:38:F1:82
+                32:19:9E:B1:C2:72:22:55:38:79:CE:93:4C:83:40:8B:0E:A0:1D:29
             X509v3 Authority Key Identifier: 
                 DE:1B:1E:ED:79:15:D4:3E:37:24:C3:21:BB:EC:34:39:6D:42:B2:30
             Authority Information Access: 
@@ -725,212 +724,212 @@ Certificate:
                 Policy: 2.23.140.1.2.1
             X509v3 CRL Distribution Points: 
                 Full Name:
-                  URI:http://c.pki.goog/wr2/oQ6nyr8F0m0.crl
+                  URI:http://c.pki.goog/wr2/75r4ZyA3vA0.crl
             CT Precertificate SCTs: 
-                Signed Certificate Timestamp:
-                    Version   : v1 (0x0)
-                    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:
-                                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E
-                    Timestamp : Sep 30 15:36:32.256 2024 GMT
-                    Extensions: none
-                    Signature : ecdsa-with-SHA256
-                                30:45:02:21:00:E1:ED:9D:12:C7:22:2C:F6:D4:BA:EA:
-                                3B:F2:B6:5C:E8:45:3D:DD:2D:57:B5:D2:B2:1A:46:58:
-                                C6:C0:AD:16:41:02:20:6B:1A:14:18:C7:A6:1D:92:81:
-                                DE:C4:75:7C:1E:30:E8:80:EA:6E:DB:52:AE:5C:AD:FF:
-                                E6:B2:C2:62:7B:80:A5
                 Signed Certificate Timestamp:
                     Version   : v1 (0x0)
                     Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:
                                 32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B
-                    Timestamp : Sep 30 15:36:31.237 2024 GMT
+                    Timestamp : Oct  7 09:23:41.406 2024 GMT
                     Extensions: none
                     Signature : ecdsa-with-SHA256
-                                30:45:02:21:00:B3:F2:B0:8B:C7:89:3D:9D:F2:CE:CB:
-                                0A:1B:23:08:20:3F:BF:24:12:B7:EF:6B:3B:CF:8B:91:
-                                D5:39:A1:7F:83:02:20:18:7E:32:56:6C:40:6A:78:45:
-                                92:43:B3:2F:E8:3B:E3:EB:9C:16:E3:35:58:70:F2:10:
-                                F1:89:BA:31:46:98:8A
+                                30:45:02:20:53:88:BD:1C:63:52:11:F9:0B:95:60:EB:
+                                17:09:58:9A:8C:EE:8C:A8:5E:2C:56:E8:02:9B:41:84:
+                                3E:64:59:8F:02:21:00:DA:6D:50:A4:F7:84:A4:52:23:
+                                DF:B4:10:7C:CF:7F:72:0E:8E:2C:E9:E3:45:53:7B:FF:
+                                EC:8E:89:6B:59:E6:45
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : DA:B6:BF:6B:3F:B5:B6:22:9F:9B:C2:BB:5C:6B:E8:70:
+                                91:71:6C:BB:51:84:85:34:BD:A4:3D:30:48:D7:FB:AB
+                    Timestamp : Oct  7 09:23:41.450 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:1D:F0:55:20:CD:2D:7D:47:5A:98:F5:1C:
+                                6C:9B:37:22:8D:2F:EC:68:D8:19:F8:4C:F1:81:B5:E9:
+                                D6:BA:72:FB:02:20:62:A2:CA:3C:6A:D5:22:B2:14:72:
+                                02:7F:3D:91:D6:C1:07:08:26:F6:77:B8:3D:78:FE:89:
+                                53:C7:8F:FB:D7:3B
     Signature Algorithm: sha256WithRSAEncryption
     Signature Value:
-        60:34:f5:78:f5:3b:f3:62:6a:06:66:99:22:9f:2f:62:1d:7f:
-        c3:d3:f1:f7:05:b7:25:69:0b:cb:7a:3a:fd:5a:2a:57:4f:fa:
-        b8:2f:22:bd:bc:8d:ac:64:b2:c0:05:d2:5c:26:ef:f6:e8:5d:
-        f7:78:da:3d:85:cd:d3:a1:2a:1c:42:fe:20:64:8c:ad:ac:1b:
-        81:56:33:a9:29:69:51:76:3f:42:3f:6f:ea:d2:a2:48:68:e8:
-        a6:7c:22:d6:50:de:85:f2:26:5c:bb:75:33:9f:3b:e0:c8:67:
-        f0:6c:af:cd:5b:29:a4:1c:46:8e:8f:55:8a:ba:bb:be:5f:5a:
-        ab:1a:b6:b5:ff:55:40:ad:3a:f6:66:6f:f6:65:e0:fb:58:22:
-        c9:f5:7a:4b:63:96:ef:93:ce:d2:96:a8:8a:69:9e:a7:48:15:
-        2d:15:a8:81:8c:d8:55:b0:f5:20:b0:56:1e:aa:70:ed:57:67:
-        6a:28:7d:ff:d5:e0:0a:5f:98:69:97:4a:6f:c0:a1:a2:76:73:
-        e9:36:53:bc:6e:12:cb:e6:51:43:59:66:64:6d:8f:40:8d:c5:
-        26:62:c1:a5:81:eb:f4:2d:6b:91:9e:85:57:93:e9:b6:dc:c3:
-        11:73:43:17:c4:34:45:a7:d1:44:6a:a9:16:44:21:a6:8d:d6:
-        56:02:dd:5e
+        0e:0d:75:66:4c:68:e9:37:d6:12:e1:d9:07:91:4f:d5:c7:e4:
+        89:c4:59:ad:69:ff:1c:ef:10:22:2a:da:c5:58:69:97:18:24:
+        cc:6f:e1:68:e6:14:7a:5d:19:54:92:46:72:6c:a6:31:39:76:
+        50:d2:59:22:8f:74:bf:58:7b:9d:83:8b:17:dd:7f:3d:24:43:
+        33:0b:de:c8:11:5b:8e:92:6b:4d:ed:c1:41:7c:55:0b:33:03:
+        55:ee:6f:5c:b7:84:c5:31:0e:aa:37:c9:d2:73:33:18:bd:a1:
+        b8:c9:bb:0e:81:93:58:ec:52:a2:e8:09:5c:40:a3:c3:c2:51:
+        ca:08:ee:4a:75:6b:1b:64:99:dd:d1:6e:ec:61:4b:12:05:f5:
+        c3:19:47:38:38:83:ec:aa:62:02:c4:46:c7:91:85:bc:d9:be:
+        e2:5b:d5:16:37:7c:70:6c:20:a3:c5:f2:a5:70:fa:f2:a1:93:
+        4d:a0:f0:47:ae:2e:cc:30:5b:f3:b2:c2:5b:74:6b:ef:07:94:
+        54:b4:61:19:e9:e5:b5:5e:2f:3e:e2:4c:fd:4e:8f:05:35:c3:
+        d8:d6:ce:54:5a:59:7a:40:22:dd:fc:66:b6:fd:84:b1:84:f0:
+        39:9c:ba:09:d2:3c:32:98:64:a3:40:5a:bc:e1:db:1f:f9:58:
+        56:7f:04:de
 -----BEGIN CERTIFICATE-----
-MIIOCjCCDPKgAwIBAgIQD0mmqAzlRB4JbY93lln/NzANBgkqhkiG9w0BAQsFADA7
-MQswCQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQww
-CgYDVQQDEwNXUjIwHhcNMjQwOTMwMTQzNjI2WhcNMjQxMjIzMTQzNjI1WjAXMRUw
-EwYDVQQDDAwqLmdvb2dsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARp
-kZG8mPwSLhM1HJF49Xz5IVqIE8hEdUivuq1x3iWF/sKRPc/F2rxIY0xhD1794ajl
-4Q+ew/enDGW1zuS0RWhFo4IL9zCCC/MwDgYDVR0PAQH/BAQDAgeAMBMGA1UdJQQM
-MAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFCOz3PHrSJv2b1xT
-ZikM+P1EOPGCMB8GA1UdIwQYMBaAFN4bHu15FdQ+NyTDIbvsNDltQrIwMFgGCCsG
-AQUFBwEBBEwwSjAhBggrBgEFBQcwAYYVaHR0cDovL28ucGtpLmdvb2cvd3IyMCUG
-CCsGAQUFBzAChhlodHRwOi8vaS5wa2kuZ29vZy93cjIuY3J0MIIJzQYDVR0RBIIJ
-xDCCCcCCDCouZ29vZ2xlLmNvbYIWKi5hcHBlbmdpbmUuZ29vZ2xlLmNvbYIJKi5i
-ZG4uZGV2ghUqLm9yaWdpbi10ZXN0LmJkbi5kZXaCEiouY2xvdWQuZ29vZ2xlLmNv
-bYIYKi5jcm93ZHNvdXJjZS5nb29nbGUuY29tghgqLmRhdGFjb21wdXRlLmdvb2ds
-ZS5jb22CCyouZ29vZ2xlLmNhggsqLmdvb2dsZS5jbIIOKi5nb29nbGUuY28uaW6C
-DiouZ29vZ2xlLmNvLmpwgg4qLmdvb2dsZS5jby51a4IPKi5nb29nbGUuY29tLmFy
-gg8qLmdvb2dsZS5jb20uYXWCDyouZ29vZ2xlLmNvbS5icoIPKi5nb29nbGUuY29t
-LmNvgg8qLmdvb2dsZS5jb20ubXiCDyouZ29vZ2xlLmNvbS50coIPKi5nb29nbGUu
-Y29tLnZuggsqLmdvb2dsZS5kZYILKi5nb29nbGUuZXOCCyouZ29vZ2xlLmZyggsq
-Lmdvb2dsZS5odYILKi5nb29nbGUuaXSCCyouZ29vZ2xlLm5sggsqLmdvb2dsZS5w
-bIILKi5nb29nbGUucHSCDyouZ29vZ2xlYXBpcy5jboIRKi5nb29nbGV2aWRlby5j
-b22CDCouZ3N0YXRpYy5jboIQKi5nc3RhdGljLWNuLmNvbYIPZ29vZ2xlY25hcHBz
-LmNughEqLmdvb2dsZWNuYXBwcy5jboIRZ29vZ2xlYXBwcy1jbi5jb22CEyouZ29v
-Z2xlYXBwcy1jbi5jb22CDGdrZWNuYXBwcy5jboIOKi5na2VjbmFwcHMuY26CEmdv
-b2dsZWRvd25sb2Fkcy5jboIUKi5nb29nbGVkb3dubG9hZHMuY26CEHJlY2FwdGNo
-YS5uZXQuY26CEioucmVjYXB0Y2hhLm5ldC5jboIQcmVjYXB0Y2hhLWNuLm5ldIIS
-Ki5yZWNhcHRjaGEtY24ubmV0ggt3aWRldmluZS5jboINKi53aWRldmluZS5jboIR
-YW1wcHJvamVjdC5vcmcuY26CEyouYW1wcHJvamVjdC5vcmcuY26CEWFtcHByb2pl
-Y3QubmV0LmNughMqLmFtcHByb2plY3QubmV0LmNughdnb29nbGUtYW5hbHl0aWNz
-LWNuLmNvbYIZKi5nb29nbGUtYW5hbHl0aWNzLWNuLmNvbYIXZ29vZ2xlYWRzZXJ2
-aWNlcy1jbi5jb22CGSouZ29vZ2xlYWRzZXJ2aWNlcy1jbi5jb22CEWdvb2dsZXZh
-ZHMtY24uY29tghMqLmdvb2dsZXZhZHMtY24uY29tghFnb29nbGVhcGlzLWNuLmNv
-bYITKi5nb29nbGVhcGlzLWNuLmNvbYIVZ29vZ2xlb3B0aW1pemUtY24uY29tghcq
-Lmdvb2dsZW9wdGltaXplLWNuLmNvbYISZG91YmxlY2xpY2stY24ubmV0ghQqLmRv
-dWJsZWNsaWNrLWNuLm5ldIIYKi5mbHMuZG91YmxlY2xpY2stY24ubmV0ghYqLmcu
-ZG91YmxlY2xpY2stY24ubmV0gg5kb3VibGVjbGljay5jboIQKi5kb3VibGVjbGlj
-ay5jboIUKi5mbHMuZG91YmxlY2xpY2suY26CEiouZy5kb3VibGVjbGljay5jboIR
-ZGFydHNlYXJjaC1jbi5uZXSCEyouZGFydHNlYXJjaC1jbi5uZXSCHWdvb2dsZXRy
-YXZlbGFkc2VydmljZXMtY24uY29tgh8qLmdvb2dsZXRyYXZlbGFkc2VydmljZXMt
-Y24uY29tghhnb29nbGV0YWdzZXJ2aWNlcy1jbi5jb22CGiouZ29vZ2xldGFnc2Vy
-dmljZXMtY24uY29tghdnb29nbGV0YWdtYW5hZ2VyLWNuLmNvbYIZKi5nb29nbGV0
-YWdtYW5hZ2VyLWNuLmNvbYIYZ29vZ2xlc3luZGljYXRpb24tY24uY29tghoqLmdv
-b2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIkKi5zYWZlZnJhbWUuZ29vZ2xlc3luZGlj
-YXRpb24tY24uY29tghZhcHAtbWVhc3VyZW1lbnQtY24uY29tghgqLmFwcC1tZWFz
-dXJlbWVudC1jbi5jb22CC2d2dDEtY24uY29tgg0qLmd2dDEtY24uY29tggtndnQy
-LWNuLmNvbYINKi5ndnQyLWNuLmNvbYILMm1kbi1jbi5uZXSCDSouMm1kbi1jbi5u
-ZXSCFGdvb2dsZWZsaWdodHMtY24ubmV0ghYqLmdvb2dsZWZsaWdodHMtY24ubmV0
-ggxhZG1vYi1jbi5jb22CDiouYWRtb2ItY24uY29tghRnb29nbGVzYW5kYm94LWNu
-LmNvbYIWKi5nb29nbGVzYW5kYm94LWNuLmNvbYIeKi5zYWZlbnVwLmdvb2dsZXNh
-bmRib3gtY24uY29tgg0qLmdzdGF0aWMuY29tghQqLm1ldHJpYy5nc3RhdGljLmNv
-bYIKKi5ndnQxLmNvbYIRKi5nY3BjZG4uZ3Z0MS5jb22CCiouZ3Z0Mi5jb22CDiou
-Z2NwLmd2dDIuY29tghAqLnVybC5nb29nbGUuY29tghYqLnlvdXR1YmUtbm9jb29r
-aWUuY29tggsqLnl0aW1nLmNvbYILYW5kcm9pZC5jb22CDSouYW5kcm9pZC5jb22C
-EyouZmxhc2guYW5kcm9pZC5jb22CBGcuY26CBiouZy5jboIEZy5jb4IGKi5nLmNv
-ggZnb28uZ2yCCnd3dy5nb28uZ2yCFGdvb2dsZS1hbmFseXRpY3MuY29tghYqLmdv
-b2dsZS1hbmFseXRpY3MuY29tggpnb29nbGUuY29tghJnb29nbGVjb21tZXJjZS5j
-b22CFCouZ29vZ2xlY29tbWVyY2UuY29tgghnZ3BodC5jboIKKi5nZ3BodC5jboIK
-dXJjaGluLmNvbYIMKi51cmNoaW4uY29tggh5b3V0dS5iZYILeW91dHViZS5jb22C
-DSoueW91dHViZS5jb22CEW11c2ljLnlvdXR1YmUuY29tghMqLm11c2ljLnlvdXR1
-YmUuY29tghR5b3V0dWJlZWR1Y2F0aW9uLmNvbYIWKi55b3V0dWJlZWR1Y2F0aW9u
-LmNvbYIPeW91dHViZWtpZHMuY29tghEqLnlvdXR1YmVraWRzLmNvbYIFeXQuYmWC
-ByoueXQuYmWCGmFuZHJvaWQuY2xpZW50cy5nb29nbGUuY29tghMqLmFuZHJvaWQu
-Z29vZ2xlLmNughIqLmNocm9tZS5nb29nbGUuY26CFiouZGV2ZWxvcGVycy5nb29n
-bGUuY24wEwYDVR0gBAwwCjAIBgZngQwBAgEwNgYDVR0fBC8wLTAroCmgJ4YlaHR0
-cDovL2MucGtpLmdvb2cvd3IyL29RNm55cjhGMG0wLmNybDCCAQQGCisGAQQB1nkC
-BAIEgfUEgfIA8AB2AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAAB
-kkOTfQAAAAQDAEcwRQIhAOHtnRLHIiz21LrqO/K2XOhFPd0tV7XSshpGWMbArRZB
-AiBrGhQYx6YdkoHexHV8HjDogOpu21KuXK3/5rLCYnuApQB2AO7N0GTV2xrOxVy3
-nbTNE6Iyh0Z8vOzew1FIWUZxH7WbAAABkkOTeQUAAAQDAEcwRQIhALPysIvHiT2d
-8s7LChsjCCA/vyQSt+9rO8+LkdU5oX+DAiAYfjJWbEBqeEWSQ7Mv6Dvj65wW4zVY
-cPIQ8Ym6MUaYijANBgkqhkiG9w0BAQsFAAOCAQEAYDT1ePU782JqBmaZIp8vYh1/
-w9Px9wW3JWkLy3o6/VoqV0/6uC8ivbyNrGSywAXSXCbv9uhd93jaPYXN06EqHEL+
-IGSMrawbgVYzqSlpUXY/Qj9v6tKiSGjopnwi1lDehfImXLt1M5874Mhn8GyvzVsp
-pBxGjo9Virq7vl9aqxq2tf9VQK069mZv9mXg+1giyfV6S2OW75PO0paoimmep0gV
-LRWogYzYVbD1ILBWHqpw7Vdnaih9/9XgCl+YaZdKb8ChonZz6TZTvG4Sy+ZRQ1lm
-ZG2PQI3FJmLBpYHr9C1rkZ6FV5PpttzDEXNDF8Q0RafRRGqpFkQhpo3WVgLdXg==
+MIIOCjCCDPKgAwIBAgIRAPPJKRI0GBe0EouKMdSYzFEwDQYJKoZIhvcNAQELBQAw
+OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM
+MAoGA1UEAxMDV1IyMB4XDTI0MTAwNzA4MjMzOFoXDTI0MTIzMDA4MjMzN1owFzEV
+MBMGA1UEAwwMKi5nb29nbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+OdOXoDxXvfQWY/6DJTIa7MJnBKalqktz1fEFj3Syuy1tro8ndfnZOJigD7XbmejS
+NqOeHPXEvZ+upEvUzPRGV6OCC/YwggvyMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUE
+DDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQyGZ6xwnIiVTh5
+zpNMg0CLDqAdKTAfBgNVHSMEGDAWgBTeGx7teRXUPjckwyG77DQ5bUKyMDBYBggr
+BgEFBQcBAQRMMEowIQYIKwYBBQUHMAGGFWh0dHA6Ly9vLnBraS5nb29nL3dyMjAl
+BggrBgEFBQcwAoYZaHR0cDovL2kucGtpLmdvb2cvd3IyLmNydDCCCc0GA1UdEQSC
+CcQwggnAggwqLmdvb2dsZS5jb22CFiouYXBwZW5naW5lLmdvb2dsZS5jb22CCSou
+YmRuLmRldoIVKi5vcmlnaW4tdGVzdC5iZG4uZGV2ghIqLmNsb3VkLmdvb2dsZS5j
+b22CGCouY3Jvd2Rzb3VyY2UuZ29vZ2xlLmNvbYIYKi5kYXRhY29tcHV0ZS5nb29n
+bGUuY29tggsqLmdvb2dsZS5jYYILKi5nb29nbGUuY2yCDiouZ29vZ2xlLmNvLmlu
+gg4qLmdvb2dsZS5jby5qcIIOKi5nb29nbGUuY28udWuCDyouZ29vZ2xlLmNvbS5h
+coIPKi5nb29nbGUuY29tLmF1gg8qLmdvb2dsZS5jb20uYnKCDyouZ29vZ2xlLmNv
+bS5jb4IPKi5nb29nbGUuY29tLm14gg8qLmdvb2dsZS5jb20udHKCDyouZ29vZ2xl
+LmNvbS52boILKi5nb29nbGUuZGWCCyouZ29vZ2xlLmVzggsqLmdvb2dsZS5mcoIL
+Ki5nb29nbGUuaHWCCyouZ29vZ2xlLml0ggsqLmdvb2dsZS5ubIILKi5nb29nbGUu
+cGyCCyouZ29vZ2xlLnB0gg8qLmdvb2dsZWFwaXMuY26CESouZ29vZ2xldmlkZW8u
+Y29tggwqLmdzdGF0aWMuY26CECouZ3N0YXRpYy1jbi5jb22CD2dvb2dsZWNuYXBw
+cy5jboIRKi5nb29nbGVjbmFwcHMuY26CEWdvb2dsZWFwcHMtY24uY29tghMqLmdv
+b2dsZWFwcHMtY24uY29tggxna2VjbmFwcHMuY26CDiouZ2tlY25hcHBzLmNughJn
+b29nbGVkb3dubG9hZHMuY26CFCouZ29vZ2xlZG93bmxvYWRzLmNughByZWNhcHRj
+aGEubmV0LmNughIqLnJlY2FwdGNoYS5uZXQuY26CEHJlY2FwdGNoYS1jbi5uZXSC
+EioucmVjYXB0Y2hhLWNuLm5ldIILd2lkZXZpbmUuY26CDSoud2lkZXZpbmUuY26C
+EWFtcHByb2plY3Qub3JnLmNughMqLmFtcHByb2plY3Qub3JnLmNughFhbXBwcm9q
+ZWN0Lm5ldC5jboITKi5hbXBwcm9qZWN0Lm5ldC5jboIXZ29vZ2xlLWFuYWx5dGlj
+cy1jbi5jb22CGSouZ29vZ2xlLWFuYWx5dGljcy1jbi5jb22CF2dvb2dsZWFkc2Vy
+dmljZXMtY24uY29tghkqLmdvb2dsZWFkc2VydmljZXMtY24uY29tghFnb29nbGV2
+YWRzLWNuLmNvbYITKi5nb29nbGV2YWRzLWNuLmNvbYIRZ29vZ2xlYXBpcy1jbi5j
+b22CEyouZ29vZ2xlYXBpcy1jbi5jb22CFWdvb2dsZW9wdGltaXplLWNuLmNvbYIX
+Ki5nb29nbGVvcHRpbWl6ZS1jbi5jb22CEmRvdWJsZWNsaWNrLWNuLm5ldIIUKi5k
+b3VibGVjbGljay1jbi5uZXSCGCouZmxzLmRvdWJsZWNsaWNrLWNuLm5ldIIWKi5n
+LmRvdWJsZWNsaWNrLWNuLm5ldIIOZG91YmxlY2xpY2suY26CECouZG91YmxlY2xp
+Y2suY26CFCouZmxzLmRvdWJsZWNsaWNrLmNughIqLmcuZG91YmxlY2xpY2suY26C
+EWRhcnRzZWFyY2gtY24ubmV0ghMqLmRhcnRzZWFyY2gtY24ubmV0gh1nb29nbGV0
+cmF2ZWxhZHNlcnZpY2VzLWNuLmNvbYIfKi5nb29nbGV0cmF2ZWxhZHNlcnZpY2Vz
+LWNuLmNvbYIYZ29vZ2xldGFnc2VydmljZXMtY24uY29tghoqLmdvb2dsZXRhZ3Nl
+cnZpY2VzLWNuLmNvbYIXZ29vZ2xldGFnbWFuYWdlci1jbi5jb22CGSouZ29vZ2xl
+dGFnbWFuYWdlci1jbi5jb22CGGdvb2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIaKi5n
+b29nbGVzeW5kaWNhdGlvbi1jbi5jb22CJCouc2FmZWZyYW1lLmdvb2dsZXN5bmRp
+Y2F0aW9uLWNuLmNvbYIWYXBwLW1lYXN1cmVtZW50LWNuLmNvbYIYKi5hcHAtbWVh
+c3VyZW1lbnQtY24uY29tggtndnQxLWNuLmNvbYINKi5ndnQxLWNuLmNvbYILZ3Z0
+Mi1jbi5jb22CDSouZ3Z0Mi1jbi5jb22CCzJtZG4tY24ubmV0gg0qLjJtZG4tY24u
+bmV0ghRnb29nbGVmbGlnaHRzLWNuLm5ldIIWKi5nb29nbGVmbGlnaHRzLWNuLm5l
+dIIMYWRtb2ItY24uY29tgg4qLmFkbW9iLWNuLmNvbYIUZ29vZ2xlc2FuZGJveC1j
+bi5jb22CFiouZ29vZ2xlc2FuZGJveC1jbi5jb22CHiouc2FmZW51cC5nb29nbGVz
+YW5kYm94LWNuLmNvbYINKi5nc3RhdGljLmNvbYIUKi5tZXRyaWMuZ3N0YXRpYy5j
+b22CCiouZ3Z0MS5jb22CESouZ2NwY2RuLmd2dDEuY29tggoqLmd2dDIuY29tgg4q
+LmdjcC5ndnQyLmNvbYIQKi51cmwuZ29vZ2xlLmNvbYIWKi55b3V0dWJlLW5vY29v
+a2llLmNvbYILKi55dGltZy5jb22CC2FuZHJvaWQuY29tgg0qLmFuZHJvaWQuY29t
+ghMqLmZsYXNoLmFuZHJvaWQuY29tggRnLmNuggYqLmcuY26CBGcuY2+CBiouZy5j
+b4IGZ29vLmdsggp3d3cuZ29vLmdsghRnb29nbGUtYW5hbHl0aWNzLmNvbYIWKi5n
+b29nbGUtYW5hbHl0aWNzLmNvbYIKZ29vZ2xlLmNvbYISZ29vZ2xlY29tbWVyY2Uu
+Y29tghQqLmdvb2dsZWNvbW1lcmNlLmNvbYIIZ2dwaHQuY26CCiouZ2dwaHQuY26C
+CnVyY2hpbi5jb22CDCoudXJjaGluLmNvbYIIeW91dHUuYmWCC3lvdXR1YmUuY29t
+gg0qLnlvdXR1YmUuY29tghFtdXNpYy55b3V0dWJlLmNvbYITKi5tdXNpYy55b3V0
+dWJlLmNvbYIUeW91dHViZWVkdWNhdGlvbi5jb22CFioueW91dHViZWVkdWNhdGlv
+bi5jb22CD3lvdXR1YmVraWRzLmNvbYIRKi55b3V0dWJla2lkcy5jb22CBXl0LmJl
+ggcqLnl0LmJlghphbmRyb2lkLmNsaWVudHMuZ29vZ2xlLmNvbYITKi5hbmRyb2lk
+Lmdvb2dsZS5jboISKi5jaHJvbWUuZ29vZ2xlLmNughYqLmRldmVsb3BlcnMuZ29v
+Z2xlLmNuMBMGA1UdIAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0
+dHA6Ly9jLnBraS5nb29nL3dyMi83NXI0WnlBM3ZBMC5jcmwwggEDBgorBgEEAdZ5
+AgQCBIH0BIHxAO8AdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAA
+AZJmSqbeAAAEAwBHMEUCIFOIvRxjUhH5C5Vg6xcJWJqM7oyoXixW6AKbQYQ+ZFmP
+AiEA2m1QpPeEpFIj37QQfM9/cg6OLOnjRVN7/+yOiWtZ5kUAdQDatr9rP7W2Ip+b
+wrtca+hwkXFsu1GEhTS9pD0wSNf7qwAAAZJmSqcKAAAEAwBGMEQCIB3wVSDNLX1H
+Wpj1HGybNyKNL+xo2Bn4TPGBtenWunL7AiBioso8atUishRyAn89kdbBBwgm9ne4
+PXj+iVPHj/vXOzANBgkqhkiG9w0BAQsFAAOCAQEADg11Zkxo6TfWEuHZB5FP1cfk
+icRZrWn/HO8QIiraxVhplxgkzG/haOYUel0ZVJJGcmymMTl2UNJZIo90v1h7nYOL
+F91/PSRDMwveyBFbjpJrTe3BQXxVCzMDVe5vXLeExTEOqjfJ0nMzGL2huMm7DoGT
+WOxSougJXECjw8JRygjuSnVrG2SZ3dFu7GFLEgX1wxlHODiD7KpiAsRGx5GFvNm+
+4lvVFjd8cGwgo8XypXD68qGTTaDwR64uzDBb87LCW3Rr7weUVLRhGenltV4vPuJM
+/U6PBTXD2NbOVFpZekAi3fxmtv2EsYTwOZy6CdI8Mphko0BavOHbH/lYVn8E3g==
 -----END CERTIFICATE-----
 
 --------------------------------------------------------------------------------
 ****************************************** Url; All Certs; Google; Fetch Only ******************************************
 URL Type is missing (e.g.: http, https etc), hence google.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpbdz4rt2_ is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpllgjppiz is created.
 ---------- openssl s_client -connect google.com:443 -showcerts 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ---------
 Remarks: Url; All Certs; Google; Fetch Only
-Info => Transaction Id: fcbqyku0suhv; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: True
+Info => Transaction Id: qvvntdmrlbrq; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: True
 Input Data: google.com
 Output Data:
 -----BEGIN CERTIFICATE-----
-MIIOCjCCDPKgAwIBAgIQD0mmqAzlRB4JbY93lln/NzANBgkqhkiG9w0BAQsFADA7
-MQswCQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQww
-CgYDVQQDEwNXUjIwHhcNMjQwOTMwMTQzNjI2WhcNMjQxMjIzMTQzNjI1WjAXMRUw
-EwYDVQQDDAwqLmdvb2dsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARp
-kZG8mPwSLhM1HJF49Xz5IVqIE8hEdUivuq1x3iWF/sKRPc/F2rxIY0xhD1794ajl
-4Q+ew/enDGW1zuS0RWhFo4IL9zCCC/MwDgYDVR0PAQH/BAQDAgeAMBMGA1UdJQQM
-MAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFCOz3PHrSJv2b1xT
-ZikM+P1EOPGCMB8GA1UdIwQYMBaAFN4bHu15FdQ+NyTDIbvsNDltQrIwMFgGCCsG
-AQUFBwEBBEwwSjAhBggrBgEFBQcwAYYVaHR0cDovL28ucGtpLmdvb2cvd3IyMCUG
-CCsGAQUFBzAChhlodHRwOi8vaS5wa2kuZ29vZy93cjIuY3J0MIIJzQYDVR0RBIIJ
-xDCCCcCCDCouZ29vZ2xlLmNvbYIWKi5hcHBlbmdpbmUuZ29vZ2xlLmNvbYIJKi5i
-ZG4uZGV2ghUqLm9yaWdpbi10ZXN0LmJkbi5kZXaCEiouY2xvdWQuZ29vZ2xlLmNv
-bYIYKi5jcm93ZHNvdXJjZS5nb29nbGUuY29tghgqLmRhdGFjb21wdXRlLmdvb2ds
-ZS5jb22CCyouZ29vZ2xlLmNhggsqLmdvb2dsZS5jbIIOKi5nb29nbGUuY28uaW6C
-DiouZ29vZ2xlLmNvLmpwgg4qLmdvb2dsZS5jby51a4IPKi5nb29nbGUuY29tLmFy
-gg8qLmdvb2dsZS5jb20uYXWCDyouZ29vZ2xlLmNvbS5icoIPKi5nb29nbGUuY29t
-LmNvgg8qLmdvb2dsZS5jb20ubXiCDyouZ29vZ2xlLmNvbS50coIPKi5nb29nbGUu
-Y29tLnZuggsqLmdvb2dsZS5kZYILKi5nb29nbGUuZXOCCyouZ29vZ2xlLmZyggsq
-Lmdvb2dsZS5odYILKi5nb29nbGUuaXSCCyouZ29vZ2xlLm5sggsqLmdvb2dsZS5w
-bIILKi5nb29nbGUucHSCDyouZ29vZ2xlYXBpcy5jboIRKi5nb29nbGV2aWRlby5j
-b22CDCouZ3N0YXRpYy5jboIQKi5nc3RhdGljLWNuLmNvbYIPZ29vZ2xlY25hcHBz
-LmNughEqLmdvb2dsZWNuYXBwcy5jboIRZ29vZ2xlYXBwcy1jbi5jb22CEyouZ29v
-Z2xlYXBwcy1jbi5jb22CDGdrZWNuYXBwcy5jboIOKi5na2VjbmFwcHMuY26CEmdv
-b2dsZWRvd25sb2Fkcy5jboIUKi5nb29nbGVkb3dubG9hZHMuY26CEHJlY2FwdGNo
-YS5uZXQuY26CEioucmVjYXB0Y2hhLm5ldC5jboIQcmVjYXB0Y2hhLWNuLm5ldIIS
-Ki5yZWNhcHRjaGEtY24ubmV0ggt3aWRldmluZS5jboINKi53aWRldmluZS5jboIR
-YW1wcHJvamVjdC5vcmcuY26CEyouYW1wcHJvamVjdC5vcmcuY26CEWFtcHByb2pl
-Y3QubmV0LmNughMqLmFtcHByb2plY3QubmV0LmNughdnb29nbGUtYW5hbHl0aWNz
-LWNuLmNvbYIZKi5nb29nbGUtYW5hbHl0aWNzLWNuLmNvbYIXZ29vZ2xlYWRzZXJ2
-aWNlcy1jbi5jb22CGSouZ29vZ2xlYWRzZXJ2aWNlcy1jbi5jb22CEWdvb2dsZXZh
-ZHMtY24uY29tghMqLmdvb2dsZXZhZHMtY24uY29tghFnb29nbGVhcGlzLWNuLmNv
-bYITKi5nb29nbGVhcGlzLWNuLmNvbYIVZ29vZ2xlb3B0aW1pemUtY24uY29tghcq
-Lmdvb2dsZW9wdGltaXplLWNuLmNvbYISZG91YmxlY2xpY2stY24ubmV0ghQqLmRv
-dWJsZWNsaWNrLWNuLm5ldIIYKi5mbHMuZG91YmxlY2xpY2stY24ubmV0ghYqLmcu
-ZG91YmxlY2xpY2stY24ubmV0gg5kb3VibGVjbGljay5jboIQKi5kb3VibGVjbGlj
-ay5jboIUKi5mbHMuZG91YmxlY2xpY2suY26CEiouZy5kb3VibGVjbGljay5jboIR
-ZGFydHNlYXJjaC1jbi5uZXSCEyouZGFydHNlYXJjaC1jbi5uZXSCHWdvb2dsZXRy
-YXZlbGFkc2VydmljZXMtY24uY29tgh8qLmdvb2dsZXRyYXZlbGFkc2VydmljZXMt
-Y24uY29tghhnb29nbGV0YWdzZXJ2aWNlcy1jbi5jb22CGiouZ29vZ2xldGFnc2Vy
-dmljZXMtY24uY29tghdnb29nbGV0YWdtYW5hZ2VyLWNuLmNvbYIZKi5nb29nbGV0
-YWdtYW5hZ2VyLWNuLmNvbYIYZ29vZ2xlc3luZGljYXRpb24tY24uY29tghoqLmdv
-b2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIkKi5zYWZlZnJhbWUuZ29vZ2xlc3luZGlj
-YXRpb24tY24uY29tghZhcHAtbWVhc3VyZW1lbnQtY24uY29tghgqLmFwcC1tZWFz
-dXJlbWVudC1jbi5jb22CC2d2dDEtY24uY29tgg0qLmd2dDEtY24uY29tggtndnQy
-LWNuLmNvbYINKi5ndnQyLWNuLmNvbYILMm1kbi1jbi5uZXSCDSouMm1kbi1jbi5u
-ZXSCFGdvb2dsZWZsaWdodHMtY24ubmV0ghYqLmdvb2dsZWZsaWdodHMtY24ubmV0
-ggxhZG1vYi1jbi5jb22CDiouYWRtb2ItY24uY29tghRnb29nbGVzYW5kYm94LWNu
-LmNvbYIWKi5nb29nbGVzYW5kYm94LWNuLmNvbYIeKi5zYWZlbnVwLmdvb2dsZXNh
-bmRib3gtY24uY29tgg0qLmdzdGF0aWMuY29tghQqLm1ldHJpYy5nc3RhdGljLmNv
-bYIKKi5ndnQxLmNvbYIRKi5nY3BjZG4uZ3Z0MS5jb22CCiouZ3Z0Mi5jb22CDiou
-Z2NwLmd2dDIuY29tghAqLnVybC5nb29nbGUuY29tghYqLnlvdXR1YmUtbm9jb29r
-aWUuY29tggsqLnl0aW1nLmNvbYILYW5kcm9pZC5jb22CDSouYW5kcm9pZC5jb22C
-EyouZmxhc2guYW5kcm9pZC5jb22CBGcuY26CBiouZy5jboIEZy5jb4IGKi5nLmNv
-ggZnb28uZ2yCCnd3dy5nb28uZ2yCFGdvb2dsZS1hbmFseXRpY3MuY29tghYqLmdv
-b2dsZS1hbmFseXRpY3MuY29tggpnb29nbGUuY29tghJnb29nbGVjb21tZXJjZS5j
-b22CFCouZ29vZ2xlY29tbWVyY2UuY29tgghnZ3BodC5jboIKKi5nZ3BodC5jboIK
-dXJjaGluLmNvbYIMKi51cmNoaW4uY29tggh5b3V0dS5iZYILeW91dHViZS5jb22C
-DSoueW91dHViZS5jb22CEW11c2ljLnlvdXR1YmUuY29tghMqLm11c2ljLnlvdXR1
-YmUuY29tghR5b3V0dWJlZWR1Y2F0aW9uLmNvbYIWKi55b3V0dWJlZWR1Y2F0aW9u
-LmNvbYIPeW91dHViZWtpZHMuY29tghEqLnlvdXR1YmVraWRzLmNvbYIFeXQuYmWC
-ByoueXQuYmWCGmFuZHJvaWQuY2xpZW50cy5nb29nbGUuY29tghMqLmFuZHJvaWQu
-Z29vZ2xlLmNughIqLmNocm9tZS5nb29nbGUuY26CFiouZGV2ZWxvcGVycy5nb29n
-bGUuY24wEwYDVR0gBAwwCjAIBgZngQwBAgEwNgYDVR0fBC8wLTAroCmgJ4YlaHR0
-cDovL2MucGtpLmdvb2cvd3IyL29RNm55cjhGMG0wLmNybDCCAQQGCisGAQQB1nkC
-BAIEgfUEgfIA8AB2AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAAB
-kkOTfQAAAAQDAEcwRQIhAOHtnRLHIiz21LrqO/K2XOhFPd0tV7XSshpGWMbArRZB
-AiBrGhQYx6YdkoHexHV8HjDogOpu21KuXK3/5rLCYnuApQB2AO7N0GTV2xrOxVy3
-nbTNE6Iyh0Z8vOzew1FIWUZxH7WbAAABkkOTeQUAAAQDAEcwRQIhALPysIvHiT2d
-8s7LChsjCCA/vyQSt+9rO8+LkdU5oX+DAiAYfjJWbEBqeEWSQ7Mv6Dvj65wW4zVY
-cPIQ8Ym6MUaYijANBgkqhkiG9w0BAQsFAAOCAQEAYDT1ePU782JqBmaZIp8vYh1/
-w9Px9wW3JWkLy3o6/VoqV0/6uC8ivbyNrGSywAXSXCbv9uhd93jaPYXN06EqHEL+
-IGSMrawbgVYzqSlpUXY/Qj9v6tKiSGjopnwi1lDehfImXLt1M5874Mhn8GyvzVsp
-pBxGjo9Virq7vl9aqxq2tf9VQK069mZv9mXg+1giyfV6S2OW75PO0paoimmep0gV
-LRWogYzYVbD1ILBWHqpw7Vdnaih9/9XgCl+YaZdKb8ChonZz6TZTvG4Sy+ZRQ1lm
-ZG2PQI3FJmLBpYHr9C1rkZ6FV5PpttzDEXNDF8Q0RafRRGqpFkQhpo3WVgLdXg==
+MIIOCjCCDPKgAwIBAgIRAPPJKRI0GBe0EouKMdSYzFEwDQYJKoZIhvcNAQELBQAw
+OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM
+MAoGA1UEAxMDV1IyMB4XDTI0MTAwNzA4MjMzOFoXDTI0MTIzMDA4MjMzN1owFzEV
+MBMGA1UEAwwMKi5nb29nbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+OdOXoDxXvfQWY/6DJTIa7MJnBKalqktz1fEFj3Syuy1tro8ndfnZOJigD7XbmejS
+NqOeHPXEvZ+upEvUzPRGV6OCC/YwggvyMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUE
+DDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQyGZ6xwnIiVTh5
+zpNMg0CLDqAdKTAfBgNVHSMEGDAWgBTeGx7teRXUPjckwyG77DQ5bUKyMDBYBggr
+BgEFBQcBAQRMMEowIQYIKwYBBQUHMAGGFWh0dHA6Ly9vLnBraS5nb29nL3dyMjAl
+BggrBgEFBQcwAoYZaHR0cDovL2kucGtpLmdvb2cvd3IyLmNydDCCCc0GA1UdEQSC
+CcQwggnAggwqLmdvb2dsZS5jb22CFiouYXBwZW5naW5lLmdvb2dsZS5jb22CCSou
+YmRuLmRldoIVKi5vcmlnaW4tdGVzdC5iZG4uZGV2ghIqLmNsb3VkLmdvb2dsZS5j
+b22CGCouY3Jvd2Rzb3VyY2UuZ29vZ2xlLmNvbYIYKi5kYXRhY29tcHV0ZS5nb29n
+bGUuY29tggsqLmdvb2dsZS5jYYILKi5nb29nbGUuY2yCDiouZ29vZ2xlLmNvLmlu
+gg4qLmdvb2dsZS5jby5qcIIOKi5nb29nbGUuY28udWuCDyouZ29vZ2xlLmNvbS5h
+coIPKi5nb29nbGUuY29tLmF1gg8qLmdvb2dsZS5jb20uYnKCDyouZ29vZ2xlLmNv
+bS5jb4IPKi5nb29nbGUuY29tLm14gg8qLmdvb2dsZS5jb20udHKCDyouZ29vZ2xl
+LmNvbS52boILKi5nb29nbGUuZGWCCyouZ29vZ2xlLmVzggsqLmdvb2dsZS5mcoIL
+Ki5nb29nbGUuaHWCCyouZ29vZ2xlLml0ggsqLmdvb2dsZS5ubIILKi5nb29nbGUu
+cGyCCyouZ29vZ2xlLnB0gg8qLmdvb2dsZWFwaXMuY26CESouZ29vZ2xldmlkZW8u
+Y29tggwqLmdzdGF0aWMuY26CECouZ3N0YXRpYy1jbi5jb22CD2dvb2dsZWNuYXBw
+cy5jboIRKi5nb29nbGVjbmFwcHMuY26CEWdvb2dsZWFwcHMtY24uY29tghMqLmdv
+b2dsZWFwcHMtY24uY29tggxna2VjbmFwcHMuY26CDiouZ2tlY25hcHBzLmNughJn
+b29nbGVkb3dubG9hZHMuY26CFCouZ29vZ2xlZG93bmxvYWRzLmNughByZWNhcHRj
+aGEubmV0LmNughIqLnJlY2FwdGNoYS5uZXQuY26CEHJlY2FwdGNoYS1jbi5uZXSC
+EioucmVjYXB0Y2hhLWNuLm5ldIILd2lkZXZpbmUuY26CDSoud2lkZXZpbmUuY26C
+EWFtcHByb2plY3Qub3JnLmNughMqLmFtcHByb2plY3Qub3JnLmNughFhbXBwcm9q
+ZWN0Lm5ldC5jboITKi5hbXBwcm9qZWN0Lm5ldC5jboIXZ29vZ2xlLWFuYWx5dGlj
+cy1jbi5jb22CGSouZ29vZ2xlLWFuYWx5dGljcy1jbi5jb22CF2dvb2dsZWFkc2Vy
+dmljZXMtY24uY29tghkqLmdvb2dsZWFkc2VydmljZXMtY24uY29tghFnb29nbGV2
+YWRzLWNuLmNvbYITKi5nb29nbGV2YWRzLWNuLmNvbYIRZ29vZ2xlYXBpcy1jbi5j
+b22CEyouZ29vZ2xlYXBpcy1jbi5jb22CFWdvb2dsZW9wdGltaXplLWNuLmNvbYIX
+Ki5nb29nbGVvcHRpbWl6ZS1jbi5jb22CEmRvdWJsZWNsaWNrLWNuLm5ldIIUKi5k
+b3VibGVjbGljay1jbi5uZXSCGCouZmxzLmRvdWJsZWNsaWNrLWNuLm5ldIIWKi5n
+LmRvdWJsZWNsaWNrLWNuLm5ldIIOZG91YmxlY2xpY2suY26CECouZG91YmxlY2xp
+Y2suY26CFCouZmxzLmRvdWJsZWNsaWNrLmNughIqLmcuZG91YmxlY2xpY2suY26C
+EWRhcnRzZWFyY2gtY24ubmV0ghMqLmRhcnRzZWFyY2gtY24ubmV0gh1nb29nbGV0
+cmF2ZWxhZHNlcnZpY2VzLWNuLmNvbYIfKi5nb29nbGV0cmF2ZWxhZHNlcnZpY2Vz
+LWNuLmNvbYIYZ29vZ2xldGFnc2VydmljZXMtY24uY29tghoqLmdvb2dsZXRhZ3Nl
+cnZpY2VzLWNuLmNvbYIXZ29vZ2xldGFnbWFuYWdlci1jbi5jb22CGSouZ29vZ2xl
+dGFnbWFuYWdlci1jbi5jb22CGGdvb2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIaKi5n
+b29nbGVzeW5kaWNhdGlvbi1jbi5jb22CJCouc2FmZWZyYW1lLmdvb2dsZXN5bmRp
+Y2F0aW9uLWNuLmNvbYIWYXBwLW1lYXN1cmVtZW50LWNuLmNvbYIYKi5hcHAtbWVh
+c3VyZW1lbnQtY24uY29tggtndnQxLWNuLmNvbYINKi5ndnQxLWNuLmNvbYILZ3Z0
+Mi1jbi5jb22CDSouZ3Z0Mi1jbi5jb22CCzJtZG4tY24ubmV0gg0qLjJtZG4tY24u
+bmV0ghRnb29nbGVmbGlnaHRzLWNuLm5ldIIWKi5nb29nbGVmbGlnaHRzLWNuLm5l
+dIIMYWRtb2ItY24uY29tgg4qLmFkbW9iLWNuLmNvbYIUZ29vZ2xlc2FuZGJveC1j
+bi5jb22CFiouZ29vZ2xlc2FuZGJveC1jbi5jb22CHiouc2FmZW51cC5nb29nbGVz
+YW5kYm94LWNuLmNvbYINKi5nc3RhdGljLmNvbYIUKi5tZXRyaWMuZ3N0YXRpYy5j
+b22CCiouZ3Z0MS5jb22CESouZ2NwY2RuLmd2dDEuY29tggoqLmd2dDIuY29tgg4q
+LmdjcC5ndnQyLmNvbYIQKi51cmwuZ29vZ2xlLmNvbYIWKi55b3V0dWJlLW5vY29v
+a2llLmNvbYILKi55dGltZy5jb22CC2FuZHJvaWQuY29tgg0qLmFuZHJvaWQuY29t
+ghMqLmZsYXNoLmFuZHJvaWQuY29tggRnLmNuggYqLmcuY26CBGcuY2+CBiouZy5j
+b4IGZ29vLmdsggp3d3cuZ29vLmdsghRnb29nbGUtYW5hbHl0aWNzLmNvbYIWKi5n
+b29nbGUtYW5hbHl0aWNzLmNvbYIKZ29vZ2xlLmNvbYISZ29vZ2xlY29tbWVyY2Uu
+Y29tghQqLmdvb2dsZWNvbW1lcmNlLmNvbYIIZ2dwaHQuY26CCiouZ2dwaHQuY26C
+CnVyY2hpbi5jb22CDCoudXJjaGluLmNvbYIIeW91dHUuYmWCC3lvdXR1YmUuY29t
+gg0qLnlvdXR1YmUuY29tghFtdXNpYy55b3V0dWJlLmNvbYITKi5tdXNpYy55b3V0
+dWJlLmNvbYIUeW91dHViZWVkdWNhdGlvbi5jb22CFioueW91dHViZWVkdWNhdGlv
+bi5jb22CD3lvdXR1YmVraWRzLmNvbYIRKi55b3V0dWJla2lkcy5jb22CBXl0LmJl
+ggcqLnl0LmJlghphbmRyb2lkLmNsaWVudHMuZ29vZ2xlLmNvbYITKi5hbmRyb2lk
+Lmdvb2dsZS5jboISKi5jaHJvbWUuZ29vZ2xlLmNughYqLmRldmVsb3BlcnMuZ29v
+Z2xlLmNuMBMGA1UdIAQMMAowCAYGZ4EMAQIBMDYGA1UdHwQvMC0wK6ApoCeGJWh0
+dHA6Ly9jLnBraS5nb29nL3dyMi83NXI0WnlBM3ZBMC5jcmwwggEDBgorBgEEAdZ5
+AgQCBIH0BIHxAO8AdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAA
+AZJmSqbeAAAEAwBHMEUCIFOIvRxjUhH5C5Vg6xcJWJqM7oyoXixW6AKbQYQ+ZFmP
+AiEA2m1QpPeEpFIj37QQfM9/cg6OLOnjRVN7/+yOiWtZ5kUAdQDatr9rP7W2Ip+b
+wrtca+hwkXFsu1GEhTS9pD0wSNf7qwAAAZJmSqcKAAAEAwBGMEQCIB3wVSDNLX1H
+Wpj1HGybNyKNL+xo2Bn4TPGBtenWunL7AiBioso8atUishRyAn89kdbBBwgm9ne4
+PXj+iVPHj/vXOzANBgkqhkiG9w0BAQsFAAOCAQEADg11Zkxo6TfWEuHZB5FP1cfk
+icRZrWn/HO8QIiraxVhplxgkzG/haOYUel0ZVJJGcmymMTl2UNJZIo90v1h7nYOL
+F91/PSRDMwveyBFbjpJrTe3BQXxVCzMDVe5vXLeExTEOqjfJ0nMzGL2huMm7DoGT
+WOxSougJXECjw8JRygjuSnVrG2SZ3dFu7GFLEgX1wxlHODiD7KpiAsRGx5GFvNm+
+4lvVFjd8cGwgo8XypXD68qGTTaDwR64uzDBb87LCW3Rr7weUVLRhGenltV4vPuJM
+/U6PBTXD2NbOVFpZekAi3fxmtv2EsYTwOZy6CdI8Mphko0BavOHbH/lYVn8E3g==
 -----END CERTIFICATE-----
 -----BEGIN CERTIFICATE-----
 MIIFCzCCAvOgAwIBAgIQf/AFoHxM3tEArZ1mpRB7mDANBgkqhkiG9w0BAQsFADBH
@@ -995,33 +994,33 @@ d0lIKO2d1xozclOzgjXPYovJJIultzkMu34qQb9Sz/yilrbCgj8=
 
 --------------------------------------------------------------------------------
 ************************************************ Url; https; www; Google ***********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp1gf9a6g2 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpy4pgb30_ is created.
 ------------- openssl s_client -connect www.google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp1gf9a6g2 -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpy4pgb30_ -------------------------
 Remarks: Url; https; www; Google
-Info => Transaction Id: fx3rnf2nv89h; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: j4fk7yj5gb5g; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.google.com/
 Output Data:
 Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            1d:ba:9e:fa:dd:1c:07:56:0a:42:9f:8b:7f:9a:62:86
+            0d:43:b1:4a:bb:9c:15:96:10:e1:3d:55:23:9f:25:4e
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C=US, O=Google Trust Services, CN=WR2
         Validity
-            Not Before: Sep 30 15:11:47 2024 GMT
-            Not After : Dec 23 15:11:46 2024 GMT
+            Not Before: Oct  7 08:26:36 2024 GMT
+            Not After : Dec 30 08:26:35 2024 GMT
         Subject: CN=www.google.com
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:8c:f2:37:90:7c:01:11:92:ef:0f:20:8e:6a:75:
-                    de:b0:49:22:81:7f:2e:bd:e5:e2:2a:50:66:9b:3d:
-                    5b:70:56:08:9e:21:03:23:b8:4b:d5:81:0c:99:0f:
-                    81:67:73:4f:db:b6:d8:72:6a:d4:a8:d4:e4:b6:98:
-                    aa:16:27:f9:9f
+                    04:ee:3f:98:73:8a:ed:cd:31:e8:9e:4f:03:00:10:
+                    60:ae:5a:f4:5a:0a:10:42:a8:eb:22:1e:6f:35:46:
+                    9a:39:77:4d:d6:39:0b:02:29:a3:13:44:47:eb:6c:
+                    40:7f:c1:8a:38:ac:dd:74:d7:a6:8a:32:9a:f8:26:
+                    2a:ed:28:85:ba
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
         X509v3 extensions:
@@ -1032,7 +1031,7 @@ Certificate:
             X509v3 Basic Constraints: critical
                 CA:FALSE
             X509v3 Subject Key Identifier: 
-                43:55:F1:7C:21:AC:99:0E:92:75:E1:4D:47:AE:E8:7D:E6:67:BF:35
+                93:DB:B9:96:47:51:45:EB:5E:75:49:E1:12:72:BD:91:B3:A9:7C:2F
             X509v3 Authority Key Identifier: 
                 DE:1B:1E:ED:79:15:D4:3E:37:24:C3:21:BB:EC:34:39:6D:42:B2:30
             Authority Information Access: 
@@ -1044,83 +1043,83 @@ Certificate:
                 Policy: 2.23.140.1.2.1
             X509v3 CRL Distribution Points: 
                 Full Name:
-                  URI:http://c.pki.goog/wr2/GSyT1N4PBrg.crl
+                  URI:http://c.pki.goog/wr2/9UVbN0w5E6Y.crl
             CT Precertificate SCTs: 
-                Signed Certificate Timestamp:
-                    Version   : v1 (0x0)
-                    Log ID    : DA:B6:BF:6B:3F:B5:B6:22:9F:9B:C2:BB:5C:6B:E8:70:
-                                91:71:6C:BB:51:84:85:34:BD:A4:3D:30:48:D7:FB:AB
-                    Timestamp : Sep 30 16:11:48.179 2024 GMT
-                    Extensions: none
-                    Signature : ecdsa-with-SHA256
-                                30:46:02:21:00:F5:A3:AD:4D:25:8C:58:99:75:3C:29:
-                                97:D9:5D:F1:9A:D0:1D:C7:0B:F3:F2:F6:0D:9B:CC:B3:
-                                60:6C:04:7E:4D:02:21:00:B5:F5:D9:B1:6F:D8:29:38:
-                                05:66:17:DE:20:63:27:66:2A:F8:8B:D3:12:F1:4A:E3:
-                                9A:E4:19:E9:E0:84:3D:C7
                 Signed Certificate Timestamp:
                     Version   : v1 (0x0)
                     Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:
                                 32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B
-                    Timestamp : Sep 30 16:11:48.122 2024 GMT
+                    Timestamp : Oct  7 09:26:37.763 2024 GMT
                     Extensions: none
                     Signature : ecdsa-with-SHA256
-                                30:46:02:21:00:80:05:6E:B4:4D:16:73:B4:90:F5:F5:
-                                62:2E:13:0C:85:3B:C4:7C:5F:96:DD:7D:14:F7:85:CB:
-                                A2:AC:40:99:8D:02:21:00:91:5E:19:3B:73:29:9D:70:
-                                29:CB:B5:9A:23:1D:1F:F3:12:93:2A:AE:94:C3:D8:98:
-                                1C:08:C0:0C:47:41:37:62
+                                30:46:02:21:00:F3:FD:09:59:01:D0:65:E2:4B:66:FB:
+                                91:35:D6:3C:F1:C5:93:64:F2:35:DF:3B:74:C7:FD:38:
+                                1E:2B:34:10:31:02:21:00:B9:F5:BE:9A:EA:D9:92:96:
+                                7B:AB:F4:50:11:5D:B3:4C:AF:FD:A3:AE:EB:FF:2F:06:
+                                07:AF:25:C4:46:74:DD:D0
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:
+                                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73
+                    Timestamp : Oct  7 09:26:37.799 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:64:F2:2B:4E:C2:98:2E:5F:5A:B3:6F:75:
+                                B3:B2:AB:05:09:CB:9A:47:2D:8F:B9:71:47:E7:3D:06:
+                                ED:BF:52:B1:02:21:00:C2:B2:19:28:EE:FD:AC:09:51:
+                                21:4F:A1:79:65:BC:20:4F:0A:79:01:97:9E:DA:80:C4:
+                                38:E6:90:F7:CC:F5:A0
     Signature Algorithm: sha256WithRSAEncryption
     Signature Value:
-        18:3d:23:81:2d:94:7f:ba:dd:a9:50:d9:e8:62:25:3d:0d:a5:
-        fe:73:1e:fb:e6:76:de:33:d0:82:f7:2f:4d:ea:b6:75:5d:79:
-        33:c6:2d:e3:4b:24:a1:4b:a9:3a:8d:91:18:5f:24:a0:66:1c:
-        02:a8:9d:05:e4:db:4f:fc:a1:bf:da:c3:28:c8:24:05:82:02:
-        61:0d:96:ef:5d:bc:1c:01:f1:65:83:61:47:01:5a:e2:58:92:
-        db:32:d1:a8:21:1b:03:a1:ad:81:a1:6d:cc:72:f7:83:ab:a4:
-        6f:d8:6b:ff:9a:bb:f6:0e:01:5a:2d:4b:d0:83:76:d9:8a:6f:
-        48:f8:6d:b7:0c:82:f0:5c:30:33:cd:07:5e:d3:a6:50:b0:6e:
-        7f:67:a4:0d:71:48:6c:ff:4d:a9:ea:8f:3e:ed:d8:68:5d:59:
-        9d:cf:2e:07:fd:92:5f:3e:86:70:26:b2:a4:57:ab:c3:72:be:
-        7b:dd:b4:2b:b3:64:2d:67:3d:d1:6c:e1:02:cc:83:6d:32:71:
-        f5:41:3e:48:49:91:97:b7:72:f9:f2:23:82:76:7a:b4:bb:b7:
-        2e:7b:6b:a7:3e:4f:a4:a5:42:e5:88:cd:59:ba:d5:6a:4c:9a:
-        dd:61:4b:7d:04:61:f4:f9:ec:36:ae:01:81:55:31:9c:ed:9c:
-        70:6c:2a:3a
+        9d:fd:b2:ac:ea:56:ff:35:f3:97:62:74:b4:21:32:82:67:70:
+        a4:a7:b5:b7:0d:08:33:60:88:2a:53:13:0f:e8:0e:ff:86:cb:
+        9e:a7:81:69:da:c8:67:99:5a:96:0f:93:77:a9:3d:20:c2:88:
+        94:ea:3c:bf:d2:91:93:32:85:a3:90:39:85:c6:14:58:4f:dc:
+        97:e6:35:e6:04:8f:da:02:10:95:5d:64:cb:ae:fa:7d:1e:3a:
+        41:1a:a2:8f:46:5e:a4:67:23:55:51:c0:5d:8e:23:59:e0:c5:
+        b3:74:f2:28:c6:7f:58:d5:e3:4d:5a:61:06:b7:46:9e:2b:b4:
+        66:ca:7b:80:11:c8:5b:46:29:60:04:c6:00:4c:b2:26:5d:df:
+        7a:c7:f8:ae:c9:19:41:b4:55:4a:95:76:be:36:29:4f:c8:98:
+        d3:38:37:ae:96:c9:83:99:7a:62:23:c2:db:ba:80:3e:88:d3:
+        ee:51:12:06:0f:05:76:3b:6a:ff:90:88:b4:81:f1:9f:94:64:
+        41:21:dc:b8:82:15:30:26:73:84:5f:80:74:b9:fe:06:f3:2a:
+        8b:ab:00:72:4e:26:e6:d5:d2:25:a9:8a:f0:64:9f:54:00:c8:
+        09:65:b2:6d:95:c2:e4:6a:8e:df:a6:d2:33:73:a6:ba:25:59:
+        a6:40:87:86
 -----BEGIN CERTIFICATE-----
-MIIEWDCCA0CgAwIBAgIQHbqe+t0cB1YKQp+Lf5pihjANBgkqhkiG9w0BAQsFADA7
+MIIEVzCCAz+gAwIBAgIQDUOxSrucFZYQ4T1VI58lTjANBgkqhkiG9w0BAQsFADA7
 MQswCQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQww
-CgYDVQQDEwNXUjIwHhcNMjQwOTMwMTUxMTQ3WhcNMjQxMjIzMTUxMTQ2WjAZMRcw
+CgYDVQQDEwNXUjIwHhcNMjQxMDA3MDgyNjM2WhcNMjQxMjMwMDgyNjM1WjAZMRcw
 FQYDVQQDEw53d3cuZ29vZ2xlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
-BIzyN5B8ARGS7w8gjmp13rBJIoF/Lr3l4ipQZps9W3BWCJ4hAyO4S9WBDJkPgWdz
-T9u22HJq1KjU5LaYqhYn+Z+jggJDMIICPzAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0l
-BAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUQ1XxfCGsmQ6S
-deFNR67ofeZnvzUwHwYDVR0jBBgwFoAU3hse7XkV1D43JMMhu+w0OW1CsjAwWAYI
+BO4/mHOK7c0x6J5PAwAQYK5a9FoKEEKo6yIebzVGmjl3TdY5CwIpoxNER+tsQH/B
+ijis3XTXpooymvgmKu0ohbqjggJCMIICPjAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0l
+BAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUk9u5lkdRRete
+dUnhEnK9kbOpfC8wHwYDVR0jBBgwFoAU3hse7XkV1D43JMMhu+w0OW1CsjAwWAYI
 KwYBBQUHAQEETDBKMCEGCCsGAQUFBzABhhVodHRwOi8vby5wa2kuZ29vZy93cjIw
 JQYIKwYBBQUHMAKGGWh0dHA6Ly9pLnBraS5nb29nL3dyMi5jcnQwGQYDVR0RBBIw
 EIIOd3d3Lmdvb2dsZS5jb20wEwYDVR0gBAwwCjAIBgZngQwBAgEwNgYDVR0fBC8w
-LTAroCmgJ4YlaHR0cDovL2MucGtpLmdvb2cvd3IyL0dTeVQxTjRQQnJnLmNybDCC
-AQYGCisGAQQB1nkCBAIEgfcEgfQA8gB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSF
-NL2kPTBI1/urAAABkkOzxlMAAAQDAEgwRgIhAPWjrU0ljFiZdTwpl9ld8ZrQHccL
-8/L2DZvMs2BsBH5NAiEAtfXZsW/YKTgFZhfeIGMnZir4i9MS8UrjmuQZ6eCEPccA
-dwDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAZJDs8YaAAAEAwBI
-MEYCIQCABW60TRZztJD19WIuEwyFO8R8X5bdfRT3hcuirECZjQIhAJFeGTtzKZ1w
-Kcu1miMdH/MSkyqulMPYmBwIwAxHQTdiMA0GCSqGSIb3DQEBCwUAA4IBAQAYPSOB
-LZR/ut2pUNnoYiU9DaX+cx775nbeM9CC9y9N6rZ1XXkzxi3jSyShS6k6jZEYXySg
-ZhwCqJ0F5NtP/KG/2sMoyCQFggJhDZbvXbwcAfFlg2FHAVriWJLbMtGoIRsDoa2B
-oW3McveDq6Rv2Gv/mrv2DgFaLUvQg3bZim9I+G23DILwXDAzzQde06ZQsG5/Z6QN
-cUhs/02p6o8+7dhoXVmdzy4H/ZJfPoZwJrKkV6vDcr573bQrs2QtZz3RbOECzINt
-MnH1QT5ISZGXt3L58iOCdnq0u7cue2unPk+kpULliM1ZutVqTJrdYUt9BGH0+ew2
-rgGBVTGc7ZxwbCo6
+LTAroCmgJ4YlaHR0cDovL2MucGtpLmdvb2cvd3IyLzlVVmJOMHc1RTZZLmNybDCC
+AQUGCisGAQQB1nkCBAIEgfYEgfMA8QB3AO7N0GTV2xrOxVy3nbTNE6Iyh0Z8vOze
+w1FIWUZxH7WbAAABkmZNV8MAAAQDAEgwRgIhAPP9CVkB0GXiS2b7kTXWPPHFk2Ty
+Nd87dMf9OB4rNBAxAiEAufW+murZkpZ7q/RQEV2zTK/9o67r/y8GB68lxEZ03dAA
+dgBIsONr2qZHNA/lagL6nTDrHFIBy1bdLIHZu7+rOdiEcwAAAZJmTVfnAAAEAwBH
+MEUCIGTyK07CmC5fWrNvdbOyqwUJy5pHLY+5cUfnPQbtv1KxAiEAwrIZKO79rAlR
+IU+heWW8IE8KeQGXntqAxDjmkPfM9aAwDQYJKoZIhvcNAQELBQADggEBAJ39sqzq
+Vv8185didLQhMoJncKSntbcNCDNgiCpTEw/oDv+Gy56ngWnayGeZWpYPk3epPSDC
+iJTqPL/SkZMyhaOQOYXGFFhP3JfmNeYEj9oCEJVdZMuu+n0eOkEaoo9GXqRnI1VR
+wF2OI1ngxbN08ijGf1jV401aYQa3Rp4rtGbKe4ARyFtGKWAExgBMsiZd33rH+K7J
+GUG0VUqVdr42KU/ImNM4N66WyYOZemIjwtu6gD6I0+5REgYPBXY7av+QiLSB8Z+U
+ZEEh3LiCFTAmc4RfgHS5/gbzKourAHJOJubV0iWpivBkn1QAyAllsm2VwuRqjt+m
+0jNzprolWaZAh4Y=
 -----END CERTIFICATE-----
 
 --------------------------------------------------------------------------------
 ********************************************** Url; AmenityPj; Fetch Only **********************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpvd28gr1q is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp0onkj8rn is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
 Remarks: Url; AmenityPj; Fetch Only
-Info => Transaction Id: ponqsucjn2lr; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: False
+Info => Transaction Id: tc6ibjmygigr; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 -----BEGIN CERTIFICATE-----
@@ -1150,11 +1149,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 
 --------------------------------------------------------------------------------
 ************************************** Url; Sub Pages; WikiPedia; url_time_out=10 **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpw9cxbeun is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpsy4m1gwj is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpw9cxbeun -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpsy4m1gwj -------------------------
 Remarks: Url; Sub Pages; WikiPedia; url_time_out=10
-Info => Transaction Id: b40qr235vfc4; Input Format: url; Url Time Out: 10; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: sbgiqtygw1g0; Input Format: url; Url Time Out: 10; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://en.wikipedia.org/wiki/Main_Page
 Output Data:
 Certificate:
@@ -1298,11 +1297,11 @@ JM96BTfZhOY1ZiiZdis=
 
 --------------------------------------------------------------------------------
 ***************************** Url; https; www; cloudflare; Forbidden; url_pre_access=False *****************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmphnuym50m is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp1zf73js6 is created.
 ----------- openssl s_client -connect www.cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmphnuym50m -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp1zf73js6 -------------------------
 Remarks: Url; https; www; cloudflare; Forbidden; url_pre_access=False
-Info => Transaction Id: thz0o7fwa48r; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: eakzt6i7ky21; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.cloudflare.com
 Output Data:
 Certificate:
@@ -1405,10 +1404,10 @@ D6/vtHH7
 
 --------------------------------------------------------------------------------
 *********************************** Der; Base64; Certificate; Single Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpcbghbzpi is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpcbghbzpi -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpd3_zu3q5 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpd3_zu3q5 -------------------------
 Remarks: Der; Base64; Certificate; Single Line; AmenityPj
-Info => Transaction Id: klw6cj3g1uml; Input Format: der
+Info => Transaction Id: 8mury4cfwse7; Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMTDGFtZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL74hi/pJ2opqu+36ppYNCt65tD3B2Kq5u1C3n/QqlofA2tdW1MXMxTPX2x66cEuMWYH0eTi0EZWv0tRB18Hy0ajggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNPucKQzTDVMjhjQEASfE1Gh44fWMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCCEmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlwai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6CEHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBhc3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGPZsnk6QAABAMARzBFAiEA5YpmM1dVtOW7SH2/SVEHpi9TdDv1j1+SMbiaw1CrqN4CIH/ulMV5ItLuRMyvz63qdkPHuesahzkNUNe1lJax8mlPAHYA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGPZsnmAAAABAMARzBFAiEA5z82NzuMuMPKl7z2lthCsSGZkNvO4VKHYJbMfrFwCAYCIDOTKLX5p+9CS8rF38jM0JZi6Gh2GwoH04oEk6lIbdpGMA0GCSqGSIb3DQEBCwUAA4IBAQCYYN6K+WblpJXB3VDpoaxJB/raiD5m4B0Yr4b0SFdBRNac/N+dBxxBTSizlW+2DkqU4j0Ni7DrudwpqZWMe9pSTRtnIgUdAs9TqpwMszUuCrToDzIbBdxYyI+4cDbMpdJtRcJLBUvBrp38b6oFp3hLs34VruS+SyXGIcnCzhJjSfUIMM51VCyyO+qbLWWRGPxz231lB6pktznflJtCllqPaOGifLBa7it2I7chuMW00GuZ4MDytqmRtWu704KKy6jiuqp+c7+je6L+B63mVry1cZlWhDm4Mhs3wpJ2k8xjzOPiHHqGCAvjLZtXkx1y1T2Y1Si62lB1iGx939ucrYhF
 Output Data:
 Certificate:
@@ -1524,10 +1523,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 ************************************ Der; Base64; Certificate; Multi Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmps2dcsvoh is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmps2dcsvoh -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp7lnlisun is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp7lnlisun -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; AmenityPj
-Info => Transaction Id: 37jwia9r70wk; Input Format: der
+Info => Transaction Id: o47l0j33r1mf; Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
 EwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMT
@@ -1668,10 +1667,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 *************************** Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpmr7sjwx9 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpmr7sjwx9 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpr3xecgr4 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpr3xecgr4 -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj
-Info => Transaction Id: 2gwano0nig3a; Input Format: der
+Info => Transaction Id: vpo9kaspqrh9; Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----
 MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
@@ -1814,10 +1813,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 ******************************************* Der; Hex; Certificate; AmenityPj *******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmppnzxwxzq is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmppnzxwxzq -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpqd4va6wr is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpqd4va6wr -------------------------
 Remarks: Der; Hex; Certificate; AmenityPj
-Info => Transaction Id: g0ltv0ulqzcx; Input Format: der
+Info => Transaction Id: n2ntn5t6o3hs; Input Format: der
 Input Data: 308204AF30820397A003020102021203C71A30F683939E8FD6FF11BF1910760C69300D06092A864886F70D01010B05003032310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074310B3009060355040313025233301E170D3234303531313037333431385A170D3234303830393037333431375A3017311530130603550403130C616D656E697479706A2E696E3059301306072A8648CE3D020106082A8648CE3D03010703420004BEF8862FE9276A29AAEFB7EA9A58342B7AE6D0F70762AAE6ED42DE7FD0AA5A1F036B5D5B53173314CF5F6C7AE9C12E316607D1E4E2D04656BF4B51075F07CB46A38202A33082029F300E0603551D0F0101FF040403020780301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E04160414D3EE70A4334C354C8E18D010049F1351A1E387D6301F0603551D23041830168014142EB317B75856CBAE500940E61FAF9D8B14C2C6305506082B0601050507010104493047302106082B060105050730018615687474703A2F2F72332E6F2E6C656E63722E6F7267302206082B060105050730028616687474703A2F2F72332E692E6C656E63722E6F72672F3081AB0603551D110481A33081A08212616C7068612E616D656E697479706A2E696E820C616D656E697479706A2E696E8211626574612E616D656E697479706A2E696E8211706173742E616D656E697479706A2E696E82167777772E616C7068612E616D656E697479706A2E696E82107777772E616D656E697479706A2E696E82157777772E626574612E616D656E697479706A2E696E82157777772E706173742E616D656E697479706A2E696E30130603551D20040C300A3008060667810C01020130820104060A2B06010401D6790204020481F50481F200F000760048B0E36BDAA647340FE56A02FA9D30EB1C5201CB56DD2C81D9BBBFAB39D884730000018F66C9E4E90000040300473045022100E58A66335755B4E5BB487DBF495107A62F53743BF58F5F9231B89AC350ABA8DE02207FEE94C57922D2EE44CCAFCFADEA7643C7B9EB1A87390D50D7B59496B1F2694F007600DFE156EBAA05AFB59C0F86718DA8C0324EAE56D96EA7F5A56A01D1C13BBE525C0000018F66C9E6000000040300473045022100E73F36373B8CB8C3CA97BCF696D842B1219990DBCEE152876096CC7EB17008060220339328B5F9A7EF424BCAC5DFC8CCD09662E868761B0A07D38A0493A9486DDA46300D06092A864886F70D01010B050003820101009860DE8AF966E5A495C1DD50E9A1AC4907FADA883E66E01D18AF86F448574144D69CFCDF9D071C414D28B3956FB60E4A94E23D0D8BB0EBB9DC29A9958C7BDA524D1B6722051D02CF53AA9C0CB3352E0AB4E80F321B05DC58C88FB87036CCA5D26D45C24B054BC1AE9DFC6FAA05A7784BB37E15AEE4BE4B25C621C9C2CE126349F50830CE75542CB23BEA9B2D659118FC73DB7D6507AA64B739DF949B42965A8F68E1A27CB05AEE2B7623B721B8C5B4D06B99E0C0F2B6A991B56BBBD3828ACBA8E2BAAA7E73BFA37BA2FE07ADE656BCB57199568439B8321B37C2927693CC63CCE3E21C7A86080BE32D9B57931D72D53D98D528BADA5075886C7DDFDB9CAD8845
 Output Data:
 Certificate:
@@ -1933,10 +1932,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 ****************************** Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x) ******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpr4u36zp0 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpr4u36zp0 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp1ixjotlb is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp1ixjotlb -------------------------
 Remarks: Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x)
-Info => Transaction Id: qa2e4tmgd4ks; Input Format: der
+Info => Transaction Id: wxnhiuy01dgq; Input Format: der
 Input Data: 30820250308201F7A003020102020900B874F3ABFA6C44D3300A06082A8648CE3D04030230443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543020170D3230303430313038323735315A180F32303535303430313038323735315A30443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543059301306072A8648CE3D020106082A8648CE3D03010703420004940657A673DC288F89D52EA8A47704992791F9C34B0036E633E2D0CBA9454D65DB32EB17981799D2F24388EE2B95C1094546C97901CEAEBA9650919A2E20D229A381CF3081CC301D0603551D0E04160414F54172BDF98A95D65CBEB88A38A1C11D800A85C3300F0603551D130101FF040530030101FF30170603551D200101FF040D300B3009060767811201020100300E0603551D0F0101FF040403020106300E0603551D1104073005880388370130610603551D1F045A3058302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D412E63726C302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D422E63726C300A06082A8648CE3D0403020347003044022052756AAFC2020A6CECBF2E5F3C20892510FF29751D298BD3B015D9605A4FE67D022057982836E4D205DDD2E6C3C1B455937F6B6E493B602FD1B66C357489A935F76B
 Output Data:
 Certificate:
@@ -2003,11 +2002,11 @@ tFWTf2tuSTtgL9G2bDV0iak192s=
 ------------------------------------------------------ UnitTesting -----------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp_1915zag is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpb9p9jr2w is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp_1915zag -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpb9p9jr2w -------------------------
 Remarks: Url; AmenityPj
-Info => Transaction Id: cf67t30yr2lr; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 0z4o43rcmlmo; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 Certificate:
@@ -2110,11 +2109,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 
 --------------------------------------------------------------------------------
 ********************************************** Url; https; www; AmenityPj **********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmptaelcq5s is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpx3xjxvsk is created.
 ------------ openssl s_client -connect www.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmptaelcq5s -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpx3xjxvsk -------------------------
 Remarks: Url; https; www; AmenityPj
-Info => Transaction Id: itkfgg2jezbx; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 4xxz8ezmyspp; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.amenitypj.in/
 Output Data:
 Certificate:
@@ -2218,11 +2217,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 --------------------------------------------------------------------------------
 ********************************************** Url; Sub Domain; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence beta.amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpxmq2yzo4 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpil9n37yc is created.
 ------------ openssl s_client -connect beta.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpxmq2yzo4 -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpil9n37yc -------------------------
 Remarks: Url; Sub Domain; AmenityPj
-Info => Transaction Id: dfhgr8su5xjl; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: knrrfc1tob7p; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: beta.amenitypj.in
 Output Data:
 Certificate:
@@ -2325,11 +2324,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 
 --------------------------------------------------------------------------------
 ************************************** Url; Sub Pages; WikiPedia; url_time_out=10 **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpfe19ts8m is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp0cua5pz8 is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpfe19ts8m -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp0cua5pz8 -------------------------
 Remarks: Url; Sub Pages; WikiPedia; url_time_out=10
-Info => Transaction Id: 8yet8n9kwvqd; Input Format: url; Url Time Out: 10; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 9mvae9vki02e; Input Format: url; Url Time Out: 10; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://en.wikipedia.org/wiki/Main_Page
 Output Data:
 Certificate:
@@ -2473,10 +2472,10 @@ JM96BTfZhOY1ZiiZdis=
 
 --------------------------------------------------------------------------------
 *********************************** Der; Base64; Certificate; Single Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmps2ftlk9d is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmps2ftlk9d -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpwczxzv1i is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpwczxzv1i -------------------------
 Remarks: Der; Base64; Certificate; Single Line; AmenityPj
-Info => Transaction Id: hao2bkc3cm5l; Input Format: der
+Info => Transaction Id: r8lvgalw3zae; Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMTDGFtZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL74hi/pJ2opqu+36ppYNCt65tD3B2Kq5u1C3n/QqlofA2tdW1MXMxTPX2x66cEuMWYH0eTi0EZWv0tRB18Hy0ajggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNPucKQzTDVMjhjQEASfE1Gh44fWMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCCEmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlwai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6CEHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBhc3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGPZsnk6QAABAMARzBFAiEA5YpmM1dVtOW7SH2/SVEHpi9TdDv1j1+SMbiaw1CrqN4CIH/ulMV5ItLuRMyvz63qdkPHuesahzkNUNe1lJax8mlPAHYA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGPZsnmAAAABAMARzBFAiEA5z82NzuMuMPKl7z2lthCsSGZkNvO4VKHYJbMfrFwCAYCIDOTKLX5p+9CS8rF38jM0JZi6Gh2GwoH04oEk6lIbdpGMA0GCSqGSIb3DQEBCwUAA4IBAQCYYN6K+WblpJXB3VDpoaxJB/raiD5m4B0Yr4b0SFdBRNac/N+dBxxBTSizlW+2DkqU4j0Ni7DrudwpqZWMe9pSTRtnIgUdAs9TqpwMszUuCrToDzIbBdxYyI+4cDbMpdJtRcJLBUvBrp38b6oFp3hLs34VruS+SyXGIcnCzhJjSfUIMM51VCyyO+qbLWWRGPxz231lB6pktznflJtCllqPaOGifLBa7it2I7chuMW00GuZ4MDytqmRtWu704KKy6jiuqp+c7+je6L+B63mVry1cZlWhDm4Mhs3wpJ2k8xjzOPiHHqGCAvjLZtXkx1y1T2Y1Si62lB1iGx939ucrYhF
 Output Data:
 Certificate:
@@ -2592,10 +2591,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 ************************************ Der; Base64; Certificate; Multi Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpt980rzow is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpt980rzow -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpfijpsc6k is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpfijpsc6k -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; AmenityPj
-Info => Transaction Id: pi22kniwgufl; Input Format: der
+Info => Transaction Id: heiiccf5c19z; Input Format: der
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
 EwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMT
@@ -2736,10 +2735,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 *************************** Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpwve5tr_1 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpwve5tr_1 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpzzt8ihd5 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpzzt8ihd5 -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj
-Info => Transaction Id: inm4it71r81n; Input Format: der
+Info => Transaction Id: teg9ysvuvepe; Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----
 MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
@@ -2882,10 +2881,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 **************************** Der; Base64; Certificate; Single Line; Begin & End in same line ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp0yfjnngw is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp0yfjnngw -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpzt6w2o6_ is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpzt6w2o6_ -------------------------
 Remarks: Der; Base64; Certificate; Single Line; Begin & End in same line
-Info => Transaction Id: bif5kg6u0jez; Input Format: der
+Info => Transaction Id: qng1o8ldq4cc; Input Format: der
 Input Data: -----BEGIN CERTIFICATE-----MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil-----END CERTIFICATE-----
 Output Data:
 Certificate:
@@ -3029,10 +3028,10 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 ******************************************* Der; Hex; Certificate; AmenityPj *******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpzs808id5 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpzs808id5 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpwu29qcky is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpwu29qcky -------------------------
 Remarks: Der; Hex; Certificate; AmenityPj
-Info => Transaction Id: ks0pafpp2p37; Input Format: der
+Info => Transaction Id: qmbqci40tdz3; Input Format: der
 Input Data: 308204AF30820397A003020102021203C71A30F683939E8FD6FF11BF1910760C69300D06092A864886F70D01010B05003032310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074310B3009060355040313025233301E170D3234303531313037333431385A170D3234303830393037333431375A3017311530130603550403130C616D656E697479706A2E696E3059301306072A8648CE3D020106082A8648CE3D03010703420004BEF8862FE9276A29AAEFB7EA9A58342B7AE6D0F70762AAE6ED42DE7FD0AA5A1F036B5D5B53173314CF5F6C7AE9C12E316607D1E4E2D04656BF4B51075F07CB46A38202A33082029F300E0603551D0F0101FF040403020780301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E04160414D3EE70A4334C354C8E18D010049F1351A1E387D6301F0603551D23041830168014142EB317B75856CBAE500940E61FAF9D8B14C2C6305506082B0601050507010104493047302106082B060105050730018615687474703A2F2F72332E6F2E6C656E63722E6F7267302206082B060105050730028616687474703A2F2F72332E692E6C656E63722E6F72672F3081AB0603551D110481A33081A08212616C7068612E616D656E697479706A2E696E820C616D656E697479706A2E696E8211626574612E616D656E697479706A2E696E8211706173742E616D656E697479706A2E696E82167777772E616C7068612E616D656E697479706A2E696E82107777772E616D656E697479706A2E696E82157777772E626574612E616D656E697479706A2E696E82157777772E706173742E616D656E697479706A2E696E30130603551D20040C300A3008060667810C01020130820104060A2B06010401D6790204020481F50481F200F000760048B0E36BDAA647340FE56A02FA9D30EB1C5201CB56DD2C81D9BBBFAB39D884730000018F66C9E4E90000040300473045022100E58A66335755B4E5BB487DBF495107A62F53743BF58F5F9231B89AC350ABA8DE02207FEE94C57922D2EE44CCAFCFADEA7643C7B9EB1A87390D50D7B59496B1F2694F007600DFE156EBAA05AFB59C0F86718DA8C0324EAE56D96EA7F5A56A01D1C13BBE525C0000018F66C9E6000000040300473045022100E73F36373B8CB8C3CA97BCF696D842B1219990DBCEE152876096CC7EB17008060220339328B5F9A7EF424BCAC5DFC8CCD09662E868761B0A07D38A0493A9486DDA46300D06092A864886F70D01010B050003820101009860DE8AF966E5A495C1DD50E9A1AC4907FADA883E66E01D18AF86F448574144D69CFCDF9D071C414D28B3956FB60E4A94E23D0D8BB0EBB9DC29A9958C7BDA524D1B6722051D02CF53AA9C0CB3352E0AB4E80F321B05DC58C88FB87036CCA5D26D45C24B054BC1AE9DFC6FAA05A7784BB37E15AEE4BE4B25C621C9C2CE126349F50830CE75542CB23BEA9B2D659118FC73DB7D6507AA64B739DF949B42965A8F68E1A27CB05AEE2B7623B721B8C5B4D06B99E0C0F2B6A991B56BBBD3828ACBA8E2BAAA7E73BFA37BA2FE07ADE656BCB57199568439B8321B37C2927693CC63CCE3E21C7A86080BE32D9B57931D72D53D98D528BADA5075886C7DDFDB9CAD8845
 Output Data:
 Certificate:
@@ -3148,10 +3147,10 @@ rYhF
 
 --------------------------------------------------------------------------------
 ****************************** Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x) ******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpbhmmn668 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpbhmmn668 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmp37kuy365 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp37kuy365 -------------------------
 Remarks: Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x)
-Info => Transaction Id: j3pjw6r7dazg; Input Format: der
+Info => Transaction Id: bnamwy4jpe10; Input Format: der
 Input Data: 30820250308201F7A003020102020900B874F3ABFA6C44D3300A06082A8648CE3D04030230443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543020170D3230303430313038323735315A180F32303535303430313038323735315A30443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543059301306072A8648CE3D020106082A8648CE3D03010703420004940657A673DC288F89D52EA8A47704992791F9C34B0036E633E2D0CBA9454D65DB32EB17981799D2F24388EE2B95C1094546C97901CEAEBA9650919A2E20D229A381CF3081CC301D0603551D0E04160414F54172BDF98A95D65CBEB88A38A1C11D800A85C3300F0603551D130101FF040530030101FF30170603551D200101FF040D300B3009060767811201020100300E0603551D0F0101FF040403020106300E0603551D1104073005880388370130610603551D1F045A3058302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D412E63726C302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D422E63726C300A06082A8648CE3D0403020347003044022052756AAFC2020A6CECBF2E5F3C20892510FF29751D298BD3B015D9605A4FE67D022057982836E4D205DDD2E6C3C1B455937F6B6E493B602FD1B66C357489A935F76B
 Output Data:
 Certificate:
@@ -3217,11 +3216,11 @@ tFWTf2tuSTtgL9G2bDV0iak192s=
 --------------------------------------------------------------------------------
 ************************************************* Default Input Format *************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp05u_0gvj is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpeu9ts1ow is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp05u_0gvj -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpeu9ts1ow -------------------------
 Remarks: Default Input Format
-Info => Transaction Id: 3mt50y03sqpm; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: uol6ktoqthdb; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 Certificate:
@@ -3325,11 +3324,11 @@ ozb4T8YmU1bhSlURaQhIP774ez9E5O3pahCiYtHfVLt3
 --------------------------------------------------------------------------------
 ************************************************ cloudflare; Accessible ************************************************
 URL Type is missing (e.g.: http, https etc), hence cloudflare.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpf2hp3395 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp5armrmm_ is created.
 ------------- openssl s_client -connect cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpf2hp3395 -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp5armrmm_ -------------------------
 Remarks: cloudflare; Accessible
-Info => Transaction Id: klpcopkl8ud4; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: az5qc4hm4qkd; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: cloudflare.com
 Output Data:
 Certificate:
@@ -3432,11 +3431,11 @@ QYje4FXU91cT5/ACIA/0fG/gb//HRc8jE/jD2L0qe4F1JKAMjlg/Vf8NOCV8
 
 --------------------------------------------------------------------------------
 ******************************** cloudflare; https; www; Forbidden; url_pre_access=False *******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp8ny2w64n is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpca51bszg is created.
 ----------- openssl s_client -connect www.cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp8ny2w64n -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpca51bszg -------------------------
 Remarks: cloudflare; https; www; Forbidden; url_pre_access=False
-Info => Transaction Id: 9tc9wj6zeo2f; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 7hl18t07ggxg; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.cloudflare.com
 Output Data:
 Certificate:
@@ -3539,11 +3538,11 @@ D6/vtHH7
 
 --------------------------------------------------------------------------------
 *********************************** cloudflare; www; Forbidden; url_pre_access=False ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpsgvah7z2 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp5ilakjko is created.
 ------------- openssl s_client -connect cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpsgvah7z2 -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp5ilakjko -------------------------
 Remarks: cloudflare; www; Forbidden; url_pre_access=False
-Info => Transaction Id: m960lqz86lad; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 56iulks8xifa; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: www.cloudflare.com
 Output Data:
 Certificate:
@@ -3646,10 +3645,10 @@ QYje4FXU91cT5/ACIA/0fG/gb//HRc8jE/jD2L0qe4F1JKAMjlg/Vf8NOCV8
 
 --------------------------------------------------------------------------------
 * MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwL... *
-Temp File C:\Users\impra\AppData\Local\Temp\tmpoi6_b16g is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpoi6_b16g -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpkjw9aoch is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpkjw9aoch -------------------------
 Remarks Generated: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwL...
-Info => Transaction Id: sf387ad8vzhe; Input Format: der
+Info => Transaction Id: y152jlfp9uqc; Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
 Output Data:
 Certificate:
@@ -3793,10 +3792,10 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 *************************************************** Kwargs; raw_data ***************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpyci8ld8o is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpyci8ld8o -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpdv8i58ky is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpdv8i58ky -------------------------
 Remarks: Kwargs; raw_data
-Info => Transaction Id: 1pkievxd8fw2; Input Format: der
+Info => Transaction Id: fn5hfw7fdp3h; Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
 Output Data:
 Certificate:
@@ -3940,10 +3939,10 @@ TJUd1W+d3LmikOUgGzil
 
 --------------------------------------------------------------------------------
 **************************************************** Kwargs; future ****************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp_jl1ojds is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp_jl1ojds -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpqp3oi9cm is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpqp3oi9cm -------------------------
 Remarks: Kwargs; future
-Info => Transaction Id: qz3b8mh3a0u4; Input Format: der
+Info => Transaction Id: fjkjixqvwk6w; Input Format: der
 Input Data: MIIISzCCB9GgAwIBAgIQB0GeOVg6THbPHqFDR/pfOjAKBggqhkjOPQQDAzBWMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTAwLgYDVQQDEydEaWdpQ2VydCBUTFMgSHlicmlkIEVDQyBTSEEzODQgMjAyMCBDQTEwHhcNMjMxMDE4MDAwMDAwWhcNMjQxMDE2MjM1OTU5WjB5MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEjMCEGA1UEChMaV2lraW1lZGlhIEZvdW5kYXRpb24sIEluYy4xGDAWBgNVBAMMDyoud2lraXBlZGlhLm9yZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDVh9CEa/2rEO/oGR8YZbr5wOPHcFrG8OBQS1BQrHAsxgVn1Z/bnKtE8Hvqup+0GXdZvXYlMa8iw4A+Dz/XTitqjggZcMIIGWDAfBgNVHSMEGDAWgBQKvAgpF4ylOW16Ds4zxy6z7fvDejAdBgNVHQ4EFgQUyqwMZ6LjhkM/u0PnQdmhhzp43TMwggLtBgNVHREEggLkMIIC4IIPKi53aWtpcGVkaWEub3Jngg13aWtpbWVkaWEub3Jngg1tZWRpYXdpa2kub3Jngg13aWtpYm9va3Mub3Jnggx3aWtpZGF0YS5vcmeCDHdpa2luZXdzLm9yZ4INd2lraXF1b3RlLm9yZ4IOd2lraXNvdXJjZS5vcmeCD3dpa2l2ZXJzaXR5Lm9yZ4IOd2lraXZveWFnZS5vcmeCDndpa3Rpb25hcnkub3Jnghd3aWtpbWVkaWFmb3VuZGF0aW9uLm9yZ4IGdy53aWtpghJ3bWZ1c2VyY29udGVudC5vcmeCESoubS53aWtpcGVkaWEub3Jngg8qLndpa2ltZWRpYS5vcmeCESoubS53aWtpbWVkaWEub3JnghYqLnBsYW5ldC53aWtpbWVkaWEub3Jngg8qLm1lZGlhd2lraS5vcmeCESoubS5tZWRpYXdpa2kub3Jngg8qLndpa2lib29rcy5vcmeCESoubS53aWtpYm9va3Mub3Jngg4qLndpa2lkYXRhLm9yZ4IQKi5tLndpa2lkYXRhLm9yZ4IOKi53aWtpbmV3cy5vcmeCECoubS53aWtpbmV3cy5vcmeCDyoud2lraXF1b3RlLm9yZ4IRKi5tLndpa2lxdW90ZS5vcmeCECoud2lraXNvdXJjZS5vcmeCEioubS53aWtpc291cmNlLm9yZ4IRKi53aWtpdmVyc2l0eS5vcmeCEyoubS53aWtpdmVyc2l0eS5vcmeCECoud2lraXZveWFnZS5vcmeCEioubS53aWtpdm95YWdlLm9yZ4IQKi53aWt0aW9uYXJ5Lm9yZ4ISKi5tLndpa3Rpb25hcnkub3JnghkqLndpa2ltZWRpYWZvdW5kYXRpb24ub3JnghQqLndtZnVzZXJjb250ZW50Lm9yZ4INd2lraXBlZGlhLm9yZ4IRd2lraWZ1bmN0aW9ucy5vcmeCEyoud2lraWZ1bmN0aW9ucy5vcmcwPgYDVR0gBDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4GA1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgZsGA1UdHwSBkzCBkDBGoESgQoZAaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDBGoESgQoZAaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTSHlicmlkRUNDU0hBMzg0MjAyMENBMS0xLmNybDCBhQYIKwYBBQUHAQEEeTB3MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRMU0h5YnJpZEVDQ1NIQTM4NDIwMjBDQTEtMS5jcnQwDAYDVR0TAQH/BAIwADCCAYAGCisGAQQB1nkCBAIEggFwBIIBbAFqAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGLQ1J6cgAABAMASDBGAiEA5reeeuLSzGPvJQ5hT3Bd8aOVxmIltXMTLhY619qDGWUCIQDO0LMbF3s42tyxgFIOt7rVOpsHe9Sy0wFQQj8BWO0LIQB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABi0NSegEAAAQDAEcwRQIgYJduBrioIun6FTeQhDxqK2eyZehguOkxScS3nwsGSakCIQC1FyuCpm+QQBRJFSTAnStRiP+hgGIhgzyZ837usahB0QB3ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABi0NSeg8AAAQDAEgwRgIhAOm1GvY8M4V+tUyjV9/PCj8rcWHUOvfY0a/onsKg/bitAiEA1Vm1pP8CDp7hGcQzBBTscpCVebzWCe8DK231mtv97QUwCgYIKoZIzj0EAwMDaAAwZQIwKuOOLjmwGgtjG6SASF4W2e8KtQZANRsYXMXJDGwBCi9fM7QyS9dvlFLwrcDg1gxlAjEA5XwJikbpk/qyQerzeUspuZKhqh1KPuj2uBdp8vicuBxuTJUd1W+d3LmikOUgGzil
 Output Data:
 Certificate:
@@ -4088,28 +4087,28 @@ TJUd1W+d3LmikOUgGzil
 --------------------------------------------------------------------------------
 ****************************************************** Empty Data ******************************************************
 Remarks: Empty Data
-Info => Transaction Id: 6ebx3j09morm; Input Format: der
+Info => Transaction Id: aoapmk3kthz3; Input Format: der
 Input Data: 
 Output Data:
 
 --------------------------------------------------------------------------------
 Known Exception Occurred; Details: Missing Input Data
 *************************************************** Garbage Hex Data ***************************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpxh63i7bp is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpxh63i7bp -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmprina8gw1 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmprina8gw1 -------------------------
 Remarks: Garbage Hex Data
-Info => Transaction Id: eugk5vh7v6bh; Input Format: der
+Info => Transaction Id: yng8y8qv0z1n; Input Format: der
 Input Data: 1234
 Output Data:
 
 --------------------------------------------------------------------------------
-Known Exception Occurred; Summary: Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmpxh63i7bp; Details: Command 'openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpxh63i7bp' returned non-zero exit status 1.
+Known Exception Occurred; Summary: Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmprina8gw1; Details: Command 'openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmprina8gw1' returned non-zero exit status 1.
 **************************************************** Inaccessible IP ***************************************************
 URL Type is missing (e.g.: http, https etc), hence 1.2.3.4 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpom4ep55y is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp5hkm25r9 is created.
 ----------------- openssl s_client -connect 1.2.3.4:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ----------------
 Remarks: Inaccessible IP
-Info => Transaction Id: l9b3h4680nlz; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 5sszgyctc112; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: 1.2.3.4
 Output Data:
 
@@ -4117,7 +4116,7 @@ Output Data:
 Known Exception Occurred; Summary: time out error; Details: Command 'openssl s_client -connect 1.2.3.4:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p'' timed out after 5 seconds
 ************************************************* Inaccessible Web Site ************************************************
 Remarks: Inaccessible Web Site
-Info => Transaction Id: gpumjodhwfbe; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 35vilpvjd2do; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://amenitypj.com
 Output Data:
 
@@ -4125,7 +4124,7 @@ Output Data:
 Known Exception Occurred; Details: URL https://amenitypj.com is not accessible. Please try a different URL.
 *********************************************** Invalid Time Out Integer ***********************************************
 Remarks: Invalid Time Out Integer
-Info => Transaction Id: 6cou38jj0lxf; Input Format: url; Url Time Out: 50; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 6jnrkxro9zv0; Input Format: url; Url Time Out: 50; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 
@@ -4133,7 +4132,7 @@ Output Data:
 Known Exception Occurred; Details: Invalid URL Time Out: 50
 ************************************************ Invalid Time Out String ***********************************************
 Remarks: Invalid Time Out String
-Info => Transaction Id: ayo7lshom1sr; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: m6i5g1thmezk; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 
@@ -4141,7 +4140,7 @@ Output Data:
 Known Exception Occurred; Details: Invalid URL Time Out: 5
 ******************************************* cloudflare; https; www; Forbidden ******************************************
 Remarks: cloudflare; https; www; Forbidden
-Info => Transaction Id: wd21j1jzf0xg; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: mae4mjvxshb6; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.cloudflare.com
 Output Data:
 
@@ -4149,17 +4148,17 @@ Output Data:
 Known Exception Occurred; Details: URL https://www.cloudflare.com is not accessible. HTTP Error 403: Forbidden.
 ************************************* cloudflare; https; www; Forbidden; Sub Pages *************************************
 Remarks: cloudflare; https; www; Forbidden; Sub Pages
-Info => Transaction Id: 5u7j04i3nwlp; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: wx8hbjf1gvr6; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/
 Output Data:
 
 --------------------------------------------------------------------------------
 Known Exception Occurred; Details: URL https://www.cloudflare.com is not accessible. HTTP Error 403: Forbidden.
 *************************************** Url; Sub Pages; WikiPedia; time out error **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmps1ktp8bd is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpkgf3jabx is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
 Remarks: Url; Sub Pages; WikiPedia; time out error
-Info => Transaction Id: egz6d2sui799; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: 4yb8m90t0ja5; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: https://en.wikipedia.org/wiki/Main_Page
 Output Data:
 
@@ -4168,11 +4167,11 @@ Known Exception Occurred; Summary: time out error; Details: Command 'openssl s_c
 ------------------------------------------------------- UserData -------------------------------------------------------
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmpq1cldw9a is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmplk1_eki5 is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpqkqiotzj -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmplk1_eki5 -------------------------
 Remarks: Url; AmenityPj
-Info => Transaction Id: woskoyrsbvco; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
+Info => Transaction Id: kbcm47p85cf7; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False
 Input Data: amenitypj.in
 Output Data:
 Certificate:

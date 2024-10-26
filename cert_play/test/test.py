@@ -222,7 +222,7 @@ def get_urls_pool():
 
 class Test():
     @classmethod
-    def test_data(self):
+    def test_data(cls):
         for url in get_urls_pool():
             try:
                 clean_and_pre_access_url_data(url)
