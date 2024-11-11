@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+Python version is v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+Python executable Path is D:\Other\Github_Self\certPlay\venv\Scripts
+--------------------------------------------------------------------------------
+User Name is Pratik Jaiswal
+User Account is impra
+--------------------------------------------------------------------------------
+Time Stamp is Monday, Nov 11 2024, 08:50:47:232105, IST (GMT+0530)
+--------------------------------------------------------------------------------
+Git Summary is f72619f;  (HEAD -> main, tag: v2.2.1, origin/main, origin/HEAD); 2024-10-27 00:28:02 +0530; imPratik <impratikjaiswal@gmail.com>; libs updated
+--------------------------------------------------------------------------------
+pythonHelpers version is v5.1.0
+--------------------------------------------------------------------------------
+certPlay version is v2.3.0
+--------------------------------------------------------------------------------
+--------------------------------------------------------- Test ---------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+url https://www.amenitypj.in/ is accessible
+URL https://www.cloudflare.com is not accessible. HTTP Error 403: Forbidden.
+URL https://www.cloudflare.com is not accessible. HTTP Error 403: Forbidden.
+URL Type is missing (e.g.: http, https etc), hence www.cloudflare.com/ accessibility can not be validated
+url www.cloudflare.com/ is accessible
+URL Type is missing (e.g.: http, https etc), hence cloudflare.com/ accessibility can not be validated
+url cloudflare.com/ is accessible
+URL Type is missing (e.g.: http, https etc), hence cloudflare.com accessibility can not be validated
+url cloudflare.com is accessible
+---------------------------------- Time Details ----------------------------------
+Current Time Stamp: 2024-11-11 08:50:48.106124+05:30
+Execution Time: 00:00:00; Milliseconds: 876.9760131835938
+Execution Time CPU: 00:00:00; Milliseconds: 62.5
+Timer State: TIMER_OFF
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+              All Done.              
+--------------------------------------------------------------------------------

@@ -15,11 +15,20 @@ _debug = False
 # _debug = True
 
 
-def process_data(data, meta_data, flip_output=False):
+def handle_certs(data, meta_data, info_data):
+    if data.input_format == Formats.URL:
+        data.input_data = clean_and_pre_access_url_data(data.input_data, data.url_pre_access)
+    if data.input_format == Formats.DER:
+        data.input_data = clean_der_data(data.input_data)
+    return open_ssl_cmd(data)
+
+
+def process_data(data, meta_data, info_data, flip_output=False):
     """
 
     :param data:
     :param meta_data:
+    :param info_data:
     :param flip_output:
     :return:
     """
@@ -36,11 +45,12 @@ def process_data(data, meta_data, flip_output=False):
         raise ValueError(PhExceptionHelper(msg_key=PhConstants.UNKNOWN_INPUT_FORMAT, msg_value=data.input_format))
     if data.url_time_out not in FormatsGroup.URL_TIME_OUT_SUPPORTED:
         raise ValueError(PhExceptionHelper(msg_key=PhConstants.INVALID_URL_TIME_OUT, msg_value=data.url_time_out))
-    if data.input_format == Formats.URL:
-        data.input_data = clean_and_pre_access_url_data(data.input_data, data.url_pre_access)
-    if data.input_format == Formats.DER:
-        data.input_data = clean_der_data(data.input_data)
-    meta_data.parsed_data = open_ssl_cmd(data)
+    # Handle Certificate
+    res = handle_certs(data=data, meta_data=meta_data, info_data=info_data)
+    if flip_output is True:
+        meta_data.re_parsed_data = res
+    else:
+        meta_data.parsed_data = res
 
 
 def open_ssl_cmd_step_1(input_data, url_time_out, url_all_certs):

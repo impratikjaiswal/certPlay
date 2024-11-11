@@ -24,6 +24,22 @@ class Dev(DataTypeMaster):
         remarks = None
         super().set_remarks(remarks)
 
+    def set_encoding(self):
+        encoding = None
+        super().set_encoding(encoding)
+
+    def set_encoding_errors(self):
+        encoding_errors = None
+        super().set_encoding_errors(encoding_errors)
+
+    def set_archive_output(self):
+        archive_output = None
+        super().set_archive_output(archive_output)
+
+    def set_archive_output_format(self):
+        archive_output_format = None
+        super().set_archive_output_format(archive_output_format)
+
     def set_input_format(self):
         input_format = None
         super().set_input_format(input_format)
@@ -51,5 +67,6 @@ class Dev(DataTypeMaster):
                 remarks='Folder',
                 input_data=r'D:\Other\Github_Self\euiccSpecs\GSMA\SGP.26 RSP Test Certificates\certs\SGP.26_v1.2_files',
             ),
+            #
         ]
         super().set_data_pool(data_pool)

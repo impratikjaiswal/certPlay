@@ -1,0 +1,133 @@
+--------------------------------------------------------------------------------
+Python version is v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+Python executable Path is D:\Other\Github_Self\certPlay\venv\Scripts
+--------------------------------------------------------------------------------
+User Name is Pratik Jaiswal
+User Account is impra
+--------------------------------------------------------------------------------
+Time Stamp is Monday, Nov 11 2024, 08:50:21:027362, IST (GMT+0530)
+--------------------------------------------------------------------------------
+Git Summary is f72619f;  (HEAD -> main, tag: v2.2.1, origin/main, origin/HEAD); 2024-10-27 00:28:02 +0530; imPratik <impratikjaiswal@gmail.com>; libs updated
+--------------------------------------------------------------------------------
+pythonHelpers version is v5.1.0
+--------------------------------------------------------------------------------
+certPlay version is v2.3.0
+--------------------------------------------------------------------------------
+------------------------------------------------------- UserData -------------------------------------------------------
+**************************************************** Url; AmenityPj ****************************************************
+URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
+Temp File C:\Users\impra\AppData\Local\Temp\tmpm1zawa09 is created.
+-------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpm1zawa09 -------------------------
+Remarks: Url; AmenityPj
+Info => Transaction Id: jskagnj8ao7w; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace
+Input Data: amenitypj.in
+Output Data:
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            03:7a:30:fa:54:d8:62:93:66:d5:a7:90:1c:18:c8:f7:f8:c3
+        Signature Algorithm: ecdsa-with-SHA384
+        Issuer: C=US, O=Let's Encrypt, CN=E5
+        Validity
+            Not Before: Nov  3 05:06:41 2024 GMT
+            Not After : Feb  1 05:06:40 2025 GMT
+        Subject: CN=amenitypj.in
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:89:1c:6e:82:bc:16:c6:44:b9:9b:43:aa:0b:7f:
+                    f4:75:70:5d:a1:0a:0e:c3:6a:34:13:c5:79:ed:55:
+                    23:90:48:4f:26:ac:97:72:78:63:b9:d6:8a:a0:df:
+                    37:d3:26:0b:f9:96:01:97:ea:87:29:53:3e:95:34:
+                    21:7d:09:33:af
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                86:C7:79:BD:8A:AA:9A:E7:DA:BE:3D:86:81:92:4D:BC:17:E2:04:27
+            X509v3 Authority Key Identifier: 
+                9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D
+            Authority Information Access: 
+                OCSP - URI:http://e5.o.lencr.org
+                CA Issuers - URI:http://e5.i.lencr.org/
+            X509v3 Subject Alternative Name: 
+                DNS:alpha.amenitypj.in, DNS:amenitypj.in, DNS:beta.amenitypj.in, DNS:past.amenitypj.in, DNS:www.alpha.amenitypj.in, DNS:www.amenitypj.in, DNS:www.beta.amenitypj.in, DNS:www.past.amenitypj.in
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:
+                                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7
+                    Timestamp : Nov  3 06:05:11.858 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:44:24:AA:4C:0D:B2:F4:6E:53:54:CE:7F:
+                                B8:EE:78:F6:A9:65:88:E7:49:08:29:04:D8:D7:70:18:
+                                FD:AA:12:CE:02:21:00:DC:8B:E4:EB:40:B7:84:49:A8:
+                                B5:94:BD:03:04:5A:72:7A:68:37:88:3E:B8:29:B6:1D:
+                                F5:E9:75:D6:7C:1A:5B
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:
+                                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08
+                    Timestamp : Nov  3 06:05:11.911 2024 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:06:8E:44:FD:79:6C:89:E9:14:D0:5C:70:
+                                92:D8:18:94:6B:6D:23:92:8D:49:AC:DC:B0:81:75:87:
+                                37:9B:6B:10:02:21:00:8D:E4:E2:2B:64:91:F9:98:12:
+                                BD:A5:72:59:04:CD:E1:4A:CF:0F:6F:E9:9F:39:10:9D:
+                                36:9A:73:DB:28:04:44
+    Signature Algorithm: ecdsa-with-SHA384
+    Signature Value:
+        30:64:02:30:2c:6b:91:e9:83:d3:0c:79:54:ea:c8:20:eb:d7:
+        9d:06:62:79:f7:14:38:05:63:ec:9b:74:a8:a5:2f:f1:63:aa:
+        40:69:30:e5:2b:b0:66:a8:77:17:46:e0:07:7f:38:14:02:30:
+        07:81:92:37:77:93:ef:d4:84:c6:30:cd:e5:b7:b4:83:36:cb:
+        c0:fd:ca:a8:dd:e4:d2:98:f6:b8:a7:61:c3:5c:3c:6f:b9:97:
+        79:f7:c0:3e:62:15:4f:30:91:59:5b:20
+-----BEGIN CERTIFICATE-----
+MIIEDTCCA5SgAwIBAgISA3ow+lTYYpNm1aeQHBjI9/jDMAoGCCqGSM49BAMDMDIx
+CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF
+NTAeFw0yNDExMDMwNTA2NDFaFw0yNTAyMDEwNTA2NDBaMBcxFTATBgNVBAMTDGFt
+ZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIkcboK8FsZEuZtD
+qgt/9HVwXaEKDsNqNBPFee1VI5BITyasl3J4Y7nWiqDfN9MmC/mWAZfqhylTPpU0
+IX0JM6+jggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUH
+AwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFIbHeb2Kqprn2r49
+hoGSTbwX4gQnMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcNMFUGCCsG
+AQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVuY3Iub3JnMCIG
+CCsGAQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCC
+EmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlw
+ai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6C
+EHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBh
+c3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHW
+eQIEAgSB9QSB8gDwAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzEuVCkR+cA
+AAGS8KChMgAABAMARzBFAiBEJKpMDbL0blNUzn+47nj2qWWI50kIKQTY13AY/aoS
+zgIhANyL5OtAt4RJqLWUvQMEWnJ6aDeIPrgpth316XXWfBpbAHYAzxFW7tUufK/z
+h1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGS8KChZwAABAMARzBFAiAGjkT9eWyJ
+6RTQXHCS2BiUa20jko1JrNywgXWHN5trEAIhAI3k4itkkfmYEr2lclkEzeFKzw9v
+6Z85EJ02mnPbKAREMAoGCCqGSM49BAMDA2cAMGQCMCxrkemD0wx5VOrIIOvXnQZi
+efcUOAVj7Jt0qKUv8WOqQGkw5SuwZqh3F0bgB384FAIwB4GSN3eT79SExjDN5be0
+gzbLwP3KqN3k0pj2uKdhw1w8b7mXeffAPmIVTzCRWVsg
+-----END CERTIFICATE-----
+
+--------------------------------------------------------------------------------
+---------------------------------- Time Details ----------------------------------
+Current Time Stamp: 2024-11-11 08:50:23.136710+05:30
+Execution Time: 00:00:02; Milliseconds: 2107.347011566162
+Execution Time CPU: 00:00:00; Milliseconds: 0.0
+Timer State: TIMER_OFF
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+              All Done.              
+--------------------------------------------------------------------------------

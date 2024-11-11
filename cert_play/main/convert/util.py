@@ -106,10 +106,10 @@ def execute_cmd(cmd, time_out=None):
     result = subprocess.run(cmd, shell=True, capture_output=True, timeout=time_out)
     # Positive Case
     if result.stdout:
-        return result.stdout.decode(PhConstants.DECODE_MODE_UTF8)
+        return result.stdout.decode(PhConstants.CHAR_ENCODING_UTF8)
     # Error Case
     if result.stderr:
         # Sample Data b'Could not find certificate from C:\Users\impra\AppData\Local\Temp\tmpo0egstjt\r\n ...'
-        error_data = result.stderr.decode(PhConstants.DECODE_MODE_UTF8).split('\r\n')[0]
+        error_data = result.stderr.decode(PhConstants.CHAR_ENCODING_UTF8).split('\r\n')[0]
         raise subprocess.CalledProcessError(returncode=result.returncode, cmd=result.args, stderr=error_data)
     return None

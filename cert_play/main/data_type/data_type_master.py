@@ -3,32 +3,45 @@ import traceback
 
 import binascii
 from python_helpers.ph_constants import PhConstants
-from python_helpers.ph_data_master import PhMasterData
+from python_helpers.ph_data_master import PhMasterData, PhMasterDataKeys
 from python_helpers.ph_exception_helper import PhExceptionHelper
 from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_modes_error_handling import PhErrorHandlingModes
+from python_helpers.ph_util import PhUtil
 
 from cert_play.main.convert import converter
 from cert_play.main.convert.converter import read_web_request, set_defaults
-from cert_play.main.convert.parser import parse_or_update_any_data
+from cert_play.main.convert.parser import process_all_data_types
 from cert_play.main.helper.data import Data
+from cert_play.main.helper.infodata import InfoData
 from cert_play.main.helper.metadata import MetaData
 
 
 class DataTypeMaster(object):
     def __init__(self):
+        # Common Objects
         self.print_input = None
         self.print_output = None
         self.print_info = None
         self.quite_mode = None
         self.remarks = None
+        self.encoding = None
+        self.encoding_errors = None
+        self.archive_output = None
+        self.archive_output_format = None
+        # Specific Objects
         self.input_format = None
         self.url_time_out = None
         self.url_pre_access = None
         self.url_cert_fetch_only = None
         self.url_all_certs = None
         self.data_pool = []
-        self.__master_data = (Data(input_data=None), MetaData(input_data_org=None), PhExceptionHelper(msg_key=None))
+        self.__master_data = PhMasterData(
+            data=Data(input_data=None),
+            meta_data=MetaData(input_data_org=None),
+            error_data=PhExceptionHelper(msg_key=None),
+            info_data=InfoData(info=None)
+        )
 
     def set_print_input(self, print_input):
         self.print_input = print_input
@@ -44,6 +57,18 @@ class DataTypeMaster(object):
 
     def set_remarks(self, remarks):
         self.remarks = remarks
+
+    def set_encoding(self, encoding):
+        self.encoding = encoding
+
+    def set_encoding_errors(self, encoding_errors):
+        self.encoding_errors = encoding_errors
+
+    def set_archive_output(self, archive_output):
+        self.archive_output = archive_output
+
+    def set_archive_output_format(self, archive_output_format):
+        self.archive_output_format = archive_output_format
 
     def set_input_format(self, input_format):
         self.input_format = input_format
@@ -63,7 +88,7 @@ class DataTypeMaster(object):
     def set_data_pool(self, data_pool):
         self.data_pool = data_pool
 
-    def parse_safe(self, error_handling_mode, data=None):
+    def process_safe(self, error_handling_mode, data=None):
         """
 
         :param data:
@@ -77,7 +102,7 @@ class DataTypeMaster(object):
             Handle Pool
             """
             for data_item in data:
-                self.parse_safe(error_handling_mode=error_handling_mode, data=data_item)
+                self.process_safe(error_handling_mode=error_handling_mode, data=data_item)
             return
         """
         Handle Individual Request
@@ -88,7 +113,7 @@ class DataTypeMaster(object):
                 Web Form
                 """
                 data = read_web_request(data)
-            self.__parse_safe_individual(data)
+            self.__process_safe_individual(data)
         except Exception as e:
             known = False
             summary_msg = None
@@ -114,12 +139,8 @@ class DataTypeMaster(object):
                 known = True
                 summary_msg = e.stderr if e.stderr else PhConstants.NON_ZERO_EXIT_STATUS_ERROR
             exception_object.set_summary_msg(summary_msg)
-            self.__master_data = (
-                self.__master_data[PhMasterData.INDEX_DATA], self.__master_data[PhMasterData.INDEX_META_DATA],
-                exception_object)
-            processed_data = self.__master_data[PhMasterData.INDEX_DATA]
-            processed_meta_data = self.__master_data[PhMasterData.INDEX_META_DATA]
-            converter.print_data(processed_data, processed_meta_data)
+            self.__master_data.set_master_data(PhMasterDataKeys.ERROR_DATA, exception_object)
+            converter.print_data(master_data=self.__master_data)
             msg = PhConstants.SEPERATOR_TWO_WORDS.join(
                 [PhConstants.KNOWN if known else PhConstants.UNKNOWN, exception_object.get_details()])
             print(f'{msg}')
@@ -128,7 +149,7 @@ class DataTypeMaster(object):
             if error_handling_mode == PhErrorHandlingModes.STOP_ON_ERROR:
                 raise
 
-    def __parse_safe_individual(self, data):
+    def __process_safe_individual(self, data):
         """
         Handle Individual Request
         :param data:
@@ -140,6 +161,10 @@ class DataTypeMaster(object):
             data.print_info = data.print_info if data.print_info is not None else self.print_info
             data.quite_mode = data.quite_mode if data.quite_mode is not None else self.quite_mode
             data.remarks = data.remarks if data.remarks is not None else self.remarks
+            data.encoding = data.encoding if data.encoding is not None else self.encoding
+            data.encoding_errors = data.encoding_errors if data.encoding_errors is not None else self.encoding_errors
+            data.archive_output = data.archive_output if data.archive_output is not None else self.archive_output
+            data.archive_output_format = data.archive_output_format if data.archive_output_format is not None else self.archive_output_format
             data.url_time_out = data.url_time_out if data.url_time_out is not None else self.url_time_out
             data.url_pre_access = data.url_pre_access if data.url_pre_access is not None else self.url_pre_access
             data.url_cert_fetch_only = data.url_cert_fetch_only if data.url_cert_fetch_only is not None else self.url_cert_fetch_only
@@ -153,6 +178,10 @@ class DataTypeMaster(object):
                 print_info=self.print_info,
                 quite_mode=self.quite_mode,
                 remarks=self.remarks,
+                encoding=self.encoding,
+                encoding_errors=self.encoding_errors,
+                archive_output=self.archive_output,
+                archive_output_format=self.archive_output_format,
                 url_time_out=self.url_time_out,
                 url_pre_access=self.url_pre_access,
                 url_cert_fetch_only=self.url_cert_fetch_only,
@@ -160,28 +189,16 @@ class DataTypeMaster(object):
                 input_format=self.input_format,
             )
         meta_data = MetaData(input_data_org=data.input_data)
-        self.__master_data = (data, meta_data)
-        parse_or_update_any_data(data, meta_data)
+        info_data = InfoData()
+        self.__master_data = PhMasterData(data=data, meta_data=meta_data, error_data=None, info_data=info_data)
+        process_all_data_types(data, meta_data, info_data)
 
     def get_output_data(self, only_output=True):
         """
 
         :return:
         """
-        output_data = PhConstants.STR_EMPTY
-        info_data = PhConstants.STR_EMPTY
-        if len(self.__master_data) > PhMasterData.INDEX_META_DATA:
-            # MetaData Object is Present
-            meta_data = self.__master_data[PhMasterData.INDEX_META_DATA]
-            if isinstance(meta_data, MetaData):
-                output_data = meta_data.parsed_data
-                info_data = meta_data.get_info_data()
-        if len(self.__master_data) > PhMasterData.INDEX_ERROR_DATA:
-            # Exception Object is Present
-            exception_data = self.__master_data[PhMasterData.INDEX_ERROR_DATA]
-            output_data = exception_data.get_details() if isinstance(exception_data,
-                                                                     PhExceptionHelper) else exception_data
-        return output_data if only_output else (output_data, info_data)
+        return self.__master_data.get_output_data(only_output=only_output)
 
     def to_dic(self, data):
         """
@@ -190,13 +207,18 @@ class DataTypeMaster(object):
         :return:
         """
         set_defaults(data, None)
-        return {
+        common_data = {
             PhKeys.INPUT_DATA: data.input_data,
             PhKeys.REMARKS: data.get_remarks_as_str(),
             PhKeys.DATA_GROUP: data.data_group,
+            PhKeys.ENCODING: data.encoding,
+            PhKeys.ENCODING_ERRORS: data.encoding_errors,
+            PhKeys.ARCHIVE_OUTPUT: data.archive_output,
+            PhKeys.ARCHIVE_OUTPUT_FORMAT: data.archive_output_format,
             PhKeys.INPUT_FORMAT: data.input_format,
             PhKeys.URL_TIME_OUT: data.url_time_out,
             PhKeys.URL_PRE_ACCESS: data.url_pre_access,
             PhKeys.URL_CERT_FETCH_ONLY: data.url_cert_fetch_only,
             PhKeys.URL_ALL_CERTS: data.url_all_certs,
         }
+        return PhUtil.dict_clean(common_data)

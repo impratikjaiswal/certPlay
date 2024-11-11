@@ -1,5 +1,7 @@
 import urllib
 
+from python_helpers.ph_util import PhUtil
+
 from cert_play.main.convert.converter import clean_and_pre_access_url_data
 
 
@@ -220,7 +222,16 @@ def get_urls_pool():
     # return url_pool_primary + url_pool_testing
 
 
-class Test():
+class Test:
+
+    @classmethod
+    def test_sample_data(cls):
+        PhUtil.print_separator()
+
+    @classmethod
+    def test_all_versions(cls):
+        PhUtil.print_separator()
+
     @classmethod
     def test_data(cls):
         for url in get_urls_pool():
@@ -230,5 +241,8 @@ class Test():
             except Exception as e:
                 print(e)
 
-
-Test.test_data()
+    @classmethod
+    def test_all(cls):
+        cls.test_sample_data()
+        cls.test_all_versions()
+        cls.test_data()

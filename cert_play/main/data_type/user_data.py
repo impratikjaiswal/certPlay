@@ -25,6 +25,22 @@ class UserData(DataTypeMaster):
         remarks = None
         super().set_remarks(remarks)
 
+    def set_encoding(self):
+        encoding = None
+        super().set_encoding(encoding)
+
+    def set_encoding_errors(self):
+        encoding_errors = None
+        super().set_encoding_errors(encoding_errors)
+
+    def set_archive_output(self):
+        archive_output = None
+        super().set_archive_output(archive_output)
+
+    def set_archive_output_format(self):
+        archive_output_format = None
+        super().set_archive_output_format(archive_output_format)
+
     def set_input_format(self):
         input_format = None
         super().set_input_format(input_format)

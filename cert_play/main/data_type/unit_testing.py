@@ -25,6 +25,22 @@ class UnitTesting(DataTypeMaster):
         remarks = None
         super().set_remarks(remarks)
 
+    def set_encoding(self):
+        encoding = None
+        super().set_encoding(encoding)
+
+    def set_encoding_errors(self):
+        encoding_errors = None
+        super().set_encoding_errors(encoding_errors)
+
+    def set_archive_output(self):
+        archive_output = None
+        super().set_archive_output(archive_output)
+
+    def set_archive_output_format(self):
+        archive_output_format = None
+        super().set_archive_output_format(archive_output_format)
+
     def set_input_format(self):
         input_format = None
         super().set_input_format(input_format)
@@ -69,6 +85,13 @@ class UnitTesting(DataTypeMaster):
             Data(
                 remarks='Url; Sub Pages; WikiPedia; url_time_out=10',
                 input_data='https://en.wikipedia.org/wiki/Main_Page',
+                input_format=Formats.URL,
+                url_time_out=10,
+            ),
+            #
+            Data(
+                remarks='Url; List',
+                input_data=['https://www.amenitypj.in', 'google.in', 'facebook.in'],
                 input_format=Formats.URL,
                 url_time_out=10,
             ),
