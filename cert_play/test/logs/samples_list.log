@@ -5,11 +5,11 @@ Python executable Path is D:\Other\Github_Self\certPlay\venv\Scripts
 User Name is Pratik Jaiswal
 User Account is impra
 --------------------------------------------------------------------------------
-Time Stamp is Sunday, Jan 26 2025, 18:41:52:692839, IST (GMT+0530)
+Time Stamp is Sunday, Jan 26 2025, 19:37:20:767968, IST (GMT+0530)
 --------------------------------------------------------------------------------
-Git Summary is d78ef53;  (HEAD -> main, origin/main, origin/HEAD); 2024-12-09 21:50:20 +0530; imPratik <impratikjaiswal@gmail.com>; fav icon changed
+Git Summary is 637d5f6;  (HEAD -> main); 2025-01-26 18:47:28 +0530; imPratik <impratikjaiswal@gmail.com>; info object collection is optimized, dict_to_data added, various other changes
 --------------------------------------------------------------------------------
-pythonHelpers version is v5.2.3.dev16
+pythonHelpers version is v5.2.4
 --------------------------------------------------------------------------------
 certPlay version is v2.4.0
 --------------------------------------------------------------------------------
@@ -229,11 +229,11 @@ data_group: Der
 
 **************************************************** Url; AmenityPj ****************************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp1z2pwoqz is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmplboun3lu is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp1z2pwoqz -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmplboun3lu -------------------------
 Remarks: Url; AmenityPj
-Info => Transaction Id: osislmbjd80p; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: k4b78mgjekjk; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: amenitypj.in
 Input Data Length: 12
 Output Data:
@@ -339,11 +339,11 @@ Output Data Length: 5468
 --------------------------------------------------------------------------------
 ************************************************** Url; IP; AmenityPj **************************************************
 URL Type is missing (e.g.: http, https etc), hence 3.141.211.207 accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp9dq82242 is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpesj2w_wf is created.
 -------------- openssl s_client -connect 3.141.211.207:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp9dq82242 -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpesj2w_wf -------------------------
 Remarks: Url; IP; AmenityPj
-Info => Transaction Id: lh0mikstbzhe; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 7yx1tbz7fzks; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: 3.141.211.207
 Input Data Length: 13
 Output Data:
@@ -449,11 +449,11 @@ Output Data Length: 5468
 --------------------------------------------------------------------------------
 *********************************************** Url; All Certs; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp3dujfxjf is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpe0eym0de is created.
 --------- openssl s_client -connect amenitypj.in:443 -showcerts 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------
----------------------- openssl storeutl -text -certs C:\Users\impra\AppData\Local\Temp\tmp3dujfxjf ---------------------
+---------------------- openssl storeutl -text -certs C:\Users\impra\AppData\Local\Temp\tmpe0eym0de ---------------------
 Remarks: Url; All Certs; AmenityPj
-Info => Transaction Id: mfn7ffa8n9y6; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: hvrk8qsnkzdh; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url All Certs: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: amenitypj.in
 Input Data Length: 12
 Output Data:
@@ -660,11 +660,11 @@ Total found: 2
 Output Data Length: 10980
 --------------------------------------------------------------------------------
 ********************************************** Url; https; www; AmenityPj **********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpi34jfb6h is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmphczf49sm is created.
 ------------ openssl s_client -connect www.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpi34jfb6h -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmphczf49sm -------------------------
 Remarks: Url; https; www; AmenityPj
-Info => Transaction Id: gxv37zbyfdxe; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 458dlwpupqgg; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: https://www.amenitypj.in/
 Input Data Length: 25
 Output Data:
@@ -770,11 +770,11 @@ Output Data Length: 5468
 --------------------------------------------------------------------------------
 ********************************************** Url; Sub Domain; AmenityPj **********************************************
 URL Type is missing (e.g.: http, https etc), hence beta.amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp54m_xhcl is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpsmv7v43c is created.
 ------------ openssl s_client -connect beta.amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp54m_xhcl -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpsmv7v43c -------------------------
 Remarks: Url; Sub Domain; AmenityPj
-Info => Transaction Id: 9h93z0wcwdia; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: hvovaz4mbqaq; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: beta.amenitypj.in
 Input Data Length: 17
 Output Data:
@@ -880,11 +880,11 @@ Output Data Length: 5468
 --------------------------------------------------------------------------------
 ****************************************************** Url; Google *****************************************************
 URL Type is missing (e.g.: http, https etc), hence google.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp7ku8cusw is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp3mo0fy3l is created.
 --------------- openssl s_client -connect google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ---------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp7ku8cusw -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp3mo0fy3l -------------------------
 Remarks: Url; Google
-Info => Transaction Id: ggsr4fozuy3k; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 0fo4c2n12qzc; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: google.com
 Input Data Length: 10
 Output Data:
@@ -1055,10 +1055,10 @@ Output Data Length: 12504
 --------------------------------------------------------------------------------
 ****************************************** Url; All Certs; Google; Fetch Only ******************************************
 URL Type is missing (e.g.: http, https etc), hence google.com accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmppoxl42ph is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp5beko92_ is created.
 ---------- openssl s_client -connect google.com:443 -showcerts 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ---------
 Remarks: Url; All Certs; Google; Fetch Only
-Info => Transaction Id: 5oafbxtx5bge; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: ud3j4h7xbkqr; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: google.com
 Input Data Length: 10
 Output Data:
@@ -1203,11 +1203,11 @@ d0lIKO2d1xozclOzgjXPYovJJIultzkMu34qQb9Sz/yilrbCgj8=
 Output Data Length: 8665
 --------------------------------------------------------------------------------
 ************************************************ Url; https; www; Google ***********************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpukzf5vlb is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpxpajofrq is created.
 ------------- openssl s_client -connect www.google.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpukzf5vlb -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpxpajofrq -------------------------
 Remarks: Url; https; www; Google
-Info => Transaction Id: nzde7pbkcbtx; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: f7p32hwctmrb; Input Format: url; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: https://www.google.com/
 Input Data Length: 23
 Output Data:
@@ -1327,10 +1327,10 @@ Output Data Length: 6069
 --------------------------------------------------------------------------------
 ********************************************** Url; AmenityPj; Fetch Only **********************************************
 URL Type is missing (e.g.: http, https etc), hence amenitypj.in accessibility can not be validated
-Temp File C:\Users\impra\AppData\Local\Temp\tmp4f5j7wak is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmpvm02trhh is created.
 -------------- openssl s_client -connect amenitypj.in:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' --------------
 Remarks: Url; AmenityPj; Fetch Only
-Info => Transaction Id: nj31o0428x7h; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 36byldzyrlzj; Input Format: url; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: amenitypj.in
 Input Data Length: 12
 Output Data:
@@ -1362,11 +1362,11 @@ gzbLwP3KqN3k0pj2uKdhw1w8b7mXeffAPmIVTzCRWVsg
 Output Data Length: 1464
 --------------------------------------------------------------------------------
 ************************************** Url; Sub Pages; WikiPedia; url_time_out=10 **************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpgsm_02nx is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmph3m7jkv4 is created.
 ------------ openssl s_client -connect en.wikipedia.org:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' ------------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpgsm_02nx -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmph3m7jkv4 -------------------------
 Remarks: Url; Sub Pages; WikiPedia; url_time_out=10
-Info => Transaction Id: toukr0y7zw5u; Input Format: url; Url Time Out: 10; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: i9b0otejgwv2; Input Format: url; Url Time Out: 10; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: https://en.wikipedia.org/wiki/Main_Page
 Input Data Length: 39
 Output Data:
@@ -1512,11 +1512,11 @@ JM96BTfZhOY1ZiiZdis=
 Output Data Length: 8955
 --------------------------------------------------------------------------------
 ***************************** Url; https; www; cloudflare; Forbidden; url_pre_access=False *****************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpb1xm2hpq is created.
+Temp File C:\Users\impra\AppData\Local\Temp\tmp6ix8_ypb is created.
 ----------- openssl s_client -connect www.cloudflare.com:443 2>&1 <  NUL | sed -n '/-----BEGIN/,/-----END/p' -----------
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpb1xm2hpq -------------------------
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp6ix8_ypb -------------------------
 Remarks: Url; https; www; cloudflare; Forbidden; url_pre_access=False
-Info => Transaction Id: sovslsh5yzye; Input Format: url; Url Time Out: 5; Url Pre Access: False; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: vibln9ff2wrt; Input Format: url; Url Time Out: 5; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: https://www.cloudflare.com
 Input Data Length: 26
 Output Data:
@@ -1620,10 +1620,10 @@ cho6kXtHJjAKBggqhkjOPQQDAgNIADBFAiEA6rRXIZPWYIx3DKDmnTf9KY2c5ifx
 Output Data Length: 5219
 --------------------------------------------------------------------------------
 *********************************** Der; Base64; Certificate; Single Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp3eu_tkf8 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp3eu_tkf8 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpv41w9y3q is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpv41w9y3q -------------------------
 Remarks: Der; Base64; Certificate; Single Line; AmenityPj
-Info => Transaction Id: u48owrcmxy2v; Input Format: der; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 1mp2lwe1p7gt; Input Format: der; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMTDGFtZW5pdHlwai5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL74hi/pJ2opqu+36ppYNCt65tD3B2Kq5u1C3n/QqlofA2tdW1MXMxTPX2x66cEuMWYH0eTi0EZWv0tRB18Hy0ajggKjMIICnzAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNPucKQzTDVMjhjQEASfE1Gh44fWMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMIGrBgNVHREEgaMwgaCCEmFscGhhLmFtZW5pdHlwai5pboIMYW1lbml0eXBqLmlughFiZXRhLmFtZW5pdHlwai5pboIRcGFzdC5hbWVuaXR5cGouaW6CFnd3dy5hbHBoYS5hbWVuaXR5cGouaW6CEHd3dy5hbWVuaXR5cGouaW6CFXd3dy5iZXRhLmFtZW5pdHlwai5pboIVd3d3LnBhc3QuYW1lbml0eXBqLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGPZsnk6QAABAMARzBFAiEA5YpmM1dVtOW7SH2/SVEHpi9TdDv1j1+SMbiaw1CrqN4CIH/ulMV5ItLuRMyvz63qdkPHuesahzkNUNe1lJax8mlPAHYA3+FW66oFr7WcD4ZxjajAMk6uVtlup/WlagHRwTu+UlwAAAGPZsnmAAAABAMARzBFAiEA5z82NzuMuMPKl7z2lthCsSGZkNvO4VKHYJbMfrFwCAYCIDOTKLX5p+9CS8rF38jM0JZi6Gh2GwoH04oEk6lIbdpGMA0GCSqGSIb3DQEBCwUAA4IBAQCYYN6K+WblpJXB3VDpoaxJB/raiD5m4B0Yr4b0SFdBRNac/N+dBxxBTSizlW+2DkqU4j0Ni7DrudwpqZWMe9pSTRtnIgUdAs9TqpwMszUuCrToDzIbBdxYyI+4cDbMpdJtRcJLBUvBrp38b6oFp3hLs34VruS+SyXGIcnCzhJjSfUIMM51VCyyO+qbLWWRGPxz231lB6pktznflJtCllqPaOGifLBa7it2I7chuMW00GuZ4MDytqmRtWu704KKy6jiuqp+c7+je6L+B63mVry1cZlWhDm4Mhs3wpJ2k8xjzOPiHHqGCAvjLZtXkx1y1T2Y1Si62lB1iGx939ucrYhF
 Input Data Length: 1604
 Output Data:
@@ -1741,10 +1741,10 @@ rYhF
 Output Data Length: 6256
 --------------------------------------------------------------------------------
 ************************************ Der; Base64; Certificate; Multi Line; AmenityPj ***********************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmp2_xvj_3c is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmp2_xvj_3c -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpp6ad0v9f is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpp6ad0v9f -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; AmenityPj
-Info => Transaction Id: xvzs906yn1no; Input Format: der; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: agfl1tnz18a9; Input Format: der; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
 EwJSMzAeFw0yNDA1MTEwNzM0MThaFw0yNDA4MDkwNzM0MTdaMBcxFTATBgNVBAMT
@@ -1887,10 +1887,10 @@ rYhF
 Output Data Length: 6256
 --------------------------------------------------------------------------------
 *************************** Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj ***************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmprlpew26h is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmprlpew26h -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpzh2u3uuk is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpzh2u3uuk -------------------------
 Remarks: Der; Base64; Certificate; Multi Line; Header & Footer; AmenityPj
-Info => Transaction Id: 1z1krs5o6w6j; Input Format: der; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: j27qovg7bbxy; Input Format: der; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: -----BEGIN CERTIFICATE-----
 MIIErzCCA5egAwIBAgISA8caMPaDk56P1v8RvxkQdgxpMA0GCSqGSIb3DQEBCwUA
 MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
@@ -2035,10 +2035,10 @@ rYhF
 Output Data Length: 6256
 --------------------------------------------------------------------------------
 ******************************************* Der; Hex; Certificate; AmenityPj *******************************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpujzkh5x8 is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpujzkh5x8 -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpw6u0o_wf is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpw6u0o_wf -------------------------
 Remarks: Der; Hex; Certificate; AmenityPj
-Info => Transaction Id: z6llzx9kartv; Input Format: der; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 7zux3xu5w0mu; Input Format: der; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: 308204AF30820397A003020102021203C71A30F683939E8FD6FF11BF1910760C69300D06092A864886F70D01010B05003032310B300906035504061302555331163014060355040A130D4C6574277320456E6372797074310B3009060355040313025233301E170D3234303531313037333431385A170D3234303830393037333431375A3017311530130603550403130C616D656E697479706A2E696E3059301306072A8648CE3D020106082A8648CE3D03010703420004BEF8862FE9276A29AAEFB7EA9A58342B7AE6D0F70762AAE6ED42DE7FD0AA5A1F036B5D5B53173314CF5F6C7AE9C12E316607D1E4E2D04656BF4B51075F07CB46A38202A33082029F300E0603551D0F0101FF040403020780301D0603551D250416301406082B0601050507030106082B06010505070302300C0603551D130101FF04023000301D0603551D0E04160414D3EE70A4334C354C8E18D010049F1351A1E387D6301F0603551D23041830168014142EB317B75856CBAE500940E61FAF9D8B14C2C6305506082B0601050507010104493047302106082B060105050730018615687474703A2F2F72332E6F2E6C656E63722E6F7267302206082B060105050730028616687474703A2F2F72332E692E6C656E63722E6F72672F3081AB0603551D110481A33081A08212616C7068612E616D656E697479706A2E696E820C616D656E697479706A2E696E8211626574612E616D656E697479706A2E696E8211706173742E616D656E697479706A2E696E82167777772E616C7068612E616D656E697479706A2E696E82107777772E616D656E697479706A2E696E82157777772E626574612E616D656E697479706A2E696E82157777772E706173742E616D656E697479706A2E696E30130603551D20040C300A3008060667810C01020130820104060A2B06010401D6790204020481F50481F200F000760048B0E36BDAA647340FE56A02FA9D30EB1C5201CB56DD2C81D9BBBFAB39D884730000018F66C9E4E90000040300473045022100E58A66335755B4E5BB487DBF495107A62F53743BF58F5F9231B89AC350ABA8DE02207FEE94C57922D2EE44CCAFCFADEA7643C7B9EB1A87390D50D7B59496B1F2694F007600DFE156EBAA05AFB59C0F86718DA8C0324EAE56D96EA7F5A56A01D1C13BBE525C0000018F66C9E6000000040300473045022100E73F36373B8CB8C3CA97BCF696D842B1219990DBCEE152876096CC7EB17008060220339328B5F9A7EF424BCAC5DFC8CCD09662E868761B0A07D38A0493A9486DDA46300D06092A864886F70D01010B050003820101009860DE8AF966E5A495C1DD50E9A1AC4907FADA883E66E01D18AF86F448574144D69CFCDF9D071C414D28B3956FB60E4A94E23D0D8BB0EBB9DC29A9958C7BDA524D1B6722051D02CF53AA9C0CB3352E0AB4E80F321B05DC58C88FB87036CCA5D26D45C24B054BC1AE9DFC6FAA05A7784BB37E15AEE4BE4B25C621C9C2CE126349F50830CE75542CB23BEA9B2D659118FC73DB7D6507AA64B739DF949B42965A8F68E1A27CB05AEE2B7623B721B8C5B4D06B99E0C0F2B6A991B56BBBD3828ACBA8E2BAAA7E73BFA37BA2FE07ADE656BCB57199568439B8321B37C2927693CC63CCE3E21C7A86080BE32D9B57931D72D53D98D528BADA5075886C7DDFDB9CAD8845
 Input Data Length: 2406
 Output Data:
@@ -2156,10 +2156,10 @@ rYhF
 Output Data Length: 6256
 --------------------------------------------------------------------------------
 ****************************** Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x) ******************************
-Temp File C:\Users\impra\AppData\Local\Temp\tmpibfokp1q is created.
-------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpibfokp1q -------------------------
+Temp File C:\Users\impra\AppData\Local\Temp\tmpl07xhy16 is created.
+------------------------- openssl x509 -text -in C:\Users\impra\AppData\Local\Temp\tmpl07xhy16 -------------------------
 Remarks: Der; Hex; Certificate; CI; GSMA NIST CI Cert (SGP.26_v1.x)
-Info => Transaction Id: a85w7on69w8u; Input Format: der; Url Time Out: 5; Url Pre Access: True; Url Cert Fetch Only: False; Url All Certs: False; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip; Quite Mode: False
+Info => Transaction Id: 3cpqfvii8fyo; Input Format: der; Url Time Out: 5; Url Pre Access: True; Encoding: utf-8; Encoding Errors: replace; Archive Output: True; Archive Output Format: .zip
 Input Data: 30820250308201F7A003020102020900B874F3ABFA6C44D3300A06082A8648CE3D04030230443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543020170D3230303430313038323735315A180F32303535303430313038323735315A30443110300E06035504030C07546573742043493111300F060355040B0C0854455354434552543110300E060355040A0C0752535054455354310B30090603550406130249543059301306072A8648CE3D020106082A8648CE3D03010703420004940657A673DC288F89D52EA8A47704992791F9C34B0036E633E2D0CBA9454D65DB32EB17981799D2F24388EE2B95C1094546C97901CEAEBA9650919A2E20D229A381CF3081CC301D0603551D0E04160414F54172BDF98A95D65CBEB88A38A1C11D800A85C3300F0603551D130101FF040530030101FF30170603551D200101FF040D300B3009060767811201020100300E0603551D0F0101FF040403020106300E0603551D1104073005880388370130610603551D1F045A3058302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D412E63726C302AA028A0268624687474703A2F2F63692E746573742E6578616D706C652E636F6D2F43524C2D422E63726C300A06082A8648CE3D0403020347003044022052756AAFC2020A6CECBF2E5F3C20892510FF29751D298BD3B015D9605A4FE67D022057982836E4D205DDD2E6C3C1B455937F6B6E493B602FD1B66C357489A935F76B
 Input Data Length: 1192
 Output Data:
@@ -2226,9 +2226,9 @@ tFWTf2tuSTtgL9G2bDV0iak192s=
 Output Data Length: 2818
 --------------------------------------------------------------------------------
 ---------------------------------- Time Details ----------------------------------
-Current Time Stamp: 2025-01-26 18:42:13.027176+05:30
-Execution Time: 00:00:20; Milliseconds: 20322.345733642578
-Execution Time CPU: 00:00:00; Milliseconds: 187.5
+Current Time Stamp: 2025-01-26 19:37:42.437228+05:30
+Execution Time: 00:00:21; Milliseconds: 21658.25605392456
+Execution Time CPU: 00:00:00; Milliseconds: 359.375
 Timer State: TIMER_OFF
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
