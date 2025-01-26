@@ -10,7 +10,7 @@ from python_helpers.ph_modes_error_handling import PhErrorHandlingModes
 from python_helpers.ph_util import PhUtil
 
 from cert_play.main.convert import converter
-from cert_play.main.convert.converter import read_web_request, set_defaults
+from cert_play.main.convert.converter import set_defaults
 from cert_play.main.convert.parser import process_all_data_types
 from cert_play.main.helper.data import Data
 from cert_play.main.helper.infodata import InfoData
@@ -27,6 +27,8 @@ class DataTypeMaster(object):
         self.remarks = None
         self.encoding = None
         self.encoding_errors = None
+        self.output_path = None
+        self.output_file_name_keyword = None
         self.archive_output = None
         self.archive_output_format = None
         # Specific Objects
@@ -64,6 +66,12 @@ class DataTypeMaster(object):
     def set_encoding_errors(self, encoding_errors):
         self.encoding_errors = encoding_errors
 
+    def set_output_path(self, output_path):
+        self.output_path = output_path
+
+    def set_output_file_name_keyword(self, output_file_name_keyword):
+        self.output_file_name_keyword = output_file_name_keyword
+
     def set_archive_output(self, archive_output):
         self.archive_output = archive_output
 
@@ -99,7 +107,7 @@ class DataTypeMaster(object):
             data = self.data_pool
         if isinstance(data, list):
             """
-            Handle Pool
+            Handle Requests Pool; Multiple Data Request are sent
             """
             for data_item in data:
                 self.process_safe(error_handling_mode=error_handling_mode, data=data_item)
@@ -112,7 +120,7 @@ class DataTypeMaster(object):
                 """
                 Web Form
                 """
-                data = read_web_request(data)
+                data = handle_web_request(data)
             self.__process_safe_individual(data)
         except Exception as e:
             known = False
@@ -163,13 +171,15 @@ class DataTypeMaster(object):
             data.remarks = data.remarks if data.remarks is not None else self.remarks
             data.encoding = data.encoding if data.encoding is not None else self.encoding
             data.encoding_errors = data.encoding_errors if data.encoding_errors is not None else self.encoding_errors
+            data.output_path = data.output_path if data.output_path is not None else self.output_path
+            data.output_file_name_keyword = data.output_file_name_keyword if data.output_file_name_keyword is not None else self.output_file_name_keyword
             data.archive_output = data.archive_output if data.archive_output is not None else self.archive_output
             data.archive_output_format = data.archive_output_format if data.archive_output_format is not None else self.archive_output_format
+            data.input_format = data.input_format if data.input_format is not None else self.input_format
             data.url_time_out = data.url_time_out if data.url_time_out is not None else self.url_time_out
             data.url_pre_access = data.url_pre_access if data.url_pre_access is not None else self.url_pre_access
             data.url_cert_fetch_only = data.url_cert_fetch_only if data.url_cert_fetch_only is not None else self.url_cert_fetch_only
             data.url_all_certs = data.url_all_certs if data.url_all_certs is not None else self.url_all_certs
-            data.input_format = data.input_format if data.input_format is not None else self.input_format
         else:
             data = Data(
                 input_data=data,
@@ -180,13 +190,15 @@ class DataTypeMaster(object):
                 remarks=self.remarks,
                 encoding=self.encoding,
                 encoding_errors=self.encoding_errors,
+                output_path=self.output_path,
+                output_file_name_keyword=self.output_file_name_keyword,
                 archive_output=self.archive_output,
                 archive_output_format=self.archive_output_format,
+                input_format=self.input_format,
                 url_time_out=self.url_time_out,
                 url_pre_access=self.url_pre_access,
                 url_cert_fetch_only=self.url_cert_fetch_only,
                 url_all_certs=self.url_all_certs,
-                input_format=self.input_format,
             )
         meta_data = MetaData(input_data_org=data.input_data)
         info_data = InfoData()
@@ -208,17 +220,26 @@ class DataTypeMaster(object):
         """
         set_defaults(data, None)
         common_data = {
+            #
             PhKeys.INPUT_DATA: data.input_data,
+            PhKeys.PRINT_INPUT: data.print_input,
+            PhKeys.PRINT_OUTPUT: data.print_output,
+            PhKeys.PRINT_INFO: data.print_info,
+            PhKeys.QUITE_MODE: data.quite_mode,
             PhKeys.REMARKS: data.get_remarks_as_str(),
-            PhKeys.DATA_GROUP: data.data_group,
             PhKeys.ENCODING: data.encoding,
             PhKeys.ENCODING_ERRORS: data.encoding_errors,
+            PhKeys.OUTPUT_PATH: data.output_path,
+            PhKeys.OUTPUT_FILE_NAME_KEYWORD: data.output_file_name_keyword,
             PhKeys.ARCHIVE_OUTPUT: data.archive_output,
             PhKeys.ARCHIVE_OUTPUT_FORMAT: data.archive_output_format,
+            #
             PhKeys.INPUT_FORMAT: data.input_format,
             PhKeys.URL_TIME_OUT: data.url_time_out,
             PhKeys.URL_PRE_ACCESS: data.url_pre_access,
             PhKeys.URL_CERT_FETCH_ONLY: data.url_cert_fetch_only,
             PhKeys.URL_ALL_CERTS: data.url_all_certs,
+            #
+            PhKeys.DATA_GROUP: data.data_group,
         }
         return PhUtil.dict_clean(common_data)

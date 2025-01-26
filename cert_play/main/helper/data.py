@@ -1,5 +1,7 @@
+from python_helpers.ph_constants import PhConstants
 from python_helpers.ph_keys import PhKeys
 from python_helpers.ph_util import PhUtil
+from python_helpers.ph_variables import PhVariables
 
 
 class Data:
@@ -13,6 +15,8 @@ class Data:
                  remarks=[],
                  encoding=None,
                  encoding_errors=None,
+                 output_path=None,
+                 output_file_name_keyword=None,
                  archive_output=None,
                  archive_output_format=None,
                  # Specific Param
@@ -21,13 +25,13 @@ class Data:
                  url_pre_access=None,
                  url_cert_fetch_only=None,
                  url_all_certs=None,
-                 # Unknown Param
+                 # Unknown/System Param
                  **kwargs,
                  ):
         """
         Instantiate the Data Object for further Processing.
 
-        :param input_data: Input Data; File Path(s), Dir Paths(s)
+        :param input_data: Input Data; String(s), File Path(s), Dir Paths(s)
         :param print_input: Printing of input needed?
         :param print_output: Printing of output needed?
         :param print_info:  Printing of info needed?
@@ -35,6 +39,8 @@ class Data:
         :param remarks: Remarks for Input Data
         :param encoding: Encoding for Input/Output Data
         :param encoding_errors: Encoding Errors Handling for Input/Output Data
+        :param output_path: Output Path
+        :param output_file_name_keyword:
         :param archive_output: Archiving of output needed?
         :param archive_output_format: Archive Output Format
         :param input_format: Format of Input Data
@@ -60,6 +66,8 @@ class Data:
         self.remarks = remarks
         self.encoding = encoding
         self.encoding_errors = encoding_errors
+        self.output_path = output_path
+        self.output_file_name_keyword = output_file_name_keyword
         self.archive_output = archive_output
         self.archive_output_format = archive_output_format
         self.input_format = input_format
@@ -80,9 +88,36 @@ class Data:
         self.__extended_remarks_needed = None
         # Handle Remarks
         self.set_user_remarks(self.remarks)
+        # Handle Remarks Variables
+        self.__variables_pool = {
+            #           _key : (_var_name, _var_value)
+            PhKeys.INPUT_FORMAT: (PhVariables.INPUT_FORMAT, self.input_format),
+            PhKeys.URL_TIME_OUT: (PhVariables.URL_TIME_OUT, self.url_time_out),
+            PhKeys.URL_PRE_ACCESS: (PhVariables.URL_PRE_ACCESS, self.url_pre_access),
+            PhKeys.URL_CERT_FETCH_ONLY: (PhVariables.URL_CERT_FETCH_ONLY, self.url_cert_fetch_only),
+            PhKeys.URL_ALL_CERTS: (PhVariables.URL_ALL_CERTS, self.url_all_certs),
+        }
 
     def set_user_remarks(self, remarks):
         self.remarks = PhUtil.to_list(remarks, trim_data=True, all_str=True)
+
+    def set_user_remarks_expand_variables(self):
+        def __set_value(x, var_name, var_value, key_name_needed, key_):
+            if var_name in x and var_value is not None:
+                var_value = str(var_value)
+                y = '_'.join([key_, var_value]) if key_name_needed else var_value
+                return x.replace(var_name, y)
+            return x
+
+        def __expand_variable(x):
+            key_name_needed = True if PhVariables.KEY_NAME in x else False
+            if key_name_needed:
+                x = x.replace(PhVariables.KEY_NAME, '')
+            for key, value in self.__variables_pool.items():
+                x = __set_value(x=x, var_name=value[0], var_value=value[1], key_name_needed=key_name_needed, key_=key)
+            return x
+
+        self.remarks = [__expand_variable(x) for x in self.remarks]
 
     def __get_default_remarks(self):
         str_input_data = PhUtil.combine_list_items(self.input_data)

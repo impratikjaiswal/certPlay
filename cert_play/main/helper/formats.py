@@ -1,3 +1,6 @@
+from python_helpers.ph_formats import PhFormats
+
+
 class Formats:
-    URL = 'url'
-    DER = 'der'
+    URL = PhFormats.URL
+    DER = PhFormats.DER

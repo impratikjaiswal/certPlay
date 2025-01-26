@@ -1,7 +1,8 @@
 from cert_play.main.data_type.data_type_master import DataTypeMaster
+from cert_play.main.helper.data import Data
 
 
-class Dev(DataTypeMaster):
+class KnownIssues(DataTypeMaster):
 
     def __init__(self):
         super().__init__()
@@ -71,7 +72,20 @@ class Dev(DataTypeMaster):
         super().set_url_all_certs(url_all_certs)
 
     def set_data_pool(self):
-        data_pool = [
+        data_pool_high_priority = [
+            #
+            # TODO: Need to Fix
+            Data(
+                remarks='Folder',
+                input_data=r'D:\Other\Github_Self\euiccSpecs\GSMA\SGP.26 RSP Test Certificates\certs\SGP.26_v1.2_files',
+            ),
             #
         ]
-        super().set_data_pool(data_pool)
+
+        data_pool_low_priority = [
+            #
+        ]
+        super().set_data_pool(
+            data_pool_high_priority
+            + data_pool_low_priority
+        )

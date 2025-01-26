@@ -15,15 +15,7 @@ _debug = False
 # _debug = True
 
 
-def handle_certs(data, meta_data, info_data):
-    if data.input_format == Formats.URL:
-        data.input_data = clean_and_pre_access_url_data(data.input_data, data.url_pre_access)
-    if data.input_format == Formats.DER:
-        data.input_data = clean_der_data(data.input_data)
-    return open_ssl_cmd(data)
-
-
-def process_data(data, meta_data, info_data, flip_output=False):
+def handle_data(data, meta_data, info_data, flip_output=False):
     """
 
     :param data:
@@ -46,11 +38,19 @@ def process_data(data, meta_data, info_data, flip_output=False):
     if data.url_time_out not in FormatsGroup.URL_TIME_OUT_SUPPORTED:
         raise ValueError(PhExceptionHelper(msg_key=PhConstants.INVALID_URL_TIME_OUT, msg_value=data.url_time_out))
     # Handle Certificate
-    res = handle_certs(data=data, meta_data=meta_data, info_data=info_data)
+    res = __handle_data(data=data, meta_data=meta_data, info_data=info_data)
     if flip_output is True:
         meta_data.re_parsed_data = res
     else:
         meta_data.parsed_data = res
+
+
+def __handle_data(data, meta_data, info_data):
+    if data.input_format == Formats.URL:
+        data.input_data = clean_and_pre_access_url_data(data.input_data, data.url_pre_access)
+    if data.input_format == Formats.DER:
+        data.input_data = clean_der_data(data.input_data)
+    return open_ssl_cmd(data)
 
 
 def open_ssl_cmd_step_1(input_data, url_time_out, url_all_certs):

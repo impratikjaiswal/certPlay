@@ -5,15 +5,15 @@ Python executable Path is D:\Other\Github_Self\certPlay\venv\Scripts
 User Name is Pratik Jaiswal
 User Account is impra
 --------------------------------------------------------------------------------
-Time Stamp is Monday, Nov 11 2024, 08:50:47:232105, IST (GMT+0530)
+Time Stamp is Sunday, Jan 26 2025, 18:42:16:157759, IST (GMT+0530)
 --------------------------------------------------------------------------------
-Git Summary is f72619f;  (HEAD -> main, tag: v2.2.1, origin/main, origin/HEAD); 2024-10-27 00:28:02 +0530; imPratik <impratikjaiswal@gmail.com>; libs updated
+Git Summary is d78ef53;  (HEAD -> main, origin/main, origin/HEAD); 2024-12-09 21:50:20 +0530; imPratik <impratikjaiswal@gmail.com>; fav icon changed
 --------------------------------------------------------------------------------
-pythonHelpers version is v5.1.0
+pythonHelpers version is v5.2.3.dev16
 --------------------------------------------------------------------------------
-certPlay version is v2.3.0
+certPlay version is v2.4.0
 --------------------------------------------------------------------------------
---------------------------------------------------------- Test ---------------------------------------------------------
+--------------------------------------------------- Data Class: Test ---------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 url https://www.amenitypj.in/ is accessible
@@ -26,8 +26,8 @@ url cloudflare.com/ is accessible
 URL Type is missing (e.g.: http, https etc), hence cloudflare.com accessibility can not be validated
 url cloudflare.com is accessible
 ---------------------------------- Time Details ----------------------------------
-Current Time Stamp: 2024-11-11 08:50:48.106124+05:30
-Execution Time: 00:00:00; Milliseconds: 876.9760131835938
+Current Time Stamp: 2025-01-26 18:42:17.088072+05:30
+Execution Time: 00:00:00; Milliseconds: 922.316312789917
 Execution Time CPU: 00:00:00; Milliseconds: 62.5
 Timer State: TIMER_OFF
 --------------------------------------------------------------------------------

@@ -36,17 +36,17 @@ setup(
     name=ConfigConst.TOOL_NAME,
     author="Pratik Jaiswal",
     author_email="impratikjaiswal@gmail.com",
-    description="Generic Cert Parser.",
+    description=ConfigConst.TOOL_DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/impratikjaiswal/certPlay",
+    url=ConfigConst.TOOL_URL,
     project_urls={
-        "Bug Tracker": "https://github.com/impratikjaiswal/certPlay/issues",
+        "Bug Tracker": ConfigConst.TOOL_URL_BUG_TRACKER,
     },
-    keywords="Cert Parser",
-    license="MIT",
+    keywords=ConfigConst.TOOL_META_KEYWORDS,
+    license="GNU GENERAL PUBLIC LICENSE v3.0",
     python_requires=">=3.9",
     packages=packages,
-    install_requires=install_reqs
+    install_requires=install_reqs,
     # test_suite="test.sample_package",
 )

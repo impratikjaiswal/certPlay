@@ -7,4 +7,4 @@ class FormatsGroup:
         Formats.DER,
     ]
 
-    URL_TIME_OUT_SUPPORTED = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    URL_TIME_OUT_SUPPORTED = list(range(10, 0, -1))
