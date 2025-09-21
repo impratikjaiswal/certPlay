@@ -104,7 +104,7 @@ class Sample(DataTypeMaster):
             #
             Data(
                 remarks='Url; IP; AmenityPj',
-                input_data='3.141.211.207',
+                input_data='3.149.113.14',
                 input_format=Formats.URL,
             ),
             #
